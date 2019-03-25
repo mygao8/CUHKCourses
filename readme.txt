@@ -1,4 +1,2 @@
-my first line
-1
-22
-333
+Git is a distributed version control system.
+Git is free software.
