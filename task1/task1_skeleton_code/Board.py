@@ -38,32 +38,30 @@ class Board():
             if x == '.': return x
             return g(x) if x == '#' else b(x)
         #print(self.state)
-        print(color(self.state[0]), '-' * 9, color(self.state[1]), '-' * 9, color(self.state[2]), '&', end='    ');
-        time.sleep(0.5)
-        print('*a', '-' * 9, 'b', '-' * 9, 'c')
-        time.sleep(0.5)
+        print(color(self.state[0]), '-' * 9, color(self.state[1]), '-' * 9, color(self.state[2]), end='    ');
+        print('a', '-' * 9, 'b', '-' * 9, 'c')
         print('|   ', ' ' * 6, '|', ' ' * 6, '   |', end='    ');
-        time.sleep(0.5)
+        
         print('|   ', ' ' * 6, '|', ' ' * 6, '   |')
-        time.sleep(0.5)
+        
         print('|   ', color(self.state[3]), '-' * 4, color(self.state[4]), '-' * 4, color(self.state[5]), '   |', end='    ');
-        time.sleep(0.5)
+        
         print('|   ', 'd', '-' * 4, 'e', '-' * 4, 'f', '   |')
         print('|   ' * 2, ' ' * 7, '   |' * 2, end='    ');
         print('|   ' * 2, ' ' * 7, '   |' * 2)
-        time.sleep(0.5)
+        
         print(color(self.state[6]), '-', color(self.state[7]), ' ' * 13, color(self.state[8]), '-', color(self.state[9]), end='    '); 
         print('g', '-', 'h', ' ' * 13, 'i', '-', 'j',)
-        time.sleep(0.5)
+        
         print('|   ' * 2, ' ' * 7, '   |' * 2, end='    '); 
         print('|   ' * 2, ' ' * 7, '   |' * 2)
-        time.sleep(0.5)
+        
         print('|   ', color(self.state[10]), '-' * 4, color(self.state[11]), '-' * 4, color(self.state[12]), '   |', end='    '); 
         print('|   ', 'k', '-' * 4, 'l', '-' * 4, 'm', '   |')
-        time.sleep(0.5)
+        
         print('|   ', ' ' * 6, '|', ' ' * 6, '   |', end='    '); 
         print('|   ', ' ' * 6, '|', ' ' * 6, '   |')
-        time.sleep(0.5)
+        
         print(color(self.state[13]), '-' * 9, color(self.state[14]), '-' * 9, color(self.state[15]), end='    '); 
         print('n', '-' * 9, 'o', '-' * 9, 'p')
 
