@@ -1,0 +1,15 @@
+CC = gcc
+CFLAGS = -Wall -g
+LIB = -pthread -lcrypto -lssl
+
+all: server client
+
+server: myftpserver.c
+	${CC} $(CFLAGS) -o myftpserver myftpserver.c myftp.c ${LIB} 
+
+client: myftpclient.c
+	${CC} $(CFLAGS) -o myftpclient myftpclient.c myftp.c ${LIB} 
+
+clean:
+	rm server
+	rm client	
