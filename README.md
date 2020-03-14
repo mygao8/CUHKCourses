@@ -1,2 +1,2 @@
-# test
-first repository
+Author: mygao8
+For CUHK Courses
