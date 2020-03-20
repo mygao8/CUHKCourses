@@ -20,7 +20,7 @@ struct metadata{
     unsigned char filename[1024];
     int filesize;
     int idx;
-}
+};
 
 struct message_s
 {

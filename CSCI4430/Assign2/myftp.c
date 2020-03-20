@@ -1,20 +1,5 @@
 #include "myftp.h"
-#define metadataName  serverconfig.txt
-int config(char* path, int* numServer, int* k, int **addr){
-    FILE *fp = fopen(path, "r");
-    if (fp == NULL){
-        printf("error reading config\n");
-        return -1;
-    }
-
-    char buf[32];
-    
-    fscanf(fptr,"%[^\n]", buf);
-    *numServer = atoi(buf);
-    fscanf(fptr,"%[^\n]", buf);
-    *k = atoi(buf);
-    printf("%d %d\n", *numServer, *k);
-}
+#define metadataName  "serverconfig.txt"
 
 int sendn(int sd, void *buf, int buf_len)
 {
@@ -59,6 +44,8 @@ void *threadFun(void *arg){
     memcpy(&threadParam, (struct _threadParam *)arg, sizeof(threadParam));
     int client_sd = threadParam.client_sd;
     int n;
+
+    // recv header and save it into buff
     if((n = recvn(client_sd, buff, headerLen)) < 0){
         printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
         exit(0);
@@ -82,11 +69,11 @@ void *threadFun(void *arg){
         FILE *fd = fopen(metadataName, "rb");
 
         /****** send header(0XA2, same as HW1 0xFF) *******/
-        strcpy(headerMsg.protocol, "myftp");
-        headerMsg.type = 0xA2;
+        strcpy(header_msg.protocol, "myftp");
+        header_msg.type = 0xA2;
         int messageLen = headerLen + file_size;
-        headerMsg.length = htonl(messageLen);
-        memcpy(buff, &headerMsg, headerLen);
+        header_msg.length = htonl(messageLen);
+        memcpy(buff, &header_msg, headerLen);
         if((sendNum = (sendn(client_sd, buff, headerLen))<0)){
             printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
             exit(0);
@@ -96,7 +83,7 @@ void *threadFun(void *arg){
         int readLen;
         int nextSize = min(MAXLEN, remainFileLen);
         while((readLen = fread(buff, 1, nextSize, fd))>0){
-            if((sendNum = (sendn(sd, buff, nextSize))<0)){
+            if((sendNum = (sendn(client_sd, buff, nextSize))<0)){
                 printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
                 exit(0);
             }

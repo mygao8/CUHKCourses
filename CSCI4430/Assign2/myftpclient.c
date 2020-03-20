@@ -30,7 +30,7 @@ int main(int argc, char **argv){
     char buf[32];
     memset(buf, '\0', sizeof(buf));
     // read parameters from config.txt
-    FILE *fp = fopen("serverconfig.txt", "r");
+    FILE *fp = fopen("clientconfig.txt", "r");
     if (fp == NULL){
         printf("error reading config\n");
         return -1;
