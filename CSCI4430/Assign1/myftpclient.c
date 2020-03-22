@@ -29,23 +29,23 @@ int main(int argc, char **argv){
      * ***************************/
     if(strcmp("list", argv[3]) == 0){
         /****** send header(0XA1) *******/
-        headerMsg.length = htonl(10);
+        headerMsg.length = htonl(11);
         strcpy(headerMsg.protocol, "myftp");
         headerMsg.type = (unsigned char)0xA1;
-        message = (unsigned char *)malloc(10);
-        memcpy(message, &headerMsg, 10);
+        message = (unsigned char *)malloc(11);
+        memcpy(message, &headerMsg, 11);
 
-        if((sendNum = (sendn(sd, message, 10))<0)){
+        if((sendNum = (sendn(sd, message, 11))<0)){
             printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
         }
         /****** receive header(0XA2) *******/
-        if((recvNum = recvn(sd, buff, 10)) < 0){
+        if((recvNum = recvn(sd, buff, 11)) < 0){
             printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
             exit(0);
         }
-        memcpy(&headerMsg, buff, 10);
+        memcpy(&headerMsg, buff, 11);
         // headerMsg.length - 10 is the length for buff (dir info)
-        if((recvNum = recvn(sd, buff, headerMsg.length - 10)) < 0){
+        if((recvNum = recvn(sd, buff, headerMsg.length - 11)) < 0){
             printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
             exit(0);
         }

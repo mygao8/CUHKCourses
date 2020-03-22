@@ -2,6 +2,30 @@
 #include <stdlib.h>
 
 int main(){
-    unsigned char test[4] = {10, 1, 0, 1};
-    printf("%x\n", test[0]);
+    FILE *fp = fopen("file0", "r");
+    char buf[100];
+    int ret = fgets(buf, sizeof(buf), fp);
+    if (ret != NULL){
+        printf("1 %d\n",ret);
+    }
+    ret = fgets(buf, sizeof(buf), fp);
+    if (ret != NULL){
+        printf("2 %d\n",ret);
+    }
+    else
+    {
+        printf("2 NULL\n");
+    }
+    
+    ret = fgets(buf, sizeof(buf), fp);
+    if (ret != NULL){
+        printf("3 %d\n",ret);
+    }else{
+        printf("3 NULL\n");
+    }
+    printf("before fclose: fp=%d\n",fp);
+
+    fclose(fp);
+
+    printf("after fclose: fp=%d\n",fp);
 }

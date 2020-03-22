@@ -1,5 +1,5 @@
 CC = gcc
-LIB =
+LIB = -lisal -g
 
 all: server client
 

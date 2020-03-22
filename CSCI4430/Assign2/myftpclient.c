@@ -9,7 +9,10 @@ unsigned char buff[MAXLEN];
 
 void setFDs(int *sd, int numServer, fd_set fds){
     for (int i = 0; i < numServer; i++){
-        FD_SET(sd[i], &fds);
+        if (sd[i] != 0){
+            // socket with a successful connect
+            FD_SET(sd[i], &fds);            
+        }
     }
 }
 
@@ -18,15 +21,16 @@ int main(int argc, char **argv){
     int port, numServer, k, blockSize;
 
     int *sd = (int *)malloc(sizeof(int) * numServer);
+    memset(sd, 0, sizeof(int)*numServer);
     struct sockaddr_in *server_addr = (struct sockaddr_in *)malloc(sizeof(struct sockaddr_in) * numServer);
 
     unsigned char *message;
     struct message_s headerMsg;
     int sendNum, recvNum;
 
-    fd_set readFds, writeFds;
+    fd_set writeFds;
     int maxFd = 0;
-
+    char listBuf[MAXLEN];
     char buf[32];
     memset(buf, '\0', sizeof(buf));
     // read parameters from config.txt
@@ -35,6 +39,7 @@ int main(int argc, char **argv){
         printf("error reading config\n");
         return -1;
     }
+    printf("initial fp:%d\n",fp);
     // read numServer(n)
     if (fgets(buf, sizeof(buf), fp) != NULL){
         numServer = atoi(buf);
@@ -51,15 +56,19 @@ int main(int argc, char **argv){
     }
     memset(buf, '\0', sizeof(buf));
 
-
+    int *connectedServer = (int*)malloc(sizeof(int)*numServer);
+    memset(connectedServer, 0, sizeof(int)*numServer);
 
     // initialize and connect each socket to each server
     for (int i = 0; i < numServer; i++)
     {
+        printf("i: %d  \n", i);
         memset(buf, '\0', sizeof(buf));
         // read addr and split by ':'
         if (fgets(buf, sizeof(buf), fp) != NULL){
-            for (int j = 0; buf[j] != '\0'; j++){
+            int j;
+            for (j = 0; buf[j] != '\0'; j++)
+            {
                 if (buf[j] == ':'){
                     buf[j] = '\0';
                     break;
@@ -67,31 +76,48 @@ int main(int argc, char **argv){
             }
             port = atoi(&buf[j + 1]);
         }
+        printf("set socket\n");
 
-        sd[i] = socket(AF_INET, SOCK_STREAM, 0);
+        int tmp = socket(AF_INET, SOCK_STREAM, 0);
+        sd[i] = tmp;
+        // sd[i] = socket(AF_INET, SOCK_STREAM, 0);
 
+        printf("set server_addr\n");
         memset(&server_addr[i], 0, sizeof(server_addr[i]));
-        server_addr.sin_family = AF_INET;
-        server_addr.sin_addr.s_addr = inet_addr(buf);
-        server_addr.sin_port = htons(port);
-        socklen_t addrlen = sizeof(server_addr);
+        server_addr[i].sin_family = AF_INET;
+        server_addr[i].sin_addr.s_addr = inet_addr(buf);
+        server_addr[i].sin_port = htons(port);
+        socklen_t addrlen = sizeof(server_addr[i]);
 
         if (connect(sd[i], (struct sockaddr *)&server_addr[i], sizeof(server_addr[i])) < 0)
         {
             printf("connect to server%d error: %s (ERRNO:%d)\n", i, strerror(errno), errno);
-            exit(0);
+            continue;
         }
-
+        else{
+            printf("connect to server%d successfully, sd=%d\n", i, sd[i]);
+            connectedServer[i]=1;
+        }
         // save the largest sd, which will be used in select()
         maxFd = max(maxFd, sd[i]);
-        // for (int i - 0; i < numServer; i++) printf("sd[%d]:%d ",i, sd[i]); printf("\n");
+        for (int i = 0; i < numServer; i++) {printf("sd[%d]:%d ",i, sd[i]); printf("\n");}
     }
+    if (fp == NULL){
+        printf("NULL\n");
+    }
+    else{
+        printf("fp=%d\n", fp);
+    }
+    // fclose(fp);
+    // printf("before exit\n");
+    // exit(0);
 
     /*****************************
      * 
      * "list" command
      * 
      * ***************************/
+    printf("enter list");
     if(strcmp("list", argv[2]) == 0){
         /****** send header(0XA1) *******/
         headerMsg.length = htonl(headerLen);
@@ -100,78 +126,93 @@ int main(int argc, char **argv){
         message = (unsigned char *)malloc(headerLen);
         memcpy(message, &headerMsg, headerLen);
 
-        while (1){
-            /*** send request ***/
+        /*** send request ***/
+        FD_ZERO(&writeFds);
+        for (int i = 0; i < numServer; i++){
+            if (connectedServer[i] != 0){
+                // socket with a successful connect
+                printf("sd=%d will be set in writeFds\n",sd[i]);
+                FD_SET(sd[i], &writeFds);            
+            }
+        }
 
-            FD_ZERO(writeFds);
-            setFDs(sd, numServer, writeFds);
-            int sdID = -1;
-            int ret = select(maxFd + 1, NULL, &writeFds, NULL, NULL);
-            if (ret < 0){
-                perror("select error");
-                return ERROR;
-            }
-            else if (ret == 0){
-                printf("select time out\r\n");
-            }
-            else{
-                // check which socket is writable
-                for (sdID = 0; sdID < maxFd; sdID++){
-                    if (FD_ISSET(sdID, writeFds)){
-                        // printf("index of fd:%d  socket:%d\n", sdID, sd[sdID]);
-                        // i is the fd of writable socket
-                        // sdID, the index of fd in writeFds should be the same as socket
-                        if((sendNum = (sendn(sdID, message, headerLen))<0)){
-                            printf("send to server%d: error: %s (ERRNO:%d)\n", sdID, strerror(errno), errno);
-                        }
-                        else{
-                            // successfully send request to a server
-                            break;
-                        }
+        int sdID; // idx of socket correspoding to server, i.e. sdID=1 is the socket connect to server 1 (may fail)
+        int ret = select(maxFd + 1, NULL, &writeFds, NULL, NULL);
+        printf("ret of select: %d\n",ret);
+        if (ret < 0){
+            perror("select error");
+            return -1;
+        }
+        else if (ret == 0){
+            printf("select time out\r\n");
+        }
+        else{
+            // check which socket is writable
+            for (sdID = 0; sdID < numServer; sdID++){
+                if (FD_ISSET(sd[sdID], &writeFds)){
+                    // printf("index of fd:%d  socket:%d\n", sdID, sd[sdID]);
+                    // i is the fd of writable socket
+                    // sdID, the index of fd in writeFds should be the same as socket
+                    printf("sdID: %d, sd=%d, enter sendn\n", sdID, sd[sdID]);
+                    if((sendNum = (sendn(sd[sdID], message, headerLen))<0)){
+                        printf("send to server%d: error: %s (ERRNO:%d)\n", sdID, strerror(errno), errno);
+                    }
+                    else{
+                        // successfully send request to a server
+                        break;
                     }
                 }
-            
+            }
+        
 
 
-                /*** receive message ***/
+            /*** receive message ***/
 
-                /****** receive header(0XA2) *******/
-                if((recvNum = recvn(sdID, buff, headerLen)) < 0){
-                    printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
-                    exit(0);
+            /****** receive header(0XA2) *******/
+            if((recvNum = recvn(sd[sdID], buff, headerLen)) < 0){
+                printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
+                exit(0);
+            }
+            memcpy(&headerMsg, buff, headerLen);
+
+            if(headerMsg.type == (unsigned char)0xA2){
+                // write received packages(.metadata) into a tmp file
+                FILE *fd = fopen(".tmpForList", "wb");
+                // fileSize get
+                int fileSize = ntohl(headerMsg.length) - headerLen;
+                int remainSize = fileSize;
+                int nextSize;
+                // recv message in packet(len<=MAXLEN)
+                while(remainSize>0){
+                    nextSize = min(remainSize, MAXLEN);
+                    if((recvNum = recvn(sd[sdID], buff, nextSize)) < 0){
+                        printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
+                        exit(0);
+                    }
+                    
+                    fwrite(buff, 1, nextSize, fd);
+                    remainSize -= nextSize;
                 }
-                memcpy(&headerMsg, buff, headerLen);
+                fclose(fd);
 
-                if(headerMsg.type == (unsigned char)0xA2){
-                    // write received packages(.metadata) into a tmp file
-                    FILE *fd = fopen(".tmpForList", "wb");
-                    // fileSize get
-                    int fileSize = ntohl(headerMsg.length) - headerLen;
-                    int remainSize = fileSize;
-                    int nextSize;
-                    // recv message in packet(len<=MAXLEN)
-                    while(remainSize>0){
-                        nextSize = min(remainSize, MAXLEN);
-                        if((recvNum = recvn(sdID, buff, nextSize)) < 0){
-                            exit(0);
-                        }
-                        
-                        fwrite(buff, 1, nextSize, fd);
-                        remainSize -= nextSize;
+                struct metadata *data = (struct metadata *)malloc(sizeof(struct metadata));
+                fd = fopen(".tmpForList", "rb");
+                remainSize = fileSize;
+                printf("remainSize:%d, struct metadata:%d\n",remainSize, sizeof(struct metadata));
+                while (remainSize>0){
+                    if (fread(data, sizeof(struct metadata), 1, fd) <= 0){
+                        printf("fread error\n");
                     }
-                    fclose(fd);
+                    printf("%s size:%d idx:%d\n", data->filename, data->filesize, data->idx);
+                    remainSize -= sizeof(struct metadata);
+                }
+                fclose(fd);
 
-                    struct metadata *data = (struct metadata *)malloc(sizeof(struct metadata));
-                    FILE *fd = fopen(".tmpForList", "rb");
-                    remainSize = fileSize;
-                    while (remainSize>0){
-                        if (fread(data, sizeof(struct metadata), 1, fd) <= 0){
-                            printf("fread error\n");
-                        }
-                        printf("%s\n", data->filename);
-                        remainSize -= sizeof(struct metadata);
-                    }
-                    fclose(fd);
+                if(remove(".tmpForList")){
+                    printf("Could not delete the file &s \n",".tmpForList");
+                }
+                else{
+                    printf("Delete tmp files for list\n");
                 }
             }
         }

@@ -1,5 +1,5 @@
 #include "myftp.h"
-#define metadataName  "serverconfig.txt"
+#define metadataName  "data/.metadata"
 
 int sendn(int sd, void *buf, int buf_len)
 {
@@ -46,10 +46,12 @@ void *threadFun(void *arg){
     int n;
 
     // recv header and save it into buff
+    printf("enter recv, client_sd: %d\n", client_sd);
     if((n = recvn(client_sd, buff, headerLen)) < 0){
         printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
         exit(0);
     }
+    printf("recv %d bytes\n", n);
     buff[n] = '\0';
     int i;
 
@@ -66,6 +68,7 @@ void *threadFun(void *arg){
             exit(0);
         }
         int file_size = statbuff.st_size;
+        printf("file_size:%d\n", file_size);
         FILE *fd = fopen(metadataName, "rb");
 
         /****** send header(0XA2, same as HW1 0xFF) *******/
