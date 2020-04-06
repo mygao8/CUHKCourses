@@ -175,7 +175,7 @@ int main(int argc, char **argv){
             }
             memcpy(&headerMsg, buff, headerLen);
 
-            // set unique .tmpFile_{pid} as cache
+            // set unique .tmpFile{pid} as cache
             char tmpFileName[100] = ".tmpFile";
             tmpFileName[8] = 0;
             // itoa(server_addr[i].sin_addr.s_addr, &tmpFileName[8], 10);
@@ -183,7 +183,7 @@ int main(int argc, char **argv){
             // }
             // tmpFileName[i] = ':';
             // itoa(server_addr[i].sin_port, &tmpFileName[i+1], 10);
-            itoa((int)getpid(), &tmpFileName[8], 10);
+            sprintf(&tmpFileName[8], "%d", (int)getpid());
 
             if(headerMsg.type == (unsigned char)0xA2){
                 // write received packages(.metadata) into a tmp file
