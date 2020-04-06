@@ -16,7 +16,7 @@ int main(int argc, char **argv){
      * ***************************/
     if(strcmp("list", argv[2]) == 0){
         unsigned char buff[MAXLEN];
-	printf("Enter list\n");
+
         int port, numServer, k, blockSize;
 
         unsigned char *message;
@@ -35,8 +35,7 @@ int main(int argc, char **argv){
             return -1;
         }
         printf("initial fp:%d\n",fp);
-        fflush(stdout);
-	// read numServer(n)
+        // read numServer(n)
         if (fgets(buf, sizeof(buf), fp) != NULL){
             numServer = atoi(buf);
         }
@@ -52,12 +51,14 @@ int main(int argc, char **argv){
         }
         memset(buf, '\0', sizeof(buf));
 
+        
         int *sd = (int *)malloc(sizeof(int) * numServer);
         memset(sd, 0, sizeof(int)*numServer);
         struct sockaddr_in *server_addr = (struct sockaddr_in *)malloc(sizeof(struct sockaddr_in) * numServer);
 
         int *connectedServer = (int*)malloc(sizeof(int)*numServer);
         memset(connectedServer, 0, sizeof(int)*numServer);
+
 
         // initialize and connect each socket to each server
         for (int i = 0; i < numServer; i++)
@@ -83,8 +84,7 @@ int main(int argc, char **argv){
             // sd[i] = socket(AF_INET, SOCK_STREAM, 0);
 
             printf("set server_addr\n");
-            memset(&server_addr[i], 0, sizeof(struct sockaddr_in));
-	    printf("after memset server addr\n");
+            memset(&server_addr[i], 0, sizeof(server_addr[i]));
             server_addr[i].sin_family = AF_INET;
             server_addr[i].sin_addr.s_addr = inet_addr(buf);
             server_addr[i].sin_port = htons(port);
@@ -175,9 +175,18 @@ int main(int argc, char **argv){
             }
             memcpy(&headerMsg, buff, headerLen);
 
+            // set unique .tmpFile_{addr:port} as cache
+            char tmpFileName[100] = ".tmpFile";
+            tmpFileName[8] = 0;
+            itoa(server_addr[i].sin_addr.s_addr, &tmpFileName[8], 10);
+            for (int i = 8; tmpFileName[i] != '\0', i++){
+            }
+            tmpFileName[i] = ':';
+            itoa(server_addr[i].sin_port, &tmpFileName[i+1], 10);
+
             if(headerMsg.type == (unsigned char)0xA2){
                 // write received packages(.metadata) into a tmp file
-                FILE *fd = fopen(".tmpForList", "wb");
+                FILE *fd = fopen(tmpFileName, "wb");
                 // fileSize get
                 int fileSize = ntohl(headerMsg.length) - headerLen;
                 int remainSize = fileSize;
@@ -196,7 +205,7 @@ int main(int argc, char **argv){
                 fclose(fd);
 
                 struct metadata *data = (struct metadata *)malloc(1029);
-                fd = fopen(".tmpForList", "rb");
+                fd = fopen(tmpFileName, "rb");
                 remainSize = fileSize;
                 printf("remainSize:%d, struct metadata:%ld\n",remainSize, sizeof(struct metadata));
                 
@@ -209,11 +218,11 @@ int main(int argc, char **argv){
                 }
                 fclose(fd);
 
-                if(remove(".tmpForList")){
-                    printf("Could not delete the file &s \n",".tmpForList");
+                if(remove(tmpFileName)){
+                    printf("Could not delete the file %s \n", tmpFileName);
                 }
                 else{
-                    printf("Delete tmp files for list\n");
+                    printf("Delete the tmp file %s for list\n", tmpFileName);
                 }
             }
         }        

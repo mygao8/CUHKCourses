@@ -61,9 +61,17 @@ void *threadFun(void *arg){
         struct stat statbuff;
         int readFileInfoflag;
         if((readFileInfoflag = stat(metadataName, &statbuff))<0){
-            printf("error read file info.");
-            exit(0);
+            printf("no metadata");
+            // create an empty metadata if not exist
+            FILE* tmp_fd = fopen(metadataName, "wb");
+            fclose(tmp_fd);
+            memset(&statbuff, 0, sizeof(struct stat));
+            if((readFileInfoflag = stat(metadataName, &statbuff))<0){
+                printf("after creating empty metadata. error read file info.");
+                exit(0);
+            }
         }
+        
         int file_size = statbuff.st_size;
         printf("file_size:%d\n", file_size);
         FILE *fd = fopen(metadataName, "rb");
