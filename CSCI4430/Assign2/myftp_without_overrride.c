@@ -224,85 +224,11 @@ void *threadFun(void *arg){
             fileInfo.fileSize = org_file_size;
             fileInfo.idx = headerMsg.idx;
             memcpy(buff, &fileInfo, FILEINFOSIZE);
-
-
-
-           if(access(".metadata",F_OK) == 0){
-                // metadata exists, check file recorded in meta or not
-                // -------check for override here---------
-                printf("Metadata found\n");
-
-                struct stat metastat;
-                if((stat(".metadata", &metastat))<0){
-                    printf("error read metadata info.");
-                    exit(0);
-                }
-
-                int metadata_size = metastat.st_size;
-                if(metadata_size % FILEINFOSIZE != 0){
-                    printf("Metadata szie error, size: %d\n", metadata_size);
-                    exit(0);
-                }
-
-                int file_num = metadata_size / FILEINFOSIZE;
-                FILE* meta_attempt = fopen(".metadata","rb");
-                int file_idx = 0;
-                int file_loc = -1; // -1 for not exists, else as the start loc
-                struct fileInfo_s fileinfo_tmp;
-                for(file_idx = 0; file_idx < file_num; file_idx++){
-                    if((fread(&fileinfo_tmp, 1, FILEINFOSIZE, meta_attempt)) < 0){
-                        printf("File info read error for checking file already exists\n");
-                        exit(0);
-                    }
-                    if(strcmp(fileinfo_tmp.fileName, recvFileName) == 0){
-                        // file already exists
-                        file_loc = file_idx;
-                        break;
-                    }
-
-                }
-                fclose(meta_attempt);
-
-                // ---------------------------------------
-                printf("file_loc: %d\n", file_loc);
-
-                if(file_loc == -1){
-                    // file not exists in metadata yet
-                    // append the fileinfo to metadata
-                    FILE *metafd = fopen(".metadata", "ab");// add the metadata fd
-                    if((fwrite(buff, 1, FILEINFOSIZE, metafd)) < 0){ 
-                        printf("Metadata write error for file: %s\n", fileInfo.fileName);
-                    }
-                    fclose(metafd);
-
-                }else{
-                    // file already exists in metadata
-                    // override the fileinfo in metadata
-                    FILE* meta_override = fopen(".metadata","rb+");
-                    if(fseek(meta_override, FILEINFOSIZE * file_loc,SEEK_SET) < 0){
-                        printf("Metadata seek error\n");
-                        exit(0);
-                    }
-                    if(fwrite(buff, 1, FILEINFOSIZE, meta_override) < 0){
-                        printf("Metadata overwrite error\n");
-                        exit(0);
-                    }
-                    fclose(meta_override);
-                }
-
-            }else{
-                // .metadata not exists
-                // append the fileinfo to metadata
-                printf("Metadata not found\n");
-                FILE *metafd = fopen(".metadata", "ab");// add the metadata fd
-                if((fwrite(buff, 1, FILEINFOSIZE, metafd)) < 0){ 
-                    printf("Metadata write error for file: %s\n", fileInfo.fileName);
-                    exit(0);
-                }
-                fclose(metafd);
+            // write the fileinfo to metadata
+            if((fwrite(buff, 1, FILEINFOSIZE, metafd)) < 0){ 
+                printf("Metadata write error for file: %s\n", fileInfo.fileName);
             }
-
-
+            fclose(metafd);
 
             int remainSize = fileSize;
             int nextSize;

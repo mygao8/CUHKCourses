@@ -2,7 +2,16 @@
 
 
 int main(int argc, char ** argv){
-    int port = atoi(argv[1]);
+    int serverIdx;
+    FILE* configure_sd = fopen(argv[1], "rb");
+    fscanf(configure_sd, "%d%d%d%d%d", &N, &K, &blockSize, &serverIdx, &portNumber);
+    printf("port:%d\n", portNumber);
+    fclose(configure_sd);
+    encodeMatrix = malloc(sizeof(uint8_t) * K * N);
+    errorMatrix = malloc(sizeof(uint8_t) * K * K);
+    invertMatrix = malloc(sizeof(uint8_t) * K * K);
+
+    // no changes in the following codes
     int i;
     for(i = 0;i < MAXJOIN;i++){
         threadClient[i].available = 1;
@@ -18,7 +27,7 @@ int main(int argc, char ** argv){
     memset(&server_addr, 0, sizeof(server_addr));
     server_addr.sin_family = AF_INET;
     server_addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    server_addr.sin_port = htons(port);
+    server_addr.sin_port = htons(portNumber);
     socklen_t addrlen = sizeof(server_addr);
     long on = 1;
     if(setsockopt(sd, SOL_SOCKET, SO_REUSEADDR, &(on), sizeof(long)) < 0){
@@ -39,6 +48,7 @@ int main(int argc, char ** argv){
             printf("accpet error: %s (ERRNO:%d)\n",strerror(errno), errno);
             exit(0);
         }
+        printf("accept\n");
         // find an available threadClient
         for(i = 0 ;i < MAXJOIN;i++){ 
             if(threadClient[i].available){
