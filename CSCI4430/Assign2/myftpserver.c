@@ -5,7 +5,7 @@ int main(int argc, char ** argv){
     int serverIdx;
     FILE* configure_sd = fopen(argv[1], "rb");
     fscanf(configure_sd, "%d%d%d%d%d", &N, &K, &blockSize, &serverIdx, &portNumber);
-    printf("port:%d\n", portNumber);
+
     fclose(configure_sd);
     encodeMatrix = malloc(sizeof(uint8_t) * K * N);
     errorMatrix = malloc(sizeof(uint8_t) * K * K);
@@ -48,7 +48,7 @@ int main(int argc, char ** argv){
             printf("accpet error: %s (ERRNO:%d)\n",strerror(errno), errno);
             exit(0);
         }
-        printf("accept\n");
+
         // find an available threadClient
         for(i = 0 ;i < MAXJOIN;i++){ 
             if(threadClient[i].available){

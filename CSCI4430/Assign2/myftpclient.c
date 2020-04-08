@@ -34,7 +34,6 @@ int main(int argc, char **argv){
             printf("error reading config\n");
             return -1;
         }
-        printf("initial fp:%d\n",fp);
         // read numServer(n)
         if (fgets(buf, sizeof(buf), fp) != NULL){
             numServer = atoi(buf);
@@ -63,7 +62,7 @@ int main(int argc, char **argv){
         // initialize and connect each socket to each server
         for (int i = 0; i < numServer; i++)
         {
-            printf("i: %d  \n", i);
+
             memset(buf, '\0', sizeof(buf));
             // read addr and split by ':'
             if (fgets(buf, sizeof(buf), fp) != NULL){
@@ -77,13 +76,11 @@ int main(int argc, char **argv){
                 }
                 port = atoi(&buf[j + 1]);
             }
-            printf("set socket\n");
 
             int tmp = socket(AF_INET, SOCK_STREAM, 0);
             sd[i] = tmp;
             // sd[i] = socket(AF_INET, SOCK_STREAM, 0);
 
-            printf("set server_addr\n");
             memset(&server_addr[i], 0, sizeof(server_addr[i]));
             server_addr[i].sin_family = AF_INET;
             server_addr[i].sin_addr.s_addr = inet_addr(buf);
@@ -103,22 +100,12 @@ int main(int argc, char **argv){
             maxFd = max(maxFd, sd[i]);
             for (int i = 0; i < numServer; i++) {printf("sd[%d]:%d ",i, sd[i]); printf("\n");}
         }
-        if (fp == NULL){
-            printf("NULL\n");
-        }
-        else{
-            printf("fp=%d\n", fp);
-        }
-        // fclose(fp);
-        // printf("before exit\n");
-        // exit(0);
 
         /*****************************
          * 
          * "list" command
          * 
          * ***************************/
-        printf("enter list");
         /****** send header(0XA1) *******/
         headerMsg.length = htonl(headerLen);
         strcpy(headerMsg.protocol, "myftp");
@@ -131,29 +118,24 @@ int main(int argc, char **argv){
         for (int i = 0; i < numServer; i++){
             if (connectedServer[i] != 0){
                 // socket with a successful connect
-                printf("sd=%d will be set in writeFds\n",sd[i]);
                 FD_SET(sd[i], &writeFds);            
             }
         }
 
         int sdID; // idx of socket correspoding to server, i.e. sdID=1 is the socket connect to server 1 (may fail)
         int ret = select(maxFd + 1, NULL, &writeFds, NULL, NULL);
-        printf("ret of select: %d\n",ret);
         if (ret < 0){
             perror("select error");
             return -1;
         }
         else if (ret == 0){
-            printf("select time out\r\n");
+
         }
         else{
             // check which socket is writable
             for (sdID = 0; sdID < numServer; sdID++){
                 if (FD_ISSET(sd[sdID], &writeFds)){
-                    // printf("index of fd:%d  socket:%d\n", sdID, sd[sdID]);
-                    // i is the fd of writable socket
-                    // sdID, the index of fd in writeFds should be the same as socket
-                    printf("sdID: %d, sd=%d, enter sendn\n", sdID, sd[sdID]);
+
                     if((sendNum = (sendn(sd[sdID], message, headerLen))<0)){
                         printf("send to server%d: error: %s (ERRNO:%d)\n", sdID, strerror(errno), errno);
                     }
@@ -208,13 +190,11 @@ int main(int argc, char **argv){
                 struct metadata *data = (struct metadata *)malloc(1029);
                 fd = fopen(tmpFileName, "rb");
                 remainSize = fileSize;
-                printf("remainSize:%d, struct metadata:%ld\n",remainSize, sizeof(struct metadata));
                 
                 while (remainSize>0){
                     if (fread(data, 1029, 1, fd) <= 0){
                         printf("fread error\n");
                     }
-                    printf("%s size:%d idx:%c\n", data->filename, data->filesize, data->idx);
                     remainSize -= 1029;
                 }
                 fclose(fd);
@@ -282,13 +262,12 @@ int main(int argc, char **argv){
             server_addr.sin_family = AF_INET;
             server_addr.sin_addr.s_addr = inet_addr(address[i]);
             server_addr.sin_port = htons(portList[i]);
-            printf("connect to %s:%d\n", serverList[i], portList[i]);
             socklen_t addrlen = sizeof(server_addr);
             if(connect(sdTable[i],(struct sockaddr *)&server_addr, sizeof(server_addr))<0){
                 printf("connect error: %s (ERRNO:%d)\n",strerror(errno), errno);
                 continue;
             }
-            printf("connected %s:%d\n", address[i], portList[i]);
+
             if (sdTable[i] > maxfd){
                 maxfd = sdTable[i];
             }
@@ -299,7 +278,7 @@ int main(int argc, char **argv){
             }
         } 
         if(countAvailableServer < K){
-            printf("two few available servers\n");
+            printf("too few available servers\n");
             exit(0);
         }
         
@@ -347,8 +326,7 @@ int main(int argc, char **argv){
 
             for(i = 0;i < K;i++){
                 if(FD_ISSET(sdTable[i], &request_fds)){
-                    printf("thread:%d\n", i);
-                    printf("status:%x\n", statusTable[i]);
+
                     if(statusTable[i] == 0x00){
                         if((sendNum = (sendn(sdTable[i], message, messageLen))<0)){
                             printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
@@ -358,8 +336,6 @@ int main(int argc, char **argv){
                     }
                 }
                 if (FD_ISSET(sdTable[i], &reply_fds)){
-                    printf("thread:%d\n", i);
-                    printf("status:%x\n", statusTable[i]);
                     if (statusTable[i] == 0xB2){
                         if((recvNum = recvn(sdTable[i], buff, HEADERLEN)) < 0){
                             printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
@@ -442,7 +418,7 @@ int main(int argc, char **argv){
                             int paddingSize = paddingSizeTable[i];
                             int j;
                             for(j = 0;j < paddingSize;j++){
-                                buff[j] = '0';
+                                buff[j] = 0;
                             }
                             FILE* fd = fopen(fileNameTable[i], "ab");
                             fwrite(buff, 1, paddingSize, fd);
@@ -496,11 +472,9 @@ int main(int argc, char **argv){
         int remainDecodeSize = fileSize;
         while(remainDecodeSize > 0){
             unsigned char *decodeResult = (unsigned char *)malloc(blockSize * K);
+
             decodeData(N, K, idxTable, decodeBlock, decodeResult);
             int j;
-//            for(j = 0 ;j < min(blockSize*K, remainDecodeSize);j++){
-  //              printf("%c ", decodeResult[j]);
-    //        }
             fwrite(decodeResult,1, min(blockSize*K, remainDecodeSize), fileResult);
             for(i = 0 ;i < K;i++){
                 memset(decodeBlock[i], 0, blockSize);
@@ -646,7 +620,7 @@ int main(int argc, char **argv){
         while(reply_received < N){
             FD_ZERO(&request_fd);
             FD_ZERO(&reply_fd);
-            printf("One request or reply with reply receive: %d\n",reply_received);
+
             int j;
             for(j = 0; j < N; j++){
                 if(request_send[j] == 0){
@@ -671,7 +645,6 @@ int main(int argc, char **argv){
                         exit(0);
                      }
 
-                     printf("server %d send request\n",j);
                      request_send[j] = 1;
                      break;
                 }
@@ -684,7 +657,6 @@ int main(int argc, char **argv){
                     }
                     memcpy(&headerMsg, buff, 11);
 
-                    printf("server %d receive reply\n",j);
                     if(headerMsg.type != (unsigned char)0xC2){
                         printf("Reply header error, server: %s:%d\n", 
                             servers[j].addr,servers[j].port);
@@ -816,10 +788,6 @@ int main(int argc, char **argv){
                 }
             }
             if(all_send_flag) break; // all the packets are sent
-
-            for(server_idx = 0; server_idx < N; server_idx++){
-                printf("Server %d status: %d\n",server_idx, send_nums[server_idx]);
-            }
             
             // set the fd_set
             FD_ZERO(&file_fd);
@@ -840,12 +808,12 @@ int main(int argc, char **argv){
                         headerMsg.length = htonl(messageLen);
                         headerMsg.idx = server_idx;
                         memcpy(buff, &headerMsg, 11);
-                        printf("to send header for server: %d\n", server_idx);
+
                         if(((sendn(sds[server_idx], buff, 11))<0)){
                             printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
                             exit(0);
                         }
-                        printf("Send header for server: %d\n", server_idx);
+
                         send_nums[server_idx] += 1;
                         break;
                     }
@@ -875,28 +843,6 @@ int main(int argc, char **argv){
 
         fclose(cachefd);
 
-        // ------------------------------------
-        /****** send header(0XFF) *******/
-        
-        // if((sendNum = (sendn(sd, buff, 11))<0)){
-        //     printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
-        //     exit(0);
-        // }
-        // // send file in packet(len <= MAXLEN)
-        // int remainFileLen = file_size;
-        // int readLen;
-        // int nextSize = min(MAXLEN, remainFileLen);
-        // while((readLen = fread(buff, 1, nextSize, fd))>0){
-        //     if((sendNum = (sendn(sd, buff, nextSize))<0)){
-        //         printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
-        //         exit(0);
-        //     }
-        //     remainFileLen -= nextSize;
-        //     nextSize = min(MAXLEN, remainFileLen);
-        // }
-
-        //------------------------------------
-
         fclose(fd);
 
         if((remove(cacheName)) != 0){ // remove the cache file here
@@ -908,8 +854,5 @@ int main(int argc, char **argv){
             close(sds[i]); // close all sockets
         }
     }
-    // for(i = 0;i < K;i++){
-    //     close(sdTable[i]);
-    // }
     return 0;
 }

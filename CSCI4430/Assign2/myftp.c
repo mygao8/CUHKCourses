@@ -149,9 +149,7 @@ void *threadFun(void *arg){
                     break;
                 }
             }
-            printf("sendFileDir:%s\n", sendFileDir);
-            printf("idx:%d\n", idx);
-            printf("fileSize:%d\n", fileSize);
+
             fclose(meta_fd);
             FILE *fd = fopen(sendFileDir, "rb");
             strcpy(headerMsg.protocol, "myftp");
@@ -203,6 +201,7 @@ void *threadFun(void *arg){
         memcpy(sendString, &headerMsg_response, 11);
         if((sendNum = (sendn(client_sd, sendString, 11))<0)){
             printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
+	    exit(0);
         }
         if((recvNum = recvn(client_sd, buff, 11)) < 0){
             printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);
@@ -216,11 +215,10 @@ void *threadFun(void *arg){
             recvFileDir[fileNameSize+6] = '\0';
             
             FILE *fd = fopen(recvFileDir, "wb");
-            FILE *metafd = fopen(".metadata", "ab");// add the metadata fd
 
             int fileSize;
             int org_file_size = ntohl(headerMsg.length) - 11;
-            printf("Received file: %s, size: %d\n", recvFileName, org_file_size);
+
             
             if(org_file_size % (K*blockSize) == 0){
                 fileSize = org_file_size / K;
@@ -228,7 +226,6 @@ void *threadFun(void *arg){
                 fileSize = (org_file_size + (K*blockSize - org_file_size % (K*blockSize))) / K; 
             }
             
-            printf("Save size: %d\n",fileSize );
             fileInfo.fileSize = org_file_size;
             fileInfo.idx = headerMsg.idx;
             memcpy(buff, &fileInfo, FILEINFOSIZE);
@@ -238,7 +235,6 @@ void *threadFun(void *arg){
            if(access(".metadata",F_OK) == 0){
                 // metadata exists, check file recorded in meta or not
                 // -------check for override here---------
-                printf("Metadata found\n");
 
                 struct stat metastat;
                 if((stat(".metadata", &metastat))<0){
@@ -248,7 +244,7 @@ void *threadFun(void *arg){
 
                 int metadata_size = metastat.st_size;
                 if(metadata_size % FILEINFOSIZE != 0){
-                    printf("Metadata szie error, size: %d\n", metadata_size);
+                    printf("Metadata size error, size: %d\n", metadata_size);
                     exit(0);
                 }
 
@@ -270,9 +266,6 @@ void *threadFun(void *arg){
 
                 }
                 fclose(meta_attempt);
-
-                // ---------------------------------------
-                printf("file_loc: %d\n", file_loc);
 
                 if(file_loc == -1){
                     // file not exists in metadata yet
@@ -301,7 +294,6 @@ void *threadFun(void *arg){
             }else{
                 // .metadata not exists
                 // append the fileinfo to metadata
-                printf("Metadata not found\n");
                 FILE *metafd = fopen(".metadata", "ab");// add the metadata fd
                 if((fwrite(buff, 1, FILEINFOSIZE, metafd)) < 0){ 
                     printf("Metadata write error for file: %s\n", fileInfo.fileName);
@@ -328,7 +320,6 @@ void *threadFun(void *arg){
     }
     close(client_sd);
     int threadIdx = threadParam.threadClientIdx;
-    //printf("finish idx:%d\n", threadIdx);
     fflush(stdout);
     threadClient[threadIdx].available = 1;
 }
@@ -363,7 +354,6 @@ int in(int *array, int val, int len){
 }
 uint8_t* decodeData(int n, int k, int *workNodes, unsigned char **data, unsigned char *result){
     int i;
-    //printf("\n");
     sort(workNodes, K);
 
     errorMatrix = (uint8_t *)malloc(sizeof(uint8_t) * (k*k));
@@ -387,6 +377,7 @@ uint8_t* decodeData(int n, int k, int *workNodes, unsigned char **data, unsigned
     
 
     gf_invert_matrix(errorMatrix, invertMatrix, k);
+
     uint8_t *decodeMatrix = (uint8_t *)malloc(sizeof(uint8_t) * k*k);
     int missCount = 0;
     int *missIdx = (int *)malloc(sizeof(int) * k);
@@ -408,11 +399,11 @@ uint8_t* decodeData(int n, int k, int *workNodes, unsigned char **data, unsigned
         }
     }
 
-
     uint8_t *table = (uint8_t *)malloc(sizeof(uint8_t)*32*k*(n-k));
     ec_init_tables(k, n-k, decodeMatrix, table);
-    ec_encode_data(blockSize, k, n-k,table, data, dest);
     
+    ec_encode_data(blockSize, k, n-k,table, data, dest);
+
     unsigned char **retrievedData = (unsigned char **)malloc(sizeof(unsigned char *)*k);
     int srcCount = 0;
     int destCount = 0;
