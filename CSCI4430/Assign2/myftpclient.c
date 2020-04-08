@@ -399,8 +399,8 @@ int main(int argc, char **argv){
                                 paddingSizeTable[i] = 0;
                             }else{
                                 if(idxTable[i] == remainBlockNum - 1){
-                                    remainSize += remainFileSize % blockSize;
-                                    paddingSizeTable[i] = blockSize - remainFileSize%blockSize;
+                                    remainSize += remainFileSize % blockSize + remainFileSize / blockSize * blockSize;
+                                    paddingSizeTable[i] = blockSize - remainSize;
                                 }else if(idxTable[i] < remainBlockNum - 1){
                                     remainSize += blockSize;
                                     paddingSizeTable[i] = 0;
