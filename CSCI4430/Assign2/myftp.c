@@ -61,7 +61,6 @@ void *threadFun(void *arg){
         struct stat statbuff;
         int readFileInfoflag;
         if((readFileInfoflag = stat(metadataName, &statbuff))<0){
-            printf("no metadata");
             // create an empty metadata if not exist
             FILE* tmp_fd = fopen(metadataName, "wb");
             fclose(tmp_fd);
@@ -73,7 +72,6 @@ void *threadFun(void *arg){
         }
         
         int file_size = statbuff.st_size;
-        printf("file_size:%d\n", file_size);
         FILE *fd = fopen(metadataName, "rb");
 
         /****** send header(0XA2, same as HW1 0xFF) *******/
@@ -201,7 +199,7 @@ void *threadFun(void *arg){
         memcpy(sendString, &headerMsg_response, 11);
         if((sendNum = (sendn(client_sd, sendString, 11))<0)){
             printf("send error: %s (ERRNO:%d)\n",strerror(errno), errno);
-	    exit(0);
+	        exit(0);
         }
         if((recvNum = recvn(client_sd, buff, 11)) < 0){
             printf("recv error: %s (ERRNO:%d)\n",strerror(errno), errno);

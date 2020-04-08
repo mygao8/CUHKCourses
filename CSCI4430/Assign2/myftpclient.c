@@ -89,16 +89,14 @@ int main(int argc, char **argv){
 
             if (connect(sd[i], (struct sockaddr *)&server_addr[i], sizeof(server_addr[i])) < 0)
             {
-                printf("connect to server%d error: %s (ERRNO:%d)\n", i, strerror(errno), errno);
+                // printf("connect to server%d error: %s (ERRNO:%d)\n", i, strerror(errno), errno);
                 continue;
             }
             else{
-                printf("connect to server%d successfully, sd=%d\n", i, sd[i]);
                 connectedServer[i]=1;
             }
             // save the largest sd, which will be used in select()
             maxFd = max(maxFd, sd[i]);
-            for (int i = 0; i < numServer; i++) {printf("sd[%d]:%d ",i, sd[i]); printf("\n");}
         }
 
         /*****************************
@@ -201,9 +199,6 @@ int main(int argc, char **argv){
 
                 if(remove(tmpFileName)){
                     printf("Could not delete the file %s \n", tmpFileName);
-                }
-                else{
-                    printf("Delete the tmp file %s for list\n", tmpFileName);
                 }
             }
         }        
@@ -567,9 +562,10 @@ int main(int argc, char **argv){
                 printf("connect error: %s (ERRNO:%d) for server: %s:%d\n",
                     strerror(errno), errno,servers[i].addr,servers[i].port);
                 exit(0);
-            }else{
-                printf("Connect to server: %s:%d\n", servers[i].addr,servers[i].port);
             }
+            // else{
+            //     printf("Connect to server: %s:%d\n", servers[i].addr,servers[i].port);
+            // }
         }
 
 
