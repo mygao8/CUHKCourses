@@ -188,6 +188,7 @@ int main(int argc, char **argv){
                     if (fread(data, 1029, 1, fd) <= 0){
                         printf("fread error\n");
                     }
+		    printf("%s\n",data->filename);
                     remainSize -= 1029;
                 }
                 fclose(fd);
