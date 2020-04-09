@@ -60,6 +60,7 @@ int main(int argc, char **argv){
 
 
         // initialize and connect each socket to each server
+        int noServer = 1;
         for (int i = 0; i < numServer; i++)
         {
 
@@ -94,11 +95,16 @@ int main(int argc, char **argv){
             }
             else{
                 connectedServer[i]=1;
+                noServer = 0;
             }
             // save the largest sd, which will be used in select()
             maxFd = max(maxFd, sd[i]);
         }
 
+        if (noServer==1){
+            printf("ERROR: NO Server\n");
+            exit(0);
+        }
         /*****************************
          * 
          * "list" command
@@ -188,7 +194,7 @@ int main(int argc, char **argv){
                     if (fread(data, 1029, 1, fd) <= 0){
                         printf("fread error\n");
                     }
-		    printf("%s\n",data->filename);
+		            printf("%s\n",data->filename);
                     remainSize -= 1029;
                 }
                 fclose(fd);
