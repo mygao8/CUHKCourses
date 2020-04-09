@@ -3,8 +3,8 @@
 int main(){
 	int i;
 	FILE *fd = fopen("file0", "wb");
-	for(i = 0 ;i < 1024*1024*2;i++){
-		fwrite("a", 1, 1, fd);
+	for(i = 0 ;i < 1024*256*1;i++){
+		fwrite("abcdefgh", 1, 8, fd);
 	}
 	return 0;
 }
