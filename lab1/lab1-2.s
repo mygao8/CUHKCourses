@@ -1,7 +1,7 @@
 	.globl main	
 	.data
 A: .word -1 22 8 35 5 4 11 2 1 78
-
+space: .ascii " "
     .text
     swap: 
         sll $t1, $a1, 2     # $a1 stores a, $t1=$a1*4 is the offset of A[i] in array A
@@ -65,6 +65,24 @@ A: .word -1 22 8 35 5 4 11 2 1 78
         addi $sp, $sp, 28
         jr   $ra            # return to caller
 
+    print:
+        slt  $t1, $s1, $t0  # $t1=1 if $s1(=9)<$t0, which means index $t0 is out of bounds
+        bne  $t1, $zero, done # if $t0>$s1, go to tag done
+        sll  $t2, $t0, 2    # $t2 = $t0*4
+        add  $t2, $s0, $t2  # $t2 = A + $t0*4
+        lw   $t3, 0($t2)    # $t3 = A[$t0]
+        
+        li   $v0, 1         # syscall code for print_int
+        move $a0, $t3       # $a0 = $t3
+        syscall             # print A[$t0]
+        li   $v0, 4         # syscall code for print_string
+        la   $a0, space     # $a0 = " "
+        syscall             # print a space
+        addi $t0, $t0, 1    # $t0 += 1
+        j    print
+    done:
+        jr $ra        
+
     main:
         la   $a0, A         # 1st parameter of swap is A
         addi $a1, $zero, 2  # 2nd parameter of swap is 2 (the 3rd element, 8)
@@ -75,5 +93,11 @@ A: .word -1 22 8 35 5 4 11 2 1 78
         move $a1, $zero     # 2nd parameter of partition is lo (=0)
         addi $a2, $zero, 9  # 3rd parameter of partition is hi (=9)
         jal  partition      # partition(A, lo, hi)
+
+        la   $s0, A         
+        addi $s1, $zero, 9  # $s1=len(A)-1=9
+        move $t0, $zero     # index $t0=0
+        jal  print          # print array A
+
         li   $v0, 10        # system call code for exit
         syscall             # exit
