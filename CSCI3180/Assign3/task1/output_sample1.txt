@@ -1,0 +1,977 @@
+There 2 players in the game:
+lin liz 
+
+Game begin!!!
+
+Player lin has 26 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card 4
+=====After player's deal=======
+4
+================================
+Player lin has 25 cards after deal.
+
+Player liz has 26 cards before deal.
+=====Before player's deal=======
+4
+================================
+liz ==> card 2
+=====After player's deal=======
+4 2
+================================
+Player liz has 25 cards after deal.
+
+Player lin has 25 cards before deal.
+=====Before player's deal=======
+4 2
+================================
+lin ==> card 6
+=====After player's deal=======
+4 2 6
+================================
+Player lin has 24 cards after deal.
+
+Player liz has 25 cards before deal.
+=====Before player's deal=======
+4 2 6
+================================
+liz ==> card 3
+=====After player's deal=======
+4 2 6 3
+================================
+Player liz has 24 cards after deal.
+
+Player lin has 24 cards before deal.
+=====Before player's deal=======
+4 2 6 3
+================================
+lin ==> card 8
+=====After player's deal=======
+4 2 6 3 8
+================================
+Player lin has 23 cards after deal.
+
+Player liz has 24 cards before deal.
+=====Before player's deal=======
+4 2 6 3 8
+================================
+liz ==> card 9
+=====After player's deal=======
+4 2 6 3 8 9
+================================
+Player liz has 23 cards after deal.
+
+Player lin has 23 cards before deal.
+=====Before player's deal=======
+4 2 6 3 8 9
+================================
+lin ==> card 10
+=====After player's deal=======
+4 2 6 3 8 9 10
+================================
+Player lin has 22 cards after deal.
+
+Player liz has 23 cards before deal.
+=====Before player's deal=======
+4 2 6 3 8 9 10
+================================
+liz ==> card 5
+=====After player's deal=======
+4 2 6 3 8 9 10 5
+================================
+Player liz has 22 cards after deal.
+
+Player lin has 22 cards before deal.
+=====Before player's deal=======
+4 2 6 3 8 9 10 5
+================================
+lin ==> card Q
+=====After player's deal=======
+4 2 6 3 8 9 10 5 Q
+================================
+Player lin has 21 cards after deal.
+
+Player liz has 22 cards before deal.
+=====Before player's deal=======
+4 2 6 3 8 9 10 5 Q
+================================
+liz ==> card 4
+=====After player's deal=======
+
+================================
+Player liz has 31 cards after deal.
+
+Player lin has 21 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card A
+=====After player's deal=======
+A
+================================
+Player lin has 20 cards after deal.
+
+Player liz has 31 cards before deal.
+=====Before player's deal=======
+A
+================================
+liz ==> card 7
+=====After player's deal=======
+A 7
+================================
+Player liz has 30 cards after deal.
+
+Player lin has 20 cards before deal.
+=====Before player's deal=======
+A 7
+================================
+lin ==> card 3
+=====After player's deal=======
+A 7 3
+================================
+Player lin has 19 cards after deal.
+
+Player liz has 30 cards before deal.
+=====Before player's deal=======
+A 7 3
+================================
+liz ==> card 3
+=====After player's deal=======
+A 7
+================================
+Player liz has 31 cards after deal.
+
+Player lin has 19 cards before deal.
+=====Before player's deal=======
+A 7
+================================
+lin ==> card 5
+=====After player's deal=======
+A 7 5
+================================
+Player lin has 18 cards after deal.
+
+Player liz has 31 cards before deal.
+=====Before player's deal=======
+A 7 5
+================================
+liz ==> card 9
+=====After player's deal=======
+A 7 5 9
+================================
+Player liz has 30 cards after deal.
+
+Player lin has 18 cards before deal.
+=====Before player's deal=======
+A 7 5 9
+================================
+lin ==> card 7
+=====After player's deal=======
+A
+================================
+Player lin has 21 cards after deal.
+
+Player liz has 30 cards before deal.
+=====Before player's deal=======
+A
+================================
+liz ==> card 6
+=====After player's deal=======
+A 6
+================================
+Player liz has 29 cards after deal.
+
+Player lin has 21 cards before deal.
+=====Before player's deal=======
+A 6
+================================
+lin ==> card 9
+=====After player's deal=======
+A 6 9
+================================
+Player lin has 20 cards after deal.
+
+Player liz has 29 cards before deal.
+=====Before player's deal=======
+A 6 9
+================================
+liz ==> card J
+=====After player's deal=======
+
+================================
+Player liz has 32 cards after deal.
+
+Player lin has 20 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card J
+=====After player's deal=======
+J
+================================
+Player lin has 19 cards after deal.
+
+Player liz has 32 cards before deal.
+=====Before player's deal=======
+J
+================================
+liz ==> card J
+=====After player's deal=======
+
+================================
+Player liz has 33 cards after deal.
+
+Player lin has 19 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card K
+=====After player's deal=======
+K
+================================
+Player lin has 18 cards after deal.
+
+Player liz has 33 cards before deal.
+=====Before player's deal=======
+K
+================================
+liz ==> card K
+=====After player's deal=======
+
+================================
+Player liz has 34 cards after deal.
+
+Player lin has 18 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card 2
+=====After player's deal=======
+2
+================================
+Player lin has 17 cards after deal.
+
+Player liz has 34 cards before deal.
+=====Before player's deal=======
+2
+================================
+liz ==> card 8
+=====After player's deal=======
+2 8
+================================
+Player liz has 33 cards after deal.
+
+Player lin has 17 cards before deal.
+=====Before player's deal=======
+2 8
+================================
+lin ==> card 4
+=====After player's deal=======
+2 8 4
+================================
+Player lin has 16 cards after deal.
+
+Player liz has 33 cards before deal.
+=====Before player's deal=======
+2 8 4
+================================
+liz ==> card 2
+=====After player's deal=======
+
+================================
+Player liz has 36 cards after deal.
+
+Player lin has 16 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card 6
+=====After player's deal=======
+6
+================================
+Player lin has 15 cards after deal.
+
+Player liz has 36 cards before deal.
+=====Before player's deal=======
+6
+================================
+liz ==> card 7
+=====After player's deal=======
+6 7
+================================
+Player liz has 35 cards after deal.
+
+Player lin has 15 cards before deal.
+=====Before player's deal=======
+6 7
+================================
+lin ==> card 8
+=====After player's deal=======
+6 7 8
+================================
+Player lin has 14 cards after deal.
+
+Player liz has 35 cards before deal.
+=====Before player's deal=======
+6 7 8
+================================
+liz ==> card 4
+=====After player's deal=======
+6 7 8 4
+================================
+Player liz has 34 cards after deal.
+
+Player lin has 14 cards before deal.
+=====Before player's deal=======
+6 7 8 4
+================================
+lin ==> card 10
+=====After player's deal=======
+6 7 8 4 10
+================================
+Player lin has 13 cards after deal.
+
+Player liz has 34 cards before deal.
+=====Before player's deal=======
+6 7 8 4 10
+================================
+liz ==> card 10
+=====After player's deal=======
+6 7 8 4
+================================
+Player liz has 35 cards after deal.
+
+Player lin has 13 cards before deal.
+=====Before player's deal=======
+6 7 8 4
+================================
+lin ==> card Q
+=====After player's deal=======
+6 7 8 4 Q
+================================
+Player lin has 12 cards after deal.
+
+Player liz has 35 cards before deal.
+=====Before player's deal=======
+6 7 8 4 Q
+================================
+liz ==> card 6
+=====After player's deal=======
+
+================================
+Player liz has 40 cards after deal.
+
+Player lin has 12 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card A
+=====After player's deal=======
+A
+================================
+Player lin has 11 cards after deal.
+
+Player liz has 40 cards before deal.
+=====Before player's deal=======
+A
+================================
+liz ==> card K
+=====After player's deal=======
+A K
+================================
+Player liz has 39 cards after deal.
+
+Player lin has 11 cards before deal.
+=====Before player's deal=======
+A K
+================================
+lin ==> card 3
+=====After player's deal=======
+A K 3
+================================
+Player lin has 10 cards after deal.
+
+Player liz has 39 cards before deal.
+=====Before player's deal=======
+A K 3
+================================
+liz ==> card 8
+=====After player's deal=======
+A K 3 8
+================================
+Player liz has 38 cards after deal.
+
+Player lin has 10 cards before deal.
+=====Before player's deal=======
+A K 3 8
+================================
+lin ==> card 5
+=====After player's deal=======
+A K 3 8 5
+================================
+Player lin has 9 cards after deal.
+
+Player liz has 38 cards before deal.
+=====Before player's deal=======
+A K 3 8 5
+================================
+liz ==> card Q
+=====After player's deal=======
+A K 3 8 5 Q
+================================
+Player liz has 37 cards after deal.
+
+Player lin has 9 cards before deal.
+=====Before player's deal=======
+A K 3 8 5 Q
+================================
+lin ==> card 7
+=====After player's deal=======
+A K 3 8 5 Q 7
+================================
+Player lin has 8 cards after deal.
+
+Player liz has 37 cards before deal.
+=====Before player's deal=======
+A K 3 8 5 Q 7
+================================
+liz ==> card 10
+=====After player's deal=======
+A K 3 8 5 Q 7 10
+================================
+Player liz has 36 cards after deal.
+
+Player lin has 8 cards before deal.
+=====Before player's deal=======
+A K 3 8 5 Q 7 10
+================================
+lin ==> card 9
+=====After player's deal=======
+A K 3 8 5 Q 7 10 9
+================================
+Player lin has 7 cards after deal.
+
+Player liz has 36 cards before deal.
+=====Before player's deal=======
+A K 3 8 5 Q 7 10 9
+================================
+liz ==> card 5
+=====After player's deal=======
+A K 3 8
+================================
+Player liz has 41 cards after deal.
+
+Player lin has 7 cards before deal.
+=====Before player's deal=======
+A K 3 8
+================================
+lin ==> card J
+=====After player's deal=======
+
+================================
+Player lin has 11 cards after deal.
+
+Player liz has 41 cards before deal.
+=====Before player's deal=======
+
+================================
+liz ==> card Q
+=====After player's deal=======
+Q
+================================
+Player liz has 40 cards after deal.
+
+Player lin has 11 cards before deal.
+=====Before player's deal=======
+Q
+================================
+lin ==> card K
+=====After player's deal=======
+Q K
+================================
+Player lin has 10 cards after deal.
+
+Player liz has 40 cards before deal.
+=====Before player's deal=======
+Q K
+================================
+liz ==> card A
+=====After player's deal=======
+Q K A
+================================
+Player liz has 39 cards after deal.
+
+Player lin has 10 cards before deal.
+=====Before player's deal=======
+Q K A
+================================
+lin ==> card 2
+=====After player's deal=======
+Q K A 2
+================================
+Player lin has 9 cards after deal.
+
+Player liz has 39 cards before deal.
+=====Before player's deal=======
+Q K A 2
+================================
+liz ==> card A
+=====After player's deal=======
+Q K
+================================
+Player liz has 41 cards after deal.
+
+Player lin has 9 cards before deal.
+=====Before player's deal=======
+Q K
+================================
+lin ==> card 7
+=====After player's deal=======
+Q K 7
+================================
+Player lin has 8 cards after deal.
+
+Player liz has 41 cards before deal.
+=====Before player's deal=======
+Q K 7
+================================
+liz ==> card 4
+=====After player's deal=======
+Q K 7 4
+================================
+Player liz has 40 cards after deal.
+
+Player lin has 8 cards before deal.
+=====Before player's deal=======
+Q K 7 4
+================================
+lin ==> card 9
+=====After player's deal=======
+Q K 7 4 9
+================================
+Player lin has 7 cards after deal.
+
+Player liz has 40 cards before deal.
+=====Before player's deal=======
+Q K 7 4 9
+================================
+liz ==> card Q
+=====After player's deal=======
+
+================================
+Player liz has 45 cards after deal.
+
+Player lin has 7 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card 5
+=====After player's deal=======
+5
+================================
+Player lin has 6 cards after deal.
+
+Player liz has 45 cards before deal.
+=====Before player's deal=======
+5
+================================
+liz ==> card 5
+=====After player's deal=======
+
+================================
+Player liz has 46 cards after deal.
+
+Player lin has 6 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card 7
+=====After player's deal=======
+7
+================================
+Player lin has 5 cards after deal.
+
+Player liz has 46 cards before deal.
+=====Before player's deal=======
+7
+================================
+liz ==> card 10
+=====After player's deal=======
+7 10
+================================
+Player liz has 45 cards after deal.
+
+Player lin has 5 cards before deal.
+=====Before player's deal=======
+7 10
+================================
+lin ==> card J
+=====After player's deal=======
+
+================================
+Player lin has 7 cards after deal.
+
+Player liz has 45 cards before deal.
+=====Before player's deal=======
+
+================================
+liz ==> card 9
+=====After player's deal=======
+9
+================================
+Player liz has 44 cards after deal.
+
+Player lin has 7 cards before deal.
+=====Before player's deal=======
+9
+================================
+lin ==> card 8
+=====After player's deal=======
+9 8
+================================
+Player lin has 6 cards after deal.
+
+Player liz has 44 cards before deal.
+=====Before player's deal=======
+9 8
+================================
+liz ==> card 8
+=====After player's deal=======
+9
+================================
+Player liz has 45 cards after deal.
+
+Player lin has 6 cards before deal.
+=====Before player's deal=======
+9
+================================
+lin ==> card 3
+=====After player's deal=======
+9 3
+================================
+Player lin has 5 cards after deal.
+
+Player liz has 45 cards before deal.
+=====Before player's deal=======
+9 3
+================================
+liz ==> card 3
+=====After player's deal=======
+9
+================================
+Player liz has 46 cards after deal.
+
+Player lin has 5 cards before deal.
+=====Before player's deal=======
+9
+================================
+lin ==> card K
+=====After player's deal=======
+9 K
+================================
+Player lin has 4 cards after deal.
+
+Player liz has 46 cards before deal.
+=====Before player's deal=======
+9 K
+================================
+liz ==> card 6
+=====After player's deal=======
+9 K 6
+================================
+Player liz has 45 cards after deal.
+
+Player lin has 4 cards before deal.
+=====Before player's deal=======
+9 K 6
+================================
+lin ==> card A
+=====After player's deal=======
+9 K 6 A
+================================
+Player lin has 3 cards after deal.
+
+Player liz has 45 cards before deal.
+=====Before player's deal=======
+9 K 6 A
+================================
+liz ==> card 2
+=====After player's deal=======
+9 K 6 A 2
+================================
+Player liz has 44 cards after deal.
+
+Player lin has 3 cards before deal.
+=====Before player's deal=======
+9 K 6 A 2
+================================
+lin ==> card J
+=====After player's deal=======
+
+================================
+Player lin has 8 cards after deal.
+
+Player liz has 44 cards before deal.
+=====Before player's deal=======
+
+================================
+liz ==> card 4
+=====After player's deal=======
+4
+================================
+Player liz has 43 cards after deal.
+
+Player lin has 8 cards before deal.
+=====Before player's deal=======
+4
+================================
+lin ==> card 10
+=====After player's deal=======
+4 10
+================================
+Player lin has 7 cards after deal.
+
+Player liz has 43 cards before deal.
+=====Before player's deal=======
+4 10
+================================
+liz ==> card 3
+=====After player's deal=======
+4 10 3
+================================
+Player liz has 42 cards after deal.
+
+Player lin has 7 cards before deal.
+=====Before player's deal=======
+4 10 3
+================================
+lin ==> card 7
+=====After player's deal=======
+4 10 3 7
+================================
+Player lin has 6 cards after deal.
+
+Player liz has 42 cards before deal.
+=====Before player's deal=======
+4 10 3 7
+================================
+liz ==> card 3
+=====After player's deal=======
+4 10
+================================
+Player liz has 44 cards after deal.
+
+Player lin has 6 cards before deal.
+=====Before player's deal=======
+4 10
+================================
+lin ==> card J
+=====After player's deal=======
+
+================================
+Player lin has 8 cards after deal.
+
+Player liz has 44 cards before deal.
+=====Before player's deal=======
+
+================================
+liz ==> card J
+=====After player's deal=======
+J
+================================
+Player liz has 43 cards after deal.
+
+Player lin has 8 cards before deal.
+=====Before player's deal=======
+J
+================================
+lin ==> card 2
+=====After player's deal=======
+J 2
+================================
+Player lin has 7 cards after deal.
+
+Player liz has 43 cards before deal.
+=====Before player's deal=======
+J 2
+================================
+liz ==> card 9
+=====After player's deal=======
+J 2 9
+================================
+Player liz has 42 cards after deal.
+
+Player lin has 7 cards before deal.
+=====Before player's deal=======
+J 2 9
+================================
+lin ==> card A
+=====After player's deal=======
+J 2 9 A
+================================
+Player lin has 6 cards after deal.
+
+Player liz has 42 cards before deal.
+=====Before player's deal=======
+J 2 9 A
+================================
+liz ==> card 6
+=====After player's deal=======
+J 2 9 A 6
+================================
+Player liz has 41 cards after deal.
+
+Player lin has 6 cards before deal.
+=====Before player's deal=======
+J 2 9 A 6
+================================
+lin ==> card 6
+=====After player's deal=======
+J 2 9 A
+================================
+Player lin has 7 cards after deal.
+
+Player liz has 41 cards before deal.
+=====Before player's deal=======
+J 2 9 A
+================================
+liz ==> card A
+=====After player's deal=======
+J 2 9
+================================
+Player liz has 42 cards after deal.
+
+Player lin has 7 cards before deal.
+=====Before player's deal=======
+J 2 9
+================================
+lin ==> card K
+=====After player's deal=======
+J 2 9 K
+================================
+Player lin has 6 cards after deal.
+
+Player liz has 42 cards before deal.
+=====Before player's deal=======
+J 2 9 K
+================================
+liz ==> card J
+=====After player's deal=======
+
+================================
+Player liz has 46 cards after deal.
+
+Player lin has 6 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card 9
+=====After player's deal=======
+9
+================================
+Player lin has 5 cards after deal.
+
+Player liz has 46 cards before deal.
+=====Before player's deal=======
+9
+================================
+liz ==> card J
+=====After player's deal=======
+
+================================
+Player liz has 47 cards after deal.
+
+Player lin has 5 cards before deal.
+=====Before player's deal=======
+
+================================
+lin ==> card J
+=====After player's deal=======
+J
+================================
+Player lin has 4 cards after deal.
+
+Player liz has 47 cards before deal.
+=====Before player's deal=======
+J
+================================
+liz ==> card K
+=====After player's deal=======
+J K
+================================
+Player liz has 46 cards after deal.
+
+Player lin has 4 cards before deal.
+=====Before player's deal=======
+J K
+================================
+lin ==> card 10
+=====After player's deal=======
+J K 10
+================================
+Player lin has 3 cards after deal.
+
+Player liz has 46 cards before deal.
+=====Before player's deal=======
+J K 10
+================================
+liz ==> card K
+=====After player's deal=======
+J
+================================
+Player liz has 48 cards after deal.
+
+Player lin has 3 cards before deal.
+=====Before player's deal=======
+J
+================================
+lin ==> card 4
+=====After player's deal=======
+J 4
+================================
+Player lin has 2 cards after deal.
+
+Player liz has 48 cards before deal.
+=====Before player's deal=======
+J 4
+================================
+liz ==> card 2
+=====After player's deal=======
+J 4 2
+================================
+Player liz has 47 cards after deal.
+
+Player lin has 2 cards before deal.
+=====Before player's deal=======
+J 4 2
+================================
+lin ==> card 6
+=====After player's deal=======
+J 4 2 6
+================================
+Player lin has 1 cards after deal.
+
+Player liz has 47 cards before deal.
+=====Before player's deal=======
+J 4 2 6
+================================
+liz ==> card 4
+=====After player's deal=======
+J
+================================
+Player liz has 50 cards after deal.
+
+Player lin has 1 cards before deal.
+=====Before player's deal=======
+J
+================================
+lin ==> card 6
+=====After player's deal=======
+J 6
+================================
+Player lin has 0 cards after deal.
+Player lin has no cards, out!
+
+Winner is liz in game 49

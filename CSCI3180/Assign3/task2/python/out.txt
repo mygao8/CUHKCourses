@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+AB|Bank    Land    Land    Land    Land    Land    Land    Land    Land    Jail 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Land                                                                    Land 
+
+   Jail    Land    Land    Land    Land    Land    Land    Land    Land    Jail 
+--------------------------------------------------------------------------------
+Player A's money: 100000
+Player B's money: 100000
+Player A's term.
+Pay $500 to throw two dice? [y/n]
