@@ -477,7 +477,7 @@ Points of dice: 8
 
    Jail    Land    Land  B|A:Lv0   Land    Land    Land    Land    Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land    Land    Land    B:Lv0   Land    Land    Land  A|A:Lv1   Jail 
 
@@ -744,7 +744,7 @@ Pay $1000 to reduce the prison round to 1? [y/n]
    Jail    Land    Land    A:Lv0   Land    Land    Land  A|A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
 Player A's money: 88950
-Player B's money: 87950
+Player B's money: 88150
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -792,7 +792,7 @@ Pay $1000 to buy the land? [y/n]
    Jail    Land    Land    A:Lv0   Land    Land    Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
 Player A's money: 88225
-Player B's money: 87750
+Player B's money: 87950
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -840,8 +840,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    Land    Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 87825
-Player B's money: 87750
+Player A's money: 88025
+Player B's money: 87950
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -890,8 +890,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    Land    Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 87825
-Player B's money: 87350
+Player A's money: 88025
+Player B's money: 87750
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -941,8 +941,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    Land    Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 86325
-Player B's money: 87350
+Player A's money: 86725
+Player B's money: 87750
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -990,8 +990,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    Land    Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 86325
-Player B's money: 86950
+Player A's money: 86725
+Player B's money: 87550
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 11
@@ -1039,8 +1039,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    Land    Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 84500
-Player B's money: 86950
+Player A's money: 84900
+Player B's money: 87550
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -1087,8 +1087,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land  B|B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 84300
-Player B's money: 85125
+Player A's money: 84700
+Player B's money: 85725
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1136,8 +1136,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 84300
-Player B's money: 83300
+Player A's money: 84700
+Player B's money: 83900
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -1162,7 +1162,7 @@ Points of dice: 8
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land    Land    Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -1184,8 +1184,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 82475
-Player B's money: 83300
+Player A's money: 82875
+Player B's money: 83900
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1233,8 +1233,8 @@ You received $2000 from the Bank!
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 82475
-Player B's money: 84575
+Player A's money: 82875
+Player B's money: 85175
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1283,8 +1283,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 80975
-Player B's money: 84575
+Player A's money: 81575
+Player B's money: 85175
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -1331,8 +1331,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 80775
-Player B's money: 83850
+Player A's money: 81375
+Player B's money: 84450
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1358,7 +1358,7 @@ Points of dice: 4
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land    Land    Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -1380,8 +1380,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 80775
-Player B's money: 83450
+Player A's money: 81375
+Player B's money: 84250
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -1406,9 +1406,9 @@ Points of dice: 6
 
    Jail    Land    Land  A|A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land    Land    Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -1430,8 +1430,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land  A|A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 80375
-Player B's money: 83450
+Player A's money: 81175
+Player B's money: 84250
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1481,8 +1481,8 @@ You need to pay player A $1000
 
    Jail    Land    Land  A|A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 81225
-Player B's money: 82050
+Player A's money: 82025
+Player B's money: 83050
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -1507,7 +1507,7 @@ Points of dice: 7
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land    Land    Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -1529,8 +1529,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 80500
-Player B's money: 82050
+Player A's money: 81300
+Player B's money: 83050
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1556,7 +1556,7 @@ Points of dice: 5
 
    Jail    Land    Land    A:Lv0   Land  B|B:Lv0   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land    Land    Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -1578,8 +1578,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land  B|B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 80500
-Player B's money: 80550
+Player A's money: 81300
+Player B's money: 81750
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1627,8 +1627,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land  B|B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 78675
-Player B's money: 80550
+Player A's money: 79475
+Player B's money: 81750
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -1653,8 +1653,8 @@ Points of dice: 8
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    Land  A|A:Lv0   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -1676,8 +1676,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 78675
-Player B's money: 78725
+Player A's money: 79475
+Player B's money: 79925
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -1724,8 +1724,8 @@ You need to pay player B $500
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 77450
-Player B's money: 79175
+Player A's money: 78250
+Player B's money: 80375
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -1772,8 +1772,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 77450
-Player B's money: 77350
+Player A's money: 78250
+Player B's money: 78550
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1822,8 +1822,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 76725
-Player B's money: 77350
+Player A's money: 77525
+Player B's money: 78550
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -1871,8 +1871,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 76525
-Player B's money: 75525
+Player A's money: 77325
+Player B's money: 76725
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -1897,8 +1897,8 @@ Points of dice: 5
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv0   Land    B:Lv0   Land  B|B:Lv0   Land    A:Lv1   Jail 
 
@@ -1920,8 +1920,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 76325
-Player B's money: 75125
+Player A's money: 77125
+Player B's money: 76525
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -1968,8 +1968,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0   Land  A|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 76325
-Player B's money: 74725
+Player A's money: 77125
+Player B's money: 76325
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2021,8 +2021,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0 A|Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 75925
-Player B's money: 74725
+Player A's money: 76925
+Player B's money: 76325
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -2069,8 +2069,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv0   Land    B:Lv1   Land    A:Lv0 A|Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 75925
-Player B's money: 74000
+Player A's money: 76925
+Player B's money: 75600
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2096,7 +2096,7 @@ Points of dice: 5
 
    Jail    Land    Land  A|A:Lv0   Land    B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv0   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -2118,8 +2118,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land  A|A:Lv1   Land    B:Lv1   Land    A:Lv0   Land    Jail 
 --------------------------------------------------------------------------------
-Player A's money: 74425
-Player B's money: 74000
+Player A's money: 75625
+Player B's money: 75600
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2167,8 +2167,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land  A|A:Lv1   Land    B:Lv1   Land    A:Lv0 B|B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 74425
-Player B's money: 72175
+Player A's money: 75625
+Player B's money: 73775
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -2216,8 +2216,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0 B|B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 72600
-Player B's money: 72175
+Player A's money: 73800
+Player B's money: 73775
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -2264,8 +2264,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 72600
-Player B's money: 70350
+Player A's money: 73800
+Player B's money: 71950
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -2290,8 +2290,8 @@ Points of dice: 6
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0 A|A:Lv1   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -2313,8 +2313,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 70775
-Player B's money: 70350
+Player A's money: 71975
+Player B's money: 71950
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2362,8 +2362,8 @@ You need to pay player A $500
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 71225
-Player B's money: 69450
+Player A's money: 72425
+Player B's money: 71250
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2411,8 +2411,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 69400
-Player B's money: 69450
+Player A's money: 70600
+Player B's money: 71250
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -2459,8 +2459,8 @@ You received $2000 from the Bank!
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 69200
-Player B's money: 71050
+Player A's money: 70400
+Player B's money: 73050
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2508,8 +2508,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 69200
-Player B's money: 70650
+Player A's money: 70400
+Player B's money: 72850
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -2558,8 +2558,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 68800
-Player B's money: 70650
+Player A's money: 70200
+Player B's money: 72850
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2609,8 +2609,8 @@ You need to pay player A $1000
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 69650
-Player B's money: 69250
+Player A's money: 71050
+Player B's money: 71650
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -2657,8 +2657,8 @@ You need to pay player B $500
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0 A|B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 68425
-Player B's money: 69700
+Player A's money: 69825
+Player B's money: 72100
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -2705,8 +2705,8 @@ You need to pay player A $500
 
    Jail    Land    Land    A:Lv1   Land    B:Lv1   Land    A:Lv0 A|B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 68875
-Player B's money: 68800
+Player A's money: 70275
+Player B's money: 71400
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2754,8 +2754,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv1 A|A:Lv0   B:Lv1   Land    A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 67375
-Player B's money: 68800
+Player A's money: 68975
+Player B's money: 71400
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2803,8 +2803,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    Land    A:Lv1 A|A:Lv0   B:Lv1 B|B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 67375
-Player B's money: 66975
+Player A's money: 68975
+Player B's money: 69575
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -2851,8 +2851,8 @@ You need to pay player B $500
 
    Jail    Land    Land    A:Lv1   A:Lv0   B:Lv1 B|B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 66150
-Player B's money: 67425
+Player A's money: 67750
+Player B's money: 70025
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2900,8 +2900,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land  B|B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 66150
-Player B's money: 65600
+Player A's money: 67750
+Player B's money: 68200
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -2926,7 +2926,7 @@ Points of dice: 3
 
    Jail    Land  B|B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv1   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -2948,8 +2948,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land  B|B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 64325
-Player B's money: 65600
+Player A's money: 65925
+Player B's money: 68200
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -2997,8 +2997,8 @@ You received $2000 from the Bank!
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 64325
-Player B's money: 66875
+Player A's money: 65925
+Player B's money: 69475
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3024,8 +3024,8 @@ Points of dice: 3
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
  B|Bank    B:Lv0   A:Lv1   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -3047,8 +3047,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 62825
-Player B's money: 66875
+Player A's money: 64625
+Player B's money: 69475
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -3095,8 +3095,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 62825
-Player B's money: 66150
+Player A's money: 64625
+Player B's money: 68750
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3144,8 +3144,8 @@ You need to pay player B $500
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 61925
-Player B's money: 66600
+Player A's money: 63925
+Player B's money: 69200
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -3170,7 +3170,7 @@ Points of dice: 6
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv1   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -3192,8 +3192,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 61925
-Player B's money: 66200
+Player A's money: 63925
+Player B's money: 69000
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3242,8 +3242,8 @@ You need to pay player B $500
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 61025
-Player B's money: 66650
+Player A's money: 63225
+Player B's money: 69450
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3293,8 +3293,8 @@ You need to pay player A $500
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 61475
-Player B's money: 65750
+Player A's money: 63675
+Player B's money: 68750
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 2
@@ -3341,8 +3341,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 60750
-Player B's money: 65750
+Player A's money: 62950
+Player B's money: 68750
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3368,7 +3368,7 @@ Points of dice: 6
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0 B|B:Lv0   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv1 A|Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -3390,8 +3390,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 60750
-Player B's money: 64250
+Player A's money: 62950
+Player B's money: 67450
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3439,8 +3439,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 58925
-Player B's money: 64250
+Player A's money: 61125
+Player B's money: 67450
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 10
@@ -3488,8 +3488,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 58925
-Player B's money: 62425
+Player A's money: 61125
+Player B's money: 65625
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -3536,8 +3536,8 @@ You need to pay player B $1000
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0 A|B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 57200
-Player B's money: 63275
+Player A's money: 59400
+Player B's money: 66475
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -3584,8 +3584,8 @@ You received $2000 from the Bank!
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0 A|B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 57200
-Player B's money: 64550
+Player A's money: 59400
+Player B's money: 67750
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -3632,8 +3632,8 @@ You need to pay player B $1000
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 55475
-Player B's money: 65400
+Player A's money: 57675
+Player B's money: 68600
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3682,8 +3682,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 55475
-Player B's money: 64675
+Player A's money: 57675
+Player B's money: 67875
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3709,7 +3709,7 @@ Points of dice: 8
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0 A|A:Lv2   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1 B|Jail 
 
@@ -3731,8 +3731,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 52550
-Player B's money: 64475
+Player A's money: 54750
+Player B's money: 67675
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -3779,8 +3779,8 @@ You need to pay player B $500
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 51650
-Player B's money: 64725
+Player A's money: 54050
+Player B's money: 67925
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3828,8 +3828,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 51250
-Player B's money: 64725
+Player A's money: 53850
+Player B's money: 67925
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -3878,8 +3878,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 51250
-Player B's money: 64325
+Player A's money: 53850
+Player B's money: 67725
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -3929,8 +3929,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 49750
-Player B's money: 64325
+Player A's money: 52550
+Player B's money: 67725
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -3955,8 +3955,8 @@ Points of dice: 6
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1 B|B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -3978,8 +3978,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1 B|B:Lv0   A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 49750
-Player B's money: 63925
+Player A's money: 52550
+Player B's money: 67525
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -4004,8 +4004,8 @@ Points of dice: 4
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1 B|B:Lv0 A|A:Lv0   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4027,8 +4027,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1 B|B:Lv0 A|A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 47925
-Player B's money: 63925
+Player A's money: 50725
+Player B's money: 67525
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -4053,7 +4053,7 @@ Points of dice: 8
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0 A|A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   Land    B:Lv0   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4075,8 +4075,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0 A|A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 47925
-Player B's money: 62100
+Player A's money: 50725
+Player B's money: 65700
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4124,8 +4124,8 @@ You need to pay player B $500
 
    Jail    Land  A|B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 46700
-Player B's money: 62550
+Player A's money: 49500
+Player B's money: 66150
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 11
@@ -4150,7 +4150,7 @@ Points of dice: 11
 
    Jail    Land  A|B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   Land  B|B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4172,8 +4172,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land  A|B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 46700
-Player B's money: 60725
+Player A's money: 49500
+Player B's money: 64325
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -4220,8 +4220,8 @@ You need to pay player B $1000
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 44975
-Player B's money: 61575
+Player A's money: 47775
+Player B's money: 65175
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4270,8 +4270,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 44975
-Player B's money: 60850
+Player A's money: 47775
+Player B's money: 64450
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4319,8 +4319,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 43150
-Player B's money: 60850
+Player A's money: 45950
+Player B's money: 64450
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 1
@@ -4367,8 +4367,8 @@ You need to pay player A $1000
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 44000
-Player B's money: 59450
+Player A's money: 46800
+Player B's money: 63250
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4416,8 +4416,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 43600
-Player B's money: 59450
+Player A's money: 46600
+Player B's money: 63250
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 2
@@ -4466,8 +4466,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 43400
-Player B's money: 59050
+Player A's money: 46400
+Player B's money: 63050
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4517,8 +4517,8 @@ You need to pay player A $500
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 43650
-Player B's money: 58150
+Player A's money: 46650
+Player B's money: 62350
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -4565,8 +4565,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1 B|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 43650
-Player B's money: 57425
+Player A's money: 46650
+Player B's money: 61625
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4592,7 +4592,7 @@ Points of dice: 4
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1 B|Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4614,8 +4614,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1 B|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 42150
-Player B's money: 57225
+Player A's money: 45350
+Player B's money: 61425
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4663,8 +4663,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1 B|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 40325
-Player B's money: 57025
+Player A's money: 43525
+Player B's money: 61225
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -4689,8 +4689,8 @@ Points of dice: 8
 
    Jail    Land    B:Lv0   A:Lv1 A|A:Lv0   B:Lv1   B:Lv0   A:Lv1   B:Lv1 B|Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4712,8 +4712,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv0   A:Lv1   B:Lv1 B|Jail 
 --------------------------------------------------------------------------------
-Player A's money: 38500
-Player B's money: 57025
+Player A's money: 41700
+Player B's money: 61225
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -4738,7 +4738,7 @@ Points of dice: 3
 
    Jail    Land    B:Lv0   A:Lv1 A|A:Lv1   B:Lv1 B|B:Lv0   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4760,8 +4760,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1 A|A:Lv1   B:Lv1 B|B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 38500
-Player B's money: 55200
+Player A's money: 41700
+Player B's money: 59400
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 11
@@ -4786,8 +4786,8 @@ Points of dice: 11
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv1   B:Lv1 B|B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -4809,8 +4809,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    Land    B:Lv0   A:Lv1   A:Lv1   B:Lv1 B|B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 35575
-Player B's money: 55200
+Player A's money: 38775
+Player B's money: 59400
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4859,8 +4859,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail  B|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 35575
-Player B's money: 53700
+Player A's money: 38775
+Player B's money: 58100
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 11
@@ -4907,8 +4907,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail  B|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 34850
-Player B's money: 53700
+Player A's money: 38050
+Player B's money: 58100
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -4956,8 +4956,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
  B|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 34450
-Player B's money: 52900
+Player A's money: 37650
+Player B's money: 57500
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 1
@@ -5006,8 +5006,8 @@ Pay $1000 to buy the land? [y/n]
 
  B|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 34050
-Player B's money: 52900
+Player A's money: 37450
+Player B's money: 57500
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -5035,7 +5035,7 @@ Points of dice: 1
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5057,8 +5057,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 34050
-Player B's money: 51400
+Player A's money: 37450
+Player B's money: 56200
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -5083,8 +5083,8 @@ Points of dice: 6
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5106,8 +5106,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 33650
-Player B's money: 51400
+Player A's money: 37250
+Player B's money: 56200
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -5132,8 +5132,8 @@ Points of dice: 7
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0   B:Lv1   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5155,8 +5155,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 33650
-Player B's money: 49575
+Player A's money: 37250
+Player B's money: 54375
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -5203,8 +5203,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 A|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 31925
-Player B's money: 50425
+Player A's money: 35525
+Player B's money: 55225
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -5229,8 +5229,8 @@ Points of dice: 5
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 A|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2   A:Lv0 B|B:Lv2   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5252,8 +5252,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 A|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 31925
-Player B's money: 47500
+Player A's money: 35525
+Player B's money: 52300
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -5300,8 +5300,8 @@ You need to pay player B $500
 
    Jail  A|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 30700
-Player B's money: 47950
+Player A's money: 34300
+Player B's money: 52750
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -5348,8 +5348,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail  A|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 30700
-Player B's money: 46125
+Player A's money: 34300
+Player B's money: 50925
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -5397,8 +5397,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 28975
-Player B's money: 46975
+Player A's money: 32575
+Player B's money: 51775
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -5447,8 +5447,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 28975
-Player B's money: 45475
+Player A's money: 32575
+Player B's money: 50475
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -5495,8 +5495,8 @@ You received $2000 from the Bank!
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 30250
-Player B's money: 45475
+Player A's money: 33850
+Player B's money: 50475
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -5543,8 +5543,8 @@ You need to pay player A $500
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 30700
-Player B's money: 44575
+Player A's money: 34300
+Player B's money: 49775
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -5570,7 +5570,7 @@ Points of dice: 2
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 5000 to upgrade the land? [y/n]
+Pay $5000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0 A|A:Lv2   A:Lv0   B:Lv2   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5592,8 +5592,8 @@ Pay 5000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 30300
-Player B's money: 44575
+Player A's money: 34100
+Player B's money: 49775
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -5618,9 +5618,9 @@ Points of dice: 6
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 B|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0 A|A:Lv2   A:Lv0   B:Lv2   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5642,8 +5642,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 B|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 30300
-Player B's money: 44175
+Player A's money: 34100
+Player B's money: 49575
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -5671,7 +5671,7 @@ Points of dice: 1
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 B|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2 A|A:Lv1   B:Lv2   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5693,8 +5693,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 B|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 28800
-Player B's money: 44175
+Player A's money: 32800
+Player B's money: 49575
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -5719,8 +5719,8 @@ Points of dice: 6
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv0   A:Lv2 A|A:Lv1   B:Lv2   Land    B:Lv0   Land    A:Lv1   Jail 
 
@@ -5742,8 +5742,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 28800
-Player B's money: 43775
+Player A's money: 32800
+Player B's money: 49375
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -5791,8 +5791,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 26975
-Player B's money: 43775
+Player A's money: 30975
+Player B's money: 49375
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -5817,7 +5817,7 @@ Points of dice: 9
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank  B|B:Lv1   A:Lv2   A:Lv1   B:Lv2   Land    B:Lv0   Land    A:Lv1 A|Jail 
 
@@ -5839,8 +5839,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 26775
-Player B's money: 41950
+Player A's money: 30775
+Player B's money: 47550
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -5888,8 +5888,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 26775
-Player B's money: 40125
+Player A's money: 30775
+Player B's money: 45725
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -5936,8 +5936,8 @@ You need to pay player B $500
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 25550
-Player B's money: 40575
+Player A's money: 29550
+Player B's money: 46175
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -5962,8 +5962,8 @@ Points of dice: 7
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv2   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -5985,8 +5985,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 25550
-Player B's money: 38750
+Player A's money: 29550
+Player B's money: 44350
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6012,8 +6012,8 @@ Points of dice: 3
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv2   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6035,8 +6035,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 24050
-Player B's money: 38750
+Player A's money: 28250
+Player B's money: 44350
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -6061,7 +6061,7 @@ Points of dice: 7
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv2   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6083,8 +6083,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 24050
-Player B's money: 38025
+Player A's money: 28250
+Player B's money: 43625
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6110,7 +6110,7 @@ Points of dice: 2
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv2   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6132,8 +6132,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 23650
-Player B's money: 38025
+Player A's money: 28050
+Player B's money: 43625
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 1
@@ -6180,8 +6180,8 @@ You need to pay player A $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 B|A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 24500
-Player B's money: 36625
+Player A's money: 28900
+Player B's money: 42425
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6230,8 +6230,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 A|B:Lv1   B:Lv1 B|A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 23100
-Player B's money: 37475
+Player A's money: 27700
+Player B's money: 43275
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6281,8 +6281,8 @@ You need to pay player A $1000
 
    Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1 A|B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 23950
-Player B's money: 36075
+Player A's money: 28550
+Player B's money: 42075
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 6
@@ -6329,8 +6329,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 22225
-Player B's money: 36925
+Player A's money: 26825
+Player B's money: 42925
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 1
@@ -6355,8 +6355,8 @@ Points of dice: 1
 
    Jail    B:Lv0 B|B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv2   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6378,8 +6378,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0 B|B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 22225
-Player B's money: 36525
+Player A's money: 26825
+Player B's money: 42725
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 10
@@ -6404,8 +6404,8 @@ Points of dice: 10
 
    Jail    B:Lv0 B|B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 5000 to upgrade the land? [y/n]
-Pay 5000 to upgrade the land? [y/n]
+Pay $5000 to upgrade the land? [y/n]
+Pay $5000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1 A|A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6427,8 +6427,8 @@ Pay 5000 to upgrade the land? [y/n]
 
    Jail    B:Lv0 B|B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 16000
-Player B's money: 36525
+Player A's money: 20600
+Player B's money: 42725
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -6453,7 +6453,7 @@ Points of dice: 5
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1 A|A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6475,8 +6475,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 16000
-Player B's money: 33600
+Player A's money: 20600
+Player B's money: 39800
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6524,8 +6524,8 @@ You need to pay player B $500
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 14775
-Player B's money: 34050
+Player A's money: 19375
+Player B's money: 40250
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -6572,8 +6572,8 @@ You need to pay player A $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 15625
-Player B's money: 32325
+Player A's money: 20225
+Player B's money: 38525
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -6620,8 +6620,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 A|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 13900
-Player B's money: 33175
+Player A's money: 18500
+Player B's money: 39375
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -6646,8 +6646,8 @@ Points of dice: 8
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 A|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6669,8 +6669,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv1 A|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 13900
-Player B's money: 31350
+Player A's money: 18500
+Player B's money: 37550
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6696,8 +6696,8 @@ Points of dice: 1
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv1   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6719,8 +6719,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 11300
-Player B's money: 31350
+Player A's money: 16100
+Player B's money: 37550
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -6745,7 +6745,7 @@ Points of dice: 8
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6767,8 +6767,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 11300
-Player B's money: 30625
+Player A's money: 16100
+Player B's money: 36825
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6816,8 +6816,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 A|B:Lv1   B:Lv1   A:Lv2 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 9900
-Player B's money: 31475
+Player A's money: 14900
+Player B's money: 37675
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -6842,7 +6842,7 @@ Points of dice: 3
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1AB|B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6864,8 +6864,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1AB|B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 9900
-Player B's money: 31075
+Player A's money: 14900
+Player B's money: 37475
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -6917,8 +6917,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1 B|B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 9500
-Player B's money: 31075
+Player A's money: 14700
+Player B's money: 37475
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -6943,7 +6943,7 @@ Points of dice: 4
 
  A|Jail  B|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv1   B:Lv2   B:Lv0   B:Lv0   Land    A:Lv1   Jail 
 
@@ -6965,8 +6965,8 @@ Pay 1000 to upgrade the land? [y/n]
 
  A|Jail  B|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 9300
-Player B's money: 30350
+Player A's money: 14500
+Player B's money: 36750
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7014,8 +7014,8 @@ You need to pay player A $1000
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 9950
-Player B's money: 28950
+Player A's money: 15150
+Player B's money: 35550
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 10
@@ -7040,8 +7040,8 @@ Points of dice: 10
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv1   B:Lv2 B|B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7063,8 +7063,8 @@ Pay 1000 to upgrade the land? [y/n]
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 9950
-Player B's money: 27125
+Player A's money: 15150
+Player B's money: 33725
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -7111,8 +7111,8 @@ You need to pay player B $1500
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 7725
-Player B's money: 28325
+Player A's money: 12925
+Player B's money: 34925
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 10
@@ -7159,8 +7159,8 @@ You need to pay player A $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 8575
-Player B's money: 26600
+Player A's money: 13775
+Player B's money: 33200
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7186,7 +7186,7 @@ Points of dice: 9
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3 A|A:Lv2   B:Lv2   B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7208,8 +7208,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 5650
-Player B's money: 26600
+Player A's money: 10850
+Player B's money: 33200
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -7256,8 +7256,8 @@ You need to pay player A $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 6500
-Player B's money: 24875
+Player A's money: 11700
+Player B's money: 31475
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -7304,8 +7304,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4775
-Player B's money: 25725
+Player A's money: 9975
+Player B's money: 32325
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7331,8 +7331,8 @@ Points of dice: 10
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7354,8 +7354,8 @@ Pay 1000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4775
-Player B's money: 25000
+Player A's money: 9975
+Player B's money: 31600
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7381,7 +7381,7 @@ Points of dice: 5
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7403,8 +7403,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1850
-Player B's money: 25000
+Player A's money: 7050
+Player B's money: 31600
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 5
@@ -7451,8 +7451,8 @@ You need to pay player A $3000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4100
-Player B's money: 21600
+Player A's money: 9300
+Player B's money: 28400
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7478,7 +7478,7 @@ Points of dice: 6
 
    Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1 B|A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7500,8 +7500,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 3700
-Player B's money: 21600
+Player A's money: 9100
+Player B's money: 28400
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 1
@@ -7548,8 +7548,8 @@ You need to pay player A $1500
 
    Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4900
-Player B's money: 19700
+Player A's money: 10300
+Player B's money: 26700
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7601,8 +7601,8 @@ Pay $1000 to reduce the prison round to 1? [y/n]
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4500
-Player B's money: 19700
+Player A's money: 10100
+Player B's money: 26700
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -7627,7 +7627,7 @@ Points of dice: 7
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7649,8 +7649,8 @@ Pay 1000 to upgrade the land? [y/n]
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4300
-Player B's money: 18975
+Player A's money: 9900
+Player B's money: 25975
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7698,8 +7698,8 @@ You need to pay player A $1000
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4950
-Player B's money: 17575
+Player A's money: 10550
+Player B's money: 24775
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -7746,8 +7746,8 @@ You need to pay player A $1500
 
  A|Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 B|A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 6150
-Player B's money: 15350
+Player A's money: 11750
+Player B's money: 22550
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7795,8 +7795,8 @@ You need to pay player B $1000
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 B|A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4425
-Player B's money: 16200
+Player A's money: 10025
+Player B's money: 23400
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -7843,8 +7843,8 @@ You need to pay player A $1000
 
    Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 5275
-Player B's money: 14475
+Player A's money: 10875
+Player B's money: 21675
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -7891,8 +7891,8 @@ You need to pay player B $500
 
    Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4050
-Player B's money: 14925
+Player A's money: 9650
+Player B's money: 22125
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -7940,8 +7940,8 @@ You need to pay player A $500
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 4500
-Player B's money: 13700
+Player A's money: 10100
+Player B's money: 20900
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 9
@@ -7966,7 +7966,7 @@ Points of dice: 9
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   Land    A:Lv1   Jail 
 
@@ -7988,8 +7988,8 @@ Pay 2000 to upgrade the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1575
-Player B's money: 13700
+Player A's money: 7175
+Player B's money: 20900
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 11
@@ -8037,8 +8037,8 @@ Pay $1000 to buy the land? [y/n]
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1575
-Player B's money: 11875
+Player A's money: 7175
+Player B's money: 19075
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -8064,9 +8064,8 @@ Points of dice: 5
 
    Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 5000 to upgrade the land? [y/n]
-Pay 5000 to upgrade the land? [y/n]
-You do not have enough money to upgrade the land!
+Pay $5000 to upgrade the land? [y/n]
+Pay $5000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0 B|B:Lv0   A:Lv1   Jail 
 
@@ -8086,10 +8085,10 @@ You do not have enough money to upgrade the land!
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1175
-Player B's money: 11875
+Player A's money: 1475
+Player B's money: 19075
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -8112,7 +8111,7 @@ Points of dice: 8
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player A $1500
 --------------------------------------------------------------------------------
@@ -8134,10 +8133,10 @@ You need to pay player A $1500
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 2375
-Player B's money: 9650
+Player A's money: 2675
+Player B's money: 16850
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 3
@@ -8160,10 +8159,10 @@ Points of dice: 3
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
 
@@ -8183,10 +8182,10 @@ Pay 2000 to upgrade the land? [y/n]
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1975
-Player B's money: 9650
+Player A's money: 2475
+Player B's money: 16850
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -8209,9 +8208,9 @@ Points of dice: 4
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2 B|B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv3 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
 
@@ -8231,10 +8230,10 @@ Pay 2000 to upgrade the land? [y/n]
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv2 B|B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 A|A:Lv1   B:Lv1   B:Lv1   A:Lv3 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1975
-Player B's money: 9250
+Player A's money: 2475
+Player B's money: 16650
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -8259,7 +8258,7 @@ Points of dice: 6
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2 B|B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player B $1000
 --------------------------------------------------------------------------------
@@ -8281,10 +8280,10 @@ You need to pay player B $1000
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2 B|B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3 B|B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 575
-Player B's money: 10100
+Player A's money: 1275
+Player B's money: 17500
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -8310,7 +8309,7 @@ Points of dice: 4
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player A $1000
 --------------------------------------------------------------------------------
@@ -8332,10 +8331,10 @@ You need to pay player A $1000
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1425
-Player B's money: 8700
+Player A's money: 2125
+Player B's money: 16300
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 7
@@ -8358,7 +8357,7 @@ Points of dice: 7
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You received $2000 from the Bank!
 --------------------------------------------------------------------------------
@@ -8380,10 +8379,10 @@ You received $2000 from the Bank!
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1 B|A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 2700
-Player B's money: 8700
+Player A's money: 3400
+Player B's money: 16300
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 1
@@ -8406,7 +8405,7 @@ Points of dice: 1
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player A $1000
 --------------------------------------------------------------------------------
@@ -8428,10 +8427,10 @@ You need to pay player A $1000
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 3550
-Player B's money: 7300
+Player A's money: 4250
+Player B's money: 15100
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -8455,7 +8454,7 @@ Points of dice: 5
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player B $1000
 --------------------------------------------------------------------------------
@@ -8477,10 +8476,10 @@ You need to pay player B $1000
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0 B|A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 2150
-Player B's money: 8150
+Player A's money: 3050
+Player B's money: 15950
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 8
@@ -8503,7 +8502,7 @@ Points of dice: 8
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player A $500
 --------------------------------------------------------------------------------
@@ -8525,10 +8524,10 @@ You need to pay player A $500
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 2600
-Player B's money: 6925
+Player A's money: 3500
+Player B's money: 14725
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
@@ -8552,7 +8551,7 @@ Points of dice: 5
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You need to pay player B $500
 --------------------------------------------------------------------------------
@@ -8574,10 +8573,10 @@ You need to pay player B $500
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1375
-Player B's money: 7375
+Player A's money: 2275
+Player B's money: 15175
 Player B's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 4
@@ -8600,7 +8599,7 @@ Points of dice: 4
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
 You received $2000 from the Bank!
 --------------------------------------------------------------------------------
@@ -8622,10 +8621,10 @@ You received $2000 from the Bank!
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 1375
-Player B's money: 8650
+Player A's money: 2275
+Player B's money: 16450
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 Points of dice: 10
@@ -8648,11 +8647,8 @@ Points of dice: 10
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 5000 to upgrade the land? [y/n]
-Pay 5000 to upgrade the land? [y/n]
-You do not have enough money to upgrade the land!
 --------------------------------------------------------------------------------
  B|Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
 
@@ -8672,11 +8668,12 @@ You do not have enough money to upgrade the land!
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 650
-Player B's money: 8650
+Player A's money: 1550
+Player B's money: 16450
 Player B's turn.
+Pay $500 to throw two dice? [y/n]
 Pay $500 to throw two dice? [y/n]
 Points of dice: 10
 --------------------------------------------------------------------------------
@@ -8698,9 +8695,9 @@ Points of dice: 10
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Pay 1000 to upgrade the land? [y/n]
+Pay $1000 to upgrade the land? [y/n]
 --------------------------------------------------------------------------------
    Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
 
@@ -8720,22 +8717,514 @@ Pay 1000 to upgrade the land? [y/n]
 
    B:Lv1                                                                   A:Lv2
 
-   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1 A|A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-Player A's money: 650
-Player B's money: 6825
+Player A's money: 1550
+Player B's money: 14625
+Player A's turn.
+Pay $500 to throw two dice? [y/n]
+Points of dice: 11
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                 B|B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+ A|A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $2000 to upgrade the land? [y/n]
+You do not have enough money to upgrade the land!
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                 B|B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+ A|A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 825
+Player B's money: 14625
+Player B's turn.
+Pay $500 to throw two dice? [y/n]
+Pay $500 to throw two dice? [y/n]
+Points of dice: 5
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+ A|A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                 B|A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+You need to pay player A $1500
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+ A|A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                 B|A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 2025
+Player B's money: 12400
+Player A's turn.
+Pay $500 to throw two dice? [y/n]
+Pay $500 to throw two dice? [y/n]
+Points of dice: 4
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+ A|B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                 B|A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+You need to pay player B $1000
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+ A|B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                 B|A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 825
+Player B's money: 13250
+Player B's turn.
+Pay $500 to throw two dice? [y/n]
+Pay $500 to throw two dice? [y/n]
+Points of dice: 11
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+ A|B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail  B|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $1000 to upgrade the land? [y/n]
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+ A|B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail  B|B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 825
+Player B's money: 11425
+Player A's turn.
+Pay $500 to throw two dice? [y/n]
+Points of dice: 4
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3 A|A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail  B|B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $5000 to upgrade the land? [y/n]
+Pay $5000 to upgrade the land? [y/n]
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3 A|A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail  B|B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 625
+Player B's money: 11425
+Player B's turn.
+Pay $500 to throw two dice? [y/n]
+Points of dice: 6
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3 A|A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+ B|A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+You need to pay player A $500
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3 A|A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+ B|A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 1075
+Player B's money: 10725
+Player A's turn.
+Pay $500 to throw two dice? [y/n]
+Points of dice: 6
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+ B|A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $1000 to reduce the prison round to 1? [y/n]
+Pay $1000 to reduce the prison round to 1? [y/n]
+Pay $1000 to reduce the prison round to 1? [y/n]
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv0                                                                   B:Lv1
+
+ B|A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 875
+Player B's money: 10725
+Player B's turn.
+Pay $500 to throw two dice? [y/n]
+Pay $500 to throw two dice? [y/n]
+Pay $500 to throw two dice? [y/n]
+Pay $500 to throw two dice? [y/n]
+Points of dice: 1
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+ B|B:Lv0                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $1000 to upgrade the land? [y/n]
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+ B|B:Lv1                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 675
+Player B's money: 9425
+Player B's turn.
+Pay $500 to throw two dice? [y/n]
+Points of dice: 2
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+ B|B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $2000 to upgrade the land? [y/n]
+Pay $2000 to upgrade the land? [y/n]
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+ B|B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 475
+Player B's money: 9225
+Player B's turn.
+Pay $500 to throw two dice? [y/n]
+Points of dice: 5
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2 B|B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Pay $5000 to upgrade the land? [y/n]
+Pay $5000 to upgrade the land? [y/n]
+--------------------------------------------------------------------------------
+   Bank    B:Lv1   A:Lv3   A:Lv2 B|B:Lv3   B:Lv1   B:Lv0   B:Lv0   A:Lv1 A|Jail 
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv2                                                                   B:Lv1
+
+   B:Lv1                                                                   B:Lv1
+
+   A:Lv0                                                                   A:Lv1
+
+   A:Lv1                                                                   A:Lv0
+
+   B:Lv2                                                                   A:Lv2
+
+   B:Lv1                                                                   A:Lv0
+
+   B:Lv1                                                                   A:Lv2
+
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
+--------------------------------------------------------------------------------
+Player A's money: 475
+Player B's money: 3000
 Player A's turn.
 Pay $500 to throw two dice? [y/n]
 You do not have enough money to throw two dice!
-Points of dice: 6
+Points of dice: 3
 --------------------------------------------------------------------------------
-   Bank    B:Lv1   A:Lv3   A:Lv2   B:Lv2   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
+   Bank    B:Lv1   A:Lv3   A:Lv2 B|B:Lv3   B:Lv1   B:Lv0   B:Lv0   A:Lv1   Jail 
 
-   B:Lv1                                                                 B|B:Lv1
+   B:Lv1                                                                   B:Lv1
 
    A:Lv2                                                                   B:Lv1
 
-   B:Lv0                                                                   B:Lv1
+   B:Lv1                                                                 A|B:Lv1
 
    A:Lv0                                                                   A:Lv1
 
@@ -8747,7 +9236,7 @@ Points of dice: 6
 
    B:Lv1                                                                   A:Lv2
 
-   Jail  A|B:Lv0   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv2   B:Lv1   Jail 
+   Jail    B:Lv1   B:Lv0   A:Lv1   A:Lv1   B:Lv1   B:Lv1   A:Lv3   B:Lv1   Jail 
 --------------------------------------------------------------------------------
-You need to pay player B $500
+You need to pay player B $1000
 Game over! winner: B.

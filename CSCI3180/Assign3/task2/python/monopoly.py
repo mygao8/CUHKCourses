@@ -70,11 +70,10 @@ class Jail:
             setRecv(cur_player, 0, 0)
             if setPay(cur_player, 1000, 0.1):
                 Player.prison_rounds = 1
+                cur_player.payDue()
             else:
                 print("You do not have enough money to reduce the prison round!")
                 Player.prison_rounds = 2
-
-            cur_player.payDue()
         else:
             Player.prison_rounds = 2
 
@@ -151,7 +150,7 @@ class Land:
         elif self.owner == cur_player:
             if self.level >= 3:
                 return
-            if getInput("Pay {} to upgrade the land? [y/n]\n".format(Land.upgrade_fee[self.level])):
+            if getInput("Pay ${} to upgrade the land? [y/n]\n".format(Land.upgrade_fee[self.level])):
                 self.upgradeLand()
         else:
             print("You need to pay player {} ${}".format(self.owner.name, Land.toll[self.level]))
@@ -287,13 +286,13 @@ def main():
             setRecv(cur_player, 0, 0)
             if setPay(cur_player, 500, 0.05):
                 num_dices = 2
+                cur_player.payDue()
             else:
                 print("You do not have enough money to throw two dice!")
                 num_dices = 1
         else:
             num_dices = 1
 
-        cur_player.payDue()
 
         step = throwDice()
         print("Points of dice: {}".format(step))
