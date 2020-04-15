@@ -97,7 +97,7 @@ sub stepOn {
             return;
         }
         my $fee = $upgrade_fee[$self->{level}];
-        if (main::getInput("Pay $fee to upgrade the land? [y/n]")){
+        if (main::getInput("Pay \$$fee to upgrade the land? [y/n]")){
             $self->upgradeLand();
         }
     }
