@@ -646,12 +646,30 @@ void eval_bus_drivers()
      *
      */
     /* input of GateMARMUX */
+    int inputOfGateMARMUXFromIR = Low16bits
+        (
+            blockZEXT_LSHF1
+            (
+                partVal(CURRENT_LATCHES.IR, 7, 0)
+            )
+        );
+    inputOfGateMARMUX = blockMARMUX(GetMARMUX(CURRENT_LATCHES.MICROINSTRUCTION), inputOfGateMARMUXFromIR, inputOfMARMUXFromAdder);
 
     /* input of GatePC */
+    inputOfGatePC = CURRENT_LATCHES.PC;
 
     /* input of GateALU */
+    int valueSR1 = CURRENT_LATCHES.REGS[blockSR1MUX(GetSR1MUX(CURRENT_LATCHES.MICROINSTRUCTION), CURRENT_LATCHES.IR)];
+    int outputOfSR2MUX = blockSR2MUX
+        (
+            partVal(CURRENT_LATCHES.IR, 5, 5), 
+            CURRENT_LATCHES.REGS[partVal(CURRENT_LATCHES.IR, 2, 0)],
+            blockSEXT(partVal(CURRENT_LATCHES.IR, 4, 0), 5)
+        );
+    inputOfGateALU = blockALU(GetALUK(CURRENT_LATCHES.MICROINSTRUCTION), valueSR1, outputOfSR2MUX);
 
     /* input of GateMDR */
+    inputOfGateMDR = blockMDRLogic1(CURRENT_LATCHES.MAR % 2, GetDATA_SIZE(CURRENT_LATCHES.MICROINSTRUCTION), CURRENT_LATCHES.MDR);
 }
 
 
@@ -667,5 +685,18 @@ void drive_bus()
      *  replace the following line:
      */
     BUS = 0;
+    if(GetGATE_PC(CURRENT_LATCHES.MICROINSTRUCTION) == 1){
+        BUS = Low16bits(inputOfGatePC);
+    }else if(GetGATE_MDR(CURRENT_LATCHES.MICROINSTRUCTION) == 1){
+        BUS = Low16bits(inputOfGateMDR);
+    }else if(GetGATE_ALU(CURRENT_LATCHES.MICROINSTRUCTION) == 1){
+        BUS = Low16bits(inputOfGateALU);
+    }else if(GetGATE_MARMUX(CURRENT_LATCHES.MICROINSTRUCTION) == 1){
+        BUS = Low16bits(inputOfGateMARMUX);
+    }else if(GetGATE_SHF(CURRENT_LATCHES.MICROINSTRUCTION) == 1){
+        BUS = Low16bits(inputOfGateSHF);
+    }else{
+        BUS = 0;
+    }
 }
 

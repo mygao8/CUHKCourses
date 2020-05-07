@@ -295,9 +295,11 @@ void init_control_store(char *ucode_filename) {
         }
 
         /* Warn about extra bits in line. */
-        if (line[index] != '\0')
-            printf("Warning: Extra bit(s) in control store file %s. Line: %d\n",
+        if (line[index] != '\0'){
+	        printf("line[%d], %c\n", index, line[index]);
+            printf("Warnings: Extra bit(s) in control store file %s. Line: %d\n",
                     ucode_filename, i);
+        }
     }
     printf("\n");
 }
@@ -456,16 +458,16 @@ void eval_micro_sequencer()
         NEXT_LATCHES.STATE_NUMBER = 0 + partVal(_IR, 15, 12);
     }
     else{
-        int _COND0 = GetCOND(CURRENT_LATCHES.MICROINSTRUCTION)>>1;
-        int _COND1 = GetCOND(CURRENT_LATCHES.MICROINSTRUCTION)%2;
+        int _COND1 = (GetCOND(CURRENT_LATCHES.MICROINSTRUCTION)>>1)%2;
+        int _COND0 = GetCOND(CURRENT_LATCHES.MICROINSTRUCTION)%2;
         int _R = CURRENT_LATCHES.READY;
         int _BEN = CURRENT_LATCHES.BEN;        
-        int _J = GetJ(CURRENT_LATCHES.MICROINSTRUCTION);    // 6bits
-        int _J0 = (_J%2) | (partVal(_IR, 11, 11) & _COND0 & _COND1);
-        int _J1 = ((_J>>1)%2) | (_R & _COND0 & !_COND1);
-        int _J2 = ((_J>>2)%2) | (_BEN & !_COND0 & _COND1);
-
-        NEXT_LATCHES.STATE_NUMBER = _J0 + _J1<<1 + _J2<<2 + _J & 0x38;   // 0011 1000
+        int _J = GetJ(CURRENT_LATCHES.MICROINSTRUCTION);    /* 6bits */
+        int _J0 = (_J%2) || (partVal(_IR, 11, 11) && _COND0 && _COND1);
+        int _J1 = ((_J>>1)%2) || (_R && _COND0 && (!_COND1));
+        int _J2 = ((_J>>2)%2) || (_BEN && (!_COND0) && _COND1);
+        
+        NEXT_LATCHES.STATE_NUMBER = _J0 + (_J1<<1) + (_J2<<2) + (_J & 0x38);   /* 0011 1000 */
     }
     
     memcpy(NEXT_LATCHES.MICROINSTRUCTION, CONTROL_STORE[NEXT_LATCHES.STATE_NUMBER], sizeof(int)*CONTROL_STORE_BITS);
