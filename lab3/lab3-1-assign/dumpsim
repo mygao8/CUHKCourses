@@ -1,0 +1,44 @@
+
+Current register/bus values :
+-------------------------------------
+Cycle Count  : 6
+PC           : 0x3002
+IR           : 0x0000
+STATE_NUMBER : 0x0000
+
+BUS          : 0x0000
+MDR          : 0x0000
+MAR          : 0x3000
+CCs: N = 0  Z = 1  P = 0
+Registers:
+0: 0x0000
+1: 0x0000
+2: 0x0000
+3: 0x0000
+4: 0x0000
+5: 0x0000
+6: 0x0000
+7: 0x0000
+
+
+Current register/bus values :
+-------------------------------------
+Cycle Count  : 7
+PC           : 0x3002
+IR           : 0x0000
+STATE_NUMBER : 0x0000
+
+BUS          : 0x0000
+MDR          : 0x0000
+MAR          : 0x3000
+CCs: N = 0  Z = 1  P = 0
+Registers:
+0: 0x0000
+1: 0x0000
+2: 0x0000
+3: 0x0000
+4: 0x0000
+5: 0x0000
+6: 0x0000
+7: 0x0000
+

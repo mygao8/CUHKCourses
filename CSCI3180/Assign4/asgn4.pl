@@ -11,9 +11,10 @@
 % Student ID : 1155107738
 % Email Addr : 1155107738@link.cuhk.edu.hk
 
-% append/3
-% append([], L, L).
-% append([X|L1], L2, [X|L3]) :- append(L1, L2, L3).
+
+ % append/3
+ append([], L, L).
+ append([X|L1], L2, [X|L3]) :- append(L1, L2, L3).
 
 % sum/3
 sum(0, X, X).
@@ -53,7 +54,7 @@ repeat_three([H|L1], L2) :-
 
 % 2(a) Represent the multi-way tree in Figure 1 as a Prolog term, with order of the sub-trees
 %      from left to right.
-mt(a, [mt(b, [mt(e, []), mt(f, [])]), mt(c, []), mt(d, [mt(g, [])])]).
+%mt(a, [mt(b, [mt(e, []), mt(f, [])]), mt(c, []), mt(d, [mt(g, [])])]).
 
 % 2(b) Define the predicate is_tree(Term) which is true if Term represents a multi-way tree.
 is_tree(mt(Root, [])).
