@@ -13,6 +13,7 @@
 #include <netinet/tcp.h>    // required by "struct tcph"
 #include <netinet/udp.h>    // required by "struct udph"
 #include <netinet/ip_icmp.h>    // required by "struct icmphdr"
+#include <math.h>
 
 
 extern "C" {
@@ -24,6 +25,7 @@ extern "C" {
 
 #define BUF_SIZE 1500
 
+#define min(a, b) ((a) < (b) ? (a) : (b))
 
 
 struct  nat_entry // ip and ports are 0 if available
@@ -61,9 +63,19 @@ int buf_av[10]; // buf avaiable
 struct verdict_para verdict_table[10];
 
 
-int fill_token(){
-  // ...
-  // fill a token if the current_time - start_time > 
+int fill_token(long long int *last_time, int bucket_size, int fill_rate, int num_token){
+  struct timeval time;     
+  gettimeofday(&time, NULL);
+  long long int cur_time = time.tv_sec * 1000 + time.tv_usec / 1000;
+
+  // last_time is the time that filled last token, not cur_time
+  double num_fill = floor((double)(cur_time - last_time) / 1000.0 * fill_rate);
+  if (num_fill >= 10e-9){
+    *last_time += (int) round(1000 * (num_fill / fill_rate));
+  }
+  
+  // fill a token if the bucket is not full, return current #token
+  return min(bucket_size, num_token + num_fill);
 }
 
 int print_nat(){

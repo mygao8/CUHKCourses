@@ -65,7 +65,7 @@ struct verdict_para verdict_table[10];
 
 
 
-int fill_token(long long int *last_time, int bucket_size, int fill_rate, int num_token){
+int fill_token(int num_token){
   struct timeval time;     
   gettimeofday(&time, NULL);
   long long int cur_time = time.tv_sec * 1000 + time.tv_usec / 1000;
@@ -73,7 +73,7 @@ int fill_token(long long int *last_time, int bucket_size, int fill_rate, int num
   // last_time is the time that filled last token, not cur_time
   double num_fill = floor((double)(cur_time - last_time) / 1000.0 * fill_rate);
   if (num_fill >= 10e-9){
-    *last_time += (int) round(1000 * (num_fill / fill_rate));
+    last_time += (int) round(1000 * (num_fill / fill_rate));
   }
   
   // fill a token if the bucket is not full, return current #token
@@ -192,12 +192,12 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     return 1;
   }
 
-  unsigned int local_mask = 0xffffffff << (32 â€?mask);
+  unsigned int local_mask = 0xffffffff << (32 ï¿½?mask);
   if((ntohl(ipHeader->saddr) & local_mask) == lan ){
     // outbound
     int nat_match = -1;
     for(i = 0; i < 2001; i++){
-      if(nat_table[i].internal_ip == ntohl(ipHeader->saddr) && nat_table[i].internal_port == ntonl(udph->source) ){
+      if(nat_table[i].internal_ip == ntohl(ipHeader->saddr) && nat_table[i].internal_port == ntohs(udph->source) ){
         nat_match = i;
         time(&cur_time);
         nat_table[i].timestamp = cur_time;
@@ -206,8 +206,28 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     }
 
     if(nat_match == -1){
-      nat_table[nat_av_idx].internal_ip = ipHeader->saddr;
-      nat_table[nat_av_idx].internal_port = udph->source;
+      if(nat_table[nat_av_idx].internal_ip != 0){
+        // this means the nat entry has been added by processing thread
+        // choose another one 
+        // in most case, this entry will be available
+        for(i = 0; i < 2001; i++){
+          if(port_av[i] == 0){
+            port_av_idx = i;
+            break;
+          }
+        }
+
+        for(i = 0; i < 2001; i++){
+          if(nat_table[i].internal_ip == 0){
+            nat_av_idx = i;
+            break;
+          }
+        }
+
+      }
+
+      nat_table[nat_av_idx].internal_ip = ntohl(ipHeader->saddr);
+      nat_table[nat_av_idx].internal_port = ntohs(udph->source);
       nat_table[nat_av_idx].translated_port =  10000 + port_av_idx;
       port_av[port_av_idx] = 1;
       time(&cur_time);
@@ -225,7 +245,7 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     // inbound
     int nat_match = -1;
     for(i = 0; i < 2001; i++){
-      if(public_ip == ntohl(ipHeader->daddr) && nat_table[i].translated_port == ntohl(udph->dest) ){
+      if(public_ip == ntohl(ipHeader->daddr) && nat_table[i].translated_port == ntohs(udph->dest) ){
         nat_match = i;
         time(&cur_time);
         nat_table[i].timestamp = cur_time;
@@ -275,7 +295,7 @@ void process_thread(){
   // }
 
 
-  while(fill_token()>=1){
+  while((num_token=fill_token(num_token))>=1){
 
     for(idx =0 ;idx < 10;idx++){
       if (buf_av[idx] == 1){
@@ -292,10 +312,10 @@ void process_thread(){
           if (nat_table[i].internal_ip == ntohl(iph->saddr)){
             flag_in_nat_table = 1;
             int translated_port = net_table[i].translated_port;
-            iph->saddr = public_ip;
-            udph->source = translated_port;
-            udph->check = udp_checksum(pktData);
-            iph->check = ip_checksum(pktData); 
+            iph->saddr = htonl(public_ip);
+            udph->source = htons(translated_port);
+            udph->check = htons(udp_checksum(pktData));
+            iph->check = htons(ip_checksum(pktData)); 
             struct timeval timestamp;
             gettimeofday(&timestamp, NULL);
             nat_table[i].timestamp = timestamp;
@@ -313,13 +333,14 @@ void process_thread(){
           }
           // create new entry
           for(j = 0;j < 2001;j++){
-            if(nat_table[i].translated_port== 0){
+            if(nat_table[i].translated_port == 0){
               nat_table[i].translated_port = translated_port;
-              nat_table[i].internal_port = udph->source;
-              nat_table[i].internal_ip = iph->saddr;
+              nat_table[i].internal_port = ntohs(udph->source);
+              nat_table[i].internal_ip = ntohl(iph->saddr);
               struct timeval timestamp;
               gettimeofday(&timestamp, NULL);
               nat_table[i].timestamp = timestamp;
+              print_nat();
               break;
             }
           }
@@ -333,24 +354,26 @@ void process_thread(){
               flag_in_nat_table = 1;
               int internal_port = net_table[i].internal_port;
               int internal_ip = net_table[i].internal_ip;
-              iph->daddr = internal_ip;
-              udph->dest = internal_port;
-              udph->check = udp_checksum(pktData);
-              iph->check = ip_checksum(pktData); 
+              iph->daddr = htonl(internal_ip);
+              udph->dest = htons(internal_port);
+              udph->check = htons(udp_checksum(pktData));
+              iph->check = htons(ip_checksum(pktData)); 
               break;
             }
           }
           if (!flag_in_nat_table){
+            memset(bufs[idx], 0, BUF_SIZE);
+            buf_av[idx] = 0;
             break;
           }
         }
         
         // send the packet
-        buf_av[idx] = 0;
         if((flag_success = nfq_set_verdict(verdict_para[idx].queue, verdict_para[idx].id, NF_ACCEPT, 
           verdict_para.ip_pkt_len, pktData))<0){
           fprintf(stderr,"nfq_set_verdict error\n");
         }
+        buf_av[idx] = 0;
         break;
       }
     }
