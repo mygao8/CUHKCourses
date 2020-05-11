@@ -190,7 +190,9 @@ void *process_thread(void *arg){
   printf("set initial last_time\n");
   int last_time_initial_flag = 0;
   while (last_time_initial_flag == 0){
+	printf("printf buf_av for last_time  ");
     for(idx=0 ;idx < 10;idx++){
+	printf("%d ", buf_av[idx]);
       if (buf_av[idx] == 1){
         struct timeval time;     
         gettimeofday(&time, NULL);
@@ -199,6 +201,7 @@ void *process_thread(void *arg){
         break;
       }
     }
+	printf("\n");
   }
 
   printf("start filling and consuming tokens\n");
