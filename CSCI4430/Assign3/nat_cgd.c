@@ -27,8 +27,7 @@ extern "C" {
 #define BUF_SIZE 1500
 
 
-
-struct  nat_entry // ip and ports are 0 if available
+struct nat_entry // ip and ports are 0 if available
 {
   int internal_ip; 
   int internal_port;
@@ -43,19 +42,20 @@ struct nat_entry nat_table[2001]; // nat entries of size 2001 (10000-12000)
 int public_ip; // inet_aton(<IP>)
 int lan;
 int mask;
-int token_bucket = 0;
+int num_token = 0;
 
 int bucket_size = 0;
 int fill_rate = 0;
 int fill_per_msec;
+long long int last_time;
 
 int port_av[2001];
 
 struct verdict_para
 { 
-  (struct nfq_q_handle *) queue,
-  unsigned int id,
-  int ip_pkt_len, 
+  struct nfq_q_handle * queue;
+  unsigned int id;
+  int ip_pkt_len;
 };
 
 unsigned char bufs[10][BUF_SIZE];
@@ -72,7 +72,7 @@ int fill_token(int num_token){
 
   // last_time is the time that filled last token, not cur_time
   double num_fill = floor((double)(cur_time - last_time) / 1000.0 * fill_rate);
-  if (num_fill >= 10e-9){
+  if (num_fill >= 10e-7){
     last_time += (int) round(1000 * (num_fill / fill_rate));
   }
   
@@ -80,7 +80,7 @@ int fill_token(int num_token){
   return min(bucket_size, num_token + num_fill);
 }
 
-int print_nat(){
+void print_nat(){
   int i;
   for(i = 0; i < 2001; i++){
     if(nat_table[i].internal_ip != 0){
@@ -100,58 +100,17 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   // call back is recv thread
   
   int i;
-  struct timeval cur_time;
-  time(&cur_time);
-  // remove expired entry
-  for(i = 0; i < 2001; i++){
-    if(nat_table[i].internal_ip != 0){
-      if( (cur_time.tv_sec - nat_table[i].timestamp.tv_sec - 10) * 1000 + (cur_time.tv_usec - nat_table[i].timestamp.tv_usec)/1000 >= 0 ){
-        port_av[nat_table[i].translated_port - 10000] = 0;
-        nat_table[i].internal_ip = 0;
-        nat_table[i].internal_port = 0;
-        nat_table[i].translated_port = 0;
-        print_nat();
-      }
-    }
-  }
-
-  // find one available entry
-  int nat_av_idx = -1;
-  for(i = 0; i < 2001; i++){
-    if(nat_table[i].internal_ip == 0){
-      nat_av_idx = i;
-      break;
-    }
-  }
-
-  // find one available port
-  int port_av_idx = -1;
-  for(i = 0; i < 2001; i++){
-    if(port_av[i] == 0){
-      port_av_idx = i;
-      break;
-    }
-  }
-
-  // find one available buf
-  int buf_av_idx = -1;
-  for(i = 0; i < 10; i++){
-    if(buf_av[i] == 0){
-      buf_av_idx = i;
-      break;
-    }
-  }
 
   // Get the id in the queue
   unsigned int id = 0;
   struct nfqnl_msg_packet_hdr *header;
-  if (header = nfq_get_msg_packet_hdr(pkt)) 
+  if ((header = nfq_get_msg_packet_hdr(pkt))){
     id = ntohl(header->packet_id);
-
+  } 
+  
   // Access IP Packet
   unsigned char *pktData;
   int ip_pkt_len;
-  struct iphdr *ipHeader;
 
   ip_pkt_len = nfq_get_payload(pkt, &pktData); 
   if(ip_pkt_len > 1500){
@@ -167,112 +126,37 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   int udp_payload_len; // prompt: udp_payload_len + udp_header_len + ip_header_len = ip_pkt_len
 
 
-
   if(ipHeader->protocol != IPPROTO_UDP) { // drop packets not in UDP
     printf("Packet drop: not UDP\n");
     nfq_set_verdict(myQueue, id, NF_DROP, ip_pkt_len, pktData);
     return 1;
   }
 
-  if(nat_av_idx == -1){ // no available entry in nat table
-    fprintf(stderr, "ERROR: Drop packet: nat table full!\n");
-    nfq_set_verdict(myQueue, id, NF_DROP, ip_pkt_len, pktData);
-    return 1;
+  // find one available buf
+  int buf_av_idx = -1;
+  for(i = 0; i < 10; i++){
+    if(buf_av[i] == 0){
+      buf_av_idx = i;
+      break;
+    }
   }
 
   if(buf_av_idx == -1){ // no buffer space
-    printf("No buffer\n");
+    printf("No buffer available\n");
     nfq_set_verdict(myQueue, id, NF_DROP, ip_pkt_len, pktData);
     return 1;
   }
-
-  if(port_av_idx == -1){
-    printf("Port full\n");
-    nfq_set_verdict(myQueue, id, NF_DROP, ip_pkt_len, pktData);
-    return 1;
-  }
-
-  unsigned int local_mask = 0xffffffff << (32 �?mask);
-  if((ntohl(ipHeader->saddr) & local_mask) == lan ){
-    // outbound
-    int nat_match = -1;
-    for(i = 0; i < 2001; i++){
-      if(nat_table[i].internal_ip == ntohl(ipHeader->saddr) && nat_table[i].internal_port == ntohs(udph->source) ){
-        nat_match = i;
-        time(&cur_time);
-        nat_table[i].timestamp = cur_time;
-        break;
-      }
-    }
-
-    if(nat_match == -1){
-      if(nat_table[nat_av_idx].internal_ip != 0){
-        // this means the nat entry has been added by processing thread
-        // choose another one 
-        // in most case, this entry will be available
-        for(i = 0; i < 2001; i++){
-          if(port_av[i] == 0){
-            port_av_idx = i;
-            break;
-          }
-        }
-
-        for(i = 0; i < 2001; i++){
-          if(nat_table[i].internal_ip == 0){
-            nat_av_idx = i;
-            break;
-          }
-        }
-
-      }
-
-      nat_table[nat_av_idx].internal_ip = ntohl(ipHeader->saddr);
-      nat_table[nat_av_idx].internal_port = ntohs(udph->source);
-      nat_table[nat_av_idx].translated_port =  10000 + port_av_idx;
-      port_av[port_av_idx] = 1;
-      time(&cur_time);
-      nat_table[nat_av_idx].timestamp = cur_time;
-      print_nat();    
-    }
-
-    memcpy(bufs[buf_av_idx], pktData, ip_pkt_len);
-    verdict_table[buf_av_idx].queue = myQueue;
-    verdict_table[buf_av_idx].id = id;
-    verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
-    buf_av[buf_av_idx] = 1;
-
-  }else{
-    // inbound
-    int nat_match = -1;
-    for(i = 0; i < 2001; i++){
-      if(public_ip == ntohl(ipHeader->daddr) && nat_table[i].translated_port == ntohs(udph->dest) ){
-        nat_match = i;
-        time(&cur_time);
-        nat_table[i].timestamp = cur_time;
-        break;
-      }
-    }
-    if(nat_match == -1){
-      // inbound cannot find nat entry in table
-      // drop the packet
-      printf("Inbound entry not found, drop packet\n");
-      nfq_set_verdict(myQueue, id, NF_DROP, ip_pkt_len, pktData);
-      return 1;
-    }
-
-    // inbound find entry in table
-    memcpy(bufs[buf_av_idx], pktData, ip_pkt_len);
-    verdict_table[buf_av_idx].queue = myQueue;
-    verdict_table[buf_av_idx].id = id;
-    verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
-    buf_av[buf_av_idx] = 1;
-
-  }
+  
+  memcpy(bufs[buf_av_idx], pktData, ip_pkt_len);
+  verdict_table[buf_av_idx].queue = myQueue;
+  verdict_table[buf_av_idx].id = id;
+  verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
+  buf_av[buf_av_idx] = 1;
 
   return 1;
 }
 
-void process_thread(){
+void *process_thread(void *arg){
 
   struct timespec tim1, tim2;
   tim1.tv_sec = 0;
@@ -287,73 +171,113 @@ void process_thread(){
   //udph->source;
   //udph->dest;
   //udph->check;
-  unsigned int local_mask=0xffffffff << (32-mask);
+  unsigned int local_mask = 0xffffffff << (32-mask);
   int i;
   //mark all the port to be available
   // for(i = 0 ;i < 2001;i++){
   //   port_av[i] = 1; //???????????
   // }
 
+  // record initial last_time as the time just consume the first token
+  int last_time_initial_flag = 0;
+  while (last_time_initial_flag == 0){
+    for(idx=0 ;idx < 10;idx++){
+      if (buf_av[idx] == 1){
+        struct timeval time;     
+        gettimeofday(&time, NULL);
+        long long int last_time = time.tv_sec * 1000 + time.tv_usec / 1000;
+        last_time_initial_flag = 1;
+        break;
+      }
+    }
+  }
+
 
   while((num_token=fill_token(num_token))>=1){
 
     for(idx =0 ;idx < 10;idx++){
       if (buf_av[idx] == 1){
+        // use one token for processing one packet
+        num_token--;
+        
         int j;
-        char *pktData = bufs[idx];
+
+        // remove expired entry
+        struct timeval cur_time;
+        gettimeofday(&cur_time, NULL);
+        long long int cur_time_msec = cur_time.tv_sec * 1000 + cur_time.tv_usec / 1000;
+        for (j = 0;j < 2001;j++){
+          struct timeval nat_timestamp = nat_table[j].timestamp;
+          if (cur_time_msec - (nat_timestamp.tv_sec*1000 + nat_timestamp.tv_usec/1000) > 10000){
+            nat_table[j].translated_port =0 ;
+            nat_table[j].internal_ip = 0;
+            nat_table[j].internal_port = 0;
+            // nat_table[i].timestamp = NULL;
+            port_av[j] = 1;
+            print_nat();
+          }
+        }
+
+        unsigned char *pktData = bufs[idx];
+        struct iphdr *ipHeader = (struct iphdr *)pktData;
+      
         iph = (struct iphdr*)pktData;
         udph = (struct udphdr*) (((char*)ipHeader) + ipHeader->ihl*4);
         // judge whether it is a inbound or outbound packet
-        if (ntohl(iph->saddr) & local_mask == local_network) {
-        // outbound traffic
-        // lookup the nat table
-        int flag_in_nat_table = 0;        
-        for (j = 0 ;j < 2001;j++){
-          if (nat_table[i].internal_ip == ntohl(iph->saddr)){
-            flag_in_nat_table = 1;
-            int translated_port = net_table[i].translated_port;
-            iph->saddr = htonl(public_ip);
-            udph->source = htons(translated_port);
-            udph->check = htons(udp_checksum(pktData));
-            iph->check = htons(ip_checksum(pktData)); 
-            struct timeval timestamp;
-            gettimeofday(&timestamp, NULL);
-            nat_table[i].timestamp = timestamp;
-            break;
-          }
-        }
-        if (!flag_in_nat_table){
-          // find an available port 
-          int translated_port = 0;
-          for (j = 0;j < 2001;j++){
-            if(port_av[j] == 0){
-              translated_port = j+10000;
-              break;
-            }
-          }
-          // create new entry
-          for(j = 0;j < 2001;j++){
-            if(nat_table[i].translated_port == 0){
-              nat_table[i].translated_port = translated_port;
-              nat_table[i].internal_port = ntohs(udph->source);
-              nat_table[i].internal_ip = ntohl(iph->saddr);
+        if ((ntohl(iph->saddr) & local_mask) == lan) {
+          // outbound traffic
+          // lookup the nat table
+          int flag_in_nat_table = 0;        
+          for (j = 0 ;j < 2001;j++){
+            if ( (nat_table[j].internal_ip == ntohl(iph->saddr)) && (nat_table[j].internal_port == ntohs(udph->source)) ){
+              flag_in_nat_table = 1;
+              int translated_port = nat_table[j].translated_port;
+              iph->saddr = htonl(public_ip);
+              udph->source = htons(translated_port);
+              udph->check = htons(udp_checksum(pktData));
+              iph->check = htons(ip_checksum(pktData)); 
               struct timeval timestamp;
               gettimeofday(&timestamp, NULL);
-              nat_table[i].timestamp = timestamp;
-              print_nat();
+              nat_table[j].timestamp = timestamp;
               break;
             }
           }
-        }
-        } else {
+          if (!flag_in_nat_table){
+            // find an available port 
+            int translated_port = 0;
+            for (j = 0;j < 2001;j++){
+              if(port_av[j] == 0){
+                translated_port = j+10000;
+                break;
+              }
+            }
+            // create new entry
+            for(j = 0;j < 2001;j++){
+              if(nat_table[j].translated_port == 0){
+                nat_table[j].translated_port = translated_port;
+                // set port unavailable
+                port_av[translated_port-10000] = 1;
+
+                nat_table[j].internal_port = ntohs(udph->source);
+                nat_table[j].internal_ip = ntohl(iph->saddr);
+                struct timeval timestamp;
+                gettimeofday(&timestamp, NULL);
+                nat_table[j].timestamp = timestamp;
+                print_nat();
+                break;
+              }
+            }
+          }
+
+        }else{
         // inbound traffic
           int flag_in_nat_table = 0;
-          int flag_valid = 0;
+          // int flag_valid = 0;
           for (j = 0 ;j < 2001;j++){
-            if (nat_table[i].translated == ntohl(iph->daddr)){
+            if ( (nat_table[j].translated_port == ntohs(udph->dest)) && (public_ip == ntohl(iph->daddr)) ){
               flag_in_nat_table = 1;
-              int internal_port = net_table[i].internal_port;
-              int internal_ip = net_table[i].internal_ip;
+              int internal_port = nat_table[j].internal_port;
+              int internal_ip = nat_table[j].internal_ip;
               iph->daddr = htonl(internal_ip);
               udph->dest = htons(internal_port);
               udph->check = htons(udp_checksum(pktData));
@@ -369,8 +293,8 @@ void process_thread(){
         }
         
         // send the packet
-        if((flag_success = nfq_set_verdict(verdict_para[idx].queue, verdict_para[idx].id, NF_ACCEPT, 
-          verdict_para.ip_pkt_len, pktData))<0){
+        if((flag_success = nfq_set_verdict(verdict_table[idx].queue, verdict_table[idx].id, NF_ACCEPT, 
+          verdict_table[idx].ip_pkt_len, pktData))<0){
           fprintf(stderr,"nfq_set_verdict error\n");
         }
         buf_av[idx] = 0;
@@ -378,6 +302,8 @@ void process_thread(){
       }
     }
   }
+
+
 }
 
 
@@ -389,10 +315,17 @@ int main(int argc, char** argv) {
     exit(-1);
   }
 
-  public_ip = inet_aton(argv[1]);
-  lan = inet_aton(argv[2]);
+  struct in_addr public_ip_addr;
+  inet_aton(argv[1], &public_ip_addr);
+  public_ip = public_ip_addr.s_addr;
+
+  struct in_addr lan_ip_addr;
+  inet_aton(argv[2], &lan_ip_addr);
+  lan = lan_ip_addr.s_addr;
+
   mask = atoi(argv[3]);
   bucket_size = atoi(argv[4]);
+  num_token = bucket_size;
   fill_rate = atoi(argv[5]);
   int fill_per_msec = 1000000/fill_rate;
 
@@ -445,9 +378,8 @@ int main(int argc, char** argv) {
   int res;
   char buf[BUF_SIZE];
 
-  // create 2 threads:
-  // 1 for token fill
-  // 2 for processing thread 
+  // create 1 threads:
+  // 1 for processing thread 
   pthread_t pro_thread; // thread for processing 
   pthread_create(&pro_thread, NULL, process_thread, NULL);
   pthread_detach(pro_thread);
