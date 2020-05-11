@@ -1,5 +1,5 @@
 CC=g++
-CFLAGS= -Wall -Wno-sign-compare -Wno-write-strings -O3 -I./
+CFLAGS= -Wall -Wno-sign-compare -Wno-write-strings -g -O3 -I./
 LDFLAGS=-lnfnetlink -lnetfilter_queue -lm -lpthread
 
 EXE=nat

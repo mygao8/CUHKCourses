@@ -1,7 +1,7 @@
 #!/bin/bash
 #IP="10.3.1.41"      # public interface
-IP="10.0.2.4"      # public interface
-LAN="10.0.2.0"   # private LAN network address (without subnet mask)
+IP="10.3.1.41"      # public interface
+LAN="10.0.41.0"   # private LAN network address (without subnet mask)
 MASK="24"
 
 echo "Public IP = ${IP}, Private LAN = ${LAN}/${MASK}"
