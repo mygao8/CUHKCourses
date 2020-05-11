@@ -152,8 +152,11 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   verdict_table[buf_av_idx].id = id;
   verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
   buf_av[buf_av_idx] = 1;
-
-  printf("callback end\n");
+  printf("print buf_av\n");
+  for(int idx=0 ;idx < 10;idx++){
+    printf("%d ", buf_av[idx]);
+  }
+  printf("\ncallback end\n");
   return 1;
 }
 
@@ -183,7 +186,9 @@ void *process_thread(void *arg){
   printf("set initial last_time\n");
   int last_time_initial_flag = 0;
   while (last_time_initial_flag == 0){
+	printf("printf buf_av for last_time  ");
     for(idx=0 ;idx < 10;idx++){
+	printf("%d ", buf_av[idx]);
       if (buf_av[idx] == 1){
         struct timeval time;     
         gettimeofday(&time, NULL);
@@ -192,6 +197,7 @@ void *process_thread(void *arg){
         break;
       }
     }
+	printf("\n");
   }
 
   printf("start filling and consuming tokens\n");
