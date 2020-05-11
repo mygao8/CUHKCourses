@@ -26,6 +26,7 @@ extern "C" {
 #define min(a, b) ((a) < (b) ? (a) : (b))
 #define BUF_SIZE 1500
 
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 
 struct nat_entry // ip and ports are 0 if available
 {
@@ -147,13 +148,19 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     return 1;
   }
   
+  pthread_mutex_lock(&mutex);
   memcpy(bufs[buf_av_idx], pktData, ip_pkt_len);
   verdict_table[buf_av_idx].queue = myQueue;
   verdict_table[buf_av_idx].id = id;
   verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
   buf_av[buf_av_idx] = 1;
+  pthread_mutex_unlock(&mutex);
 
-  printf("callback end\n");
+  printf("print buf_av\n");
+  for(int idx=0 ;idx < 10;idx++){
+    printf("%d ", buf_av[idx]);
+  }
+  printf("\ncallback end\n");
   return 1;
 }
 
