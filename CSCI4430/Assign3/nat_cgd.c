@@ -98,7 +98,7 @@ void print_nat(){
 static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     struct nfq_data *pkt, void *cbData) {
   // call back is recv thread
-  
+  printf("callback start\n");
   int i;
 
   // Get the id in the queue
@@ -153,11 +153,12 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
   buf_av[buf_av_idx] = 1;
 
+  printf("callback end\n");
   return 1;
 }
 
 void *process_thread(void *arg){
-
+  printf("processing thread\n");
   struct timespec tim1, tim2;
   tim1.tv_sec = 0;
   tim1.tv_nsec = fill_per_msec;
@@ -179,6 +180,7 @@ void *process_thread(void *arg){
   // }
 
   // record initial last_time as the time just consume the first token
+  printf("set initial last_time\n");
   int last_time_initial_flag = 0;
   while (last_time_initial_flag == 0){
     for(idx=0 ;idx < 10;idx++){
@@ -192,14 +194,13 @@ void *process_thread(void *arg){
     }
   }
 
-
+  printf("start filling and consuming tokens\n");
   while((num_token=fill_token(num_token))>=1){
-
     for(idx =0 ;idx < 10;idx++){
       if (buf_av[idx] == 1){
         // use one token for processing one packet
         num_token--;
-        
+        printf("consume 1 token\n");
         int j;
 
         // remove expired entry
@@ -225,6 +226,7 @@ void *process_thread(void *arg){
         udph = (struct udphdr*) (((char*)ipHeader) + ipHeader->ihl*4);
         // judge whether it is a inbound or outbound packet
         if ((ntohl(iph->saddr) & local_mask) == lan) {
+          printf("outbound traffic\n");
           // outbound traffic
           // lookup the nat table
           int flag_in_nat_table = 0;        
@@ -270,6 +272,7 @@ void *process_thread(void *arg){
           }
 
         }else{
+          printf("inbound traffic\n");
         // inbound traffic
           int flag_in_nat_table = 0;
           // int flag_valid = 0;
@@ -303,7 +306,7 @@ void *process_thread(void *arg){
     }
   }
 
-
+  printf("exit processing thread\n");
 }
 
 
@@ -384,6 +387,7 @@ int main(int argc, char** argv) {
   pthread_create(&pro_thread, NULL, process_thread, NULL);
   pthread_detach(pro_thread);
 
+  printf("recv\n");
   // recv thread as main 
   while ((res = recv(fd, buf, sizeof(buf), 0)) && res >= 0) {
     nfq_handle_packet(nfqHandle, buf, res);
