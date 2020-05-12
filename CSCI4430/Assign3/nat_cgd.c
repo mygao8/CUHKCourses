@@ -219,9 +219,10 @@ void *process_thread(void *arg){
         long long int cur_time_msec = cur_time.tv_sec * 1000 + cur_time.tv_usec / 1000;
         for (j = 0;j < 2001;j++){
           struct timeval nat_timestamp = nat_table[j].timestamp;
+          if(nat_table[j].internal_ip == 0) continue;
           if (cur_time_msec - (nat_timestamp.tv_sec*1000 + nat_timestamp.tv_usec/1000) > 10000){
             int tmp_translated_port = nat_table[j].translated_port;
-	    nat_table[j].translated_port =0 ;
+	          nat_table[j].translated_port =0 ;
             nat_table[j].internal_ip = 0;
             nat_table[j].internal_port = 0;
             // nat_table[i].timestamp = NULL;
@@ -236,8 +237,8 @@ void *process_thread(void *arg){
         iph = (struct iphdr*)pktData;
         udph = (struct udphdr*) (((char*)ipHeader) + ipHeader->ihl*4);
         // judge whether it is a inbound or outbound packet
-       printf("addr:0x%x, lan:0x%x\n",ntohl(iph->saddr), lan);
-       if ((ntohl(iph->saddr) & local_mask) == lan) {
+        printf("addr:0x%x, lan:0x%x\n",ntohl(iph->saddr), lan);
+        if ((ntohl(iph->saddr) & local_mask) == lan) {
           printf("outbound traffic\n");
           // outbound traffic
           // lookup the nat table
@@ -259,8 +260,8 @@ void *process_thread(void *arg){
 	  
           if (!flag_in_nat_table){
             // find an available port 
-        printf("not in table\n");  
-	  int translated_port = 0;
+            printf("not in table\n");  
+	          int translated_port = 0;
             for (j = 0;j < 2001;j++){
               if(port_av[j] == 0){
                 translated_port = j+10000;

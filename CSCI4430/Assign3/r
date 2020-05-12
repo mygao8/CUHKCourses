@@ -1,0 +1,135 @@
+#1. 初始化
+#--- 目标函数
+myFun <- function(x){   # 求解函数 亦 适应度函数
+  x*sin(10*pi * x) + 2
+}
+#--- 求解参数
+limitX <- c(-1, 2)   # 【-1，2】之间取值
+e <- 0.01            # 小数点后2位 
+groupNum <- 50       # 产生的群体数
+mutationProb <- 0.01 # 变异概率
+generation <- 500    # 迭代数目
+plotGA <- list()     # 存储图片，画连续图用
+
+#1. 初始化
+#--- 目标函数
+
+# calculate the demominator of objective function
+denom<- function(x){
+  y<-0
+  for (i in 1:length(x)){
+    y<- y+i*x[i]^2
+  }
+  return(sqrt(y))
+}
+#objective function   # 求解函数 亦 适应度函数
+myFun<- function(x)
+{
+  if(prod(x)>=0.75)
+  {
+    return((abs((sum(cos(x)^4) -2*prod(cos(x)^2))/denom(x) ) ) )
+  }else{
+    return(0)
+  }
+}
+
+GetCodeParameter <- function(e, limitX){
+  # 获取编码的缩放比例，用于解码或者编码（二进制）
+  # Args ： e:求解精度
+  #        limitX:X的范围
+  # return: bitsPower:二进制编码位数
+  #         e:真实求解精度
+  #         diff:解码公式的中的常数
+  
+  range <- limitX[2] - limitX[1] # 区间长度
+  splitNum <- range/e            # 需要切割位数
+  bitsPower <- 1 
+  while(2^bitsPower <= splitNum ){
+    bitsPower <- bitsPower + 1
+  }
+  xMax <- max(limitX)
+  e <- range/2^bitsPower        # 精度大小
+  diff <- 2^bitsPower*e - xMax  # 缩放差值 1 
+  c(bitsPower, e, diff)         # 返还结果 
+}
+
+DeCode <- function(x, limitX, codeParameter){
+  # 解码
+  # Args: x:需要解码的个体
+  #       limitX: x的取值范围
+  #       codeParameter：包含bitsPower、e、diff
+  # return:x：解码后的x
+  
+  x <- strtoi(x, base = 2) # 转换为10进制
+  x <- x*codeParameter[2]-codeParameter[3]
+  x
+}
+#--- 求解参数
+limitX <- c(0, 10)   # 【0，10】之间取值
+e <- 0.01            # 小数点后2位 
+groupNum <- 100       # 产生的群体数
+mutationProb <- 0.2 # 变异概率
+generation <- 4000    # 迭代数目
+plotGA <- list()     # 存储图片，画连续图用
+
+#2. 编码
+#--- 获取编码参数
+codeParameter <- GetCodeParameter(e, limitX)
+#--- 产生群体
+group <- CreateGroup(groupNum, codeParameter)
+
+#3. 种群繁衍过程
+for(i in 1:generation){
+  #3.1 计算适应度
+  deCodeGroup <-  DeCode(group, limitX, codeParameter) 
+  adaptive <- myFun(deCodeGroup)          
+  
+  #3.2 适者生存
+  existProb <- adaptive/sum(adaptive)# 计算生存概率
+  group <- sample(group, groupNum,prob = existProb, replace = T) # 生存的个体
+  
+  #--- plot
+  meanAdaptive <- mean(adaptive)
+  maxAdaptive <- max(adaptive)
+  main <- paste("generation", i)
+  plotGA[[i]] <- plotShow(x = deCodeGroup, y = adaptive, limitX, main, meanAdaptive, maxAdaptive)
+  
+  #3.3 杂交（两两配对）
+  #--- 选择配对对象
+  candidate  <- 1:groupNum
+  parentNum <- floor(groupNum/2)
+  parentInx1 <- sample(candidate, parentNum, replace = F)                              #
+  parentInx2 <- sample(candidate[!candidate %in% parentInx1], parentNum, replace = F)  #
+  #--- 选择配对点
+  matingPoint <- sample(2:(codeParameter[1]-1), parentNum, replace = T)
+  #--- 配对
+  newgroup <- NULL
+  for(i2 in 1:parentNum){
+    previousGene_1 <- substr(group[parentInx1[i2]], 1, matingPoint[i2])
+    lastGene_1 <- substr(group[parentInx1[i2]], matingPoint[i2]+1, codeParameter[1])
+    previousGene_2 <- substr(group[parentInx2[i2]], 1, matingPoint[i2])
+    lastGene_2 <- substr(group[parentInx2[i2]], matingPoint[i2]+1,codeParameter[1])
+    child_1 <- paste(previousGene_1, lastGene_2, sep="")
+    child_2 <- paste(previousGene_2, lastGene_1, sep="")
+    newgroup <- c(newgroup, child_1, child_2)
+  }
+  single <- which(!candidate %in% c(parentInx1, parentInx2))  # 将单身狗添加回去
+  group <- c(newgroup, group[single])
+  
+  #3.4 变异
+  #--- 选择变异基因
+  mutationGene <- sample(c(0,1), groupNum, prob = c(1-mutationProb, mutationProb), replace = T)
+  #--- 变异位置点
+  mutationIdx <- which(mutationGene==1)
+  #--- 变异(0 -> 1; 1 -> 0)
+  lenMutation <- length(mutationIdx)
+  if( lenMutation> 0){
+    matingPoint <- sample(1:codeParameter[1], lenMutation, replace = F)
+    for (i in 1:lenMutation){
+      group[mutationIdx[i]] <- Mutation(group[mutationIdx[i]], matingPoint[i])
+    }
+  }
+  
+  #3.5 结束条件
+  if((maxAdaptive - meanAdaptive) <= e) break()
+}
