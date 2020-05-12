@@ -114,6 +114,7 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   int ip_pkt_len;
 
   ip_pkt_len = nfq_get_payload(pkt, &pktData); 
+  printf("ip_pkt_len:%d\n", ip_pkt_len);
   if(ip_pkt_len > 1500){
     printf("Packet larger than 1500!\n");
   }
@@ -148,13 +149,16 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     return 1;
   }
   
+  printf("try to get lock\n");
   pthread_mutex_lock(&mutex);
+  printf("get lock\n");
   memcpy(bufs[buf_av_idx], pktData, ip_pkt_len);
   verdict_table[buf_av_idx].queue = myQueue;
   verdict_table[buf_av_idx].id = id;
   verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
   buf_av[buf_av_idx] = 1;
   pthread_mutex_unlock(&mutex);
+  printf("release lock\n\n");
 
   printf("print buf_av\n");
   for(int idx=0 ;idx < 10;idx++){
@@ -237,7 +241,7 @@ void *process_thread(void *arg){
         iph = (struct iphdr*)pktData;
         udph = (struct udphdr*) (((char*)ipHeader) + ipHeader->ihl*4);
         // judge whether it is a inbound or outbound packet
-        printf("addr:0x%x, lan:0x%x\n",ntohl(iph->saddr), lan);
+
         if ((ntohl(iph->saddr) & local_mask) == lan) {
           printf("outbound traffic\n");
           // outbound traffic
