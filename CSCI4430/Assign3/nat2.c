@@ -190,7 +190,6 @@ void *process_thread(void *arg){
   printf("set initial last_time\n");
   int last_time_initial_flag = 0;
   while (last_time_initial_flag == 0){
-    pthread_mutex_lock(&mutex);
     for(idx=0 ;idx < 10;idx++){
       if (buf_av[idx] == 1){
         struct timeval time;     
@@ -199,13 +198,14 @@ void *process_thread(void *arg){
         last_time_initial_flag = 1;
         break;
       }
-    pthread_mutex_unlock(&mutex);
     }
   }
 
   printf("start filling and consuming tokens\n");
   while(1){
   while((num_token=fill_token(num_token))>=1){
+    printf("debug a\n");
+    exit(0);
     for(idx =0 ;idx < 10;idx++){
       if (buf_av[idx] == 1){
         // use one token for processing one packet
@@ -220,12 +220,11 @@ void *process_thread(void *arg){
         for (j = 0;j < 2001;j++){
           struct timeval nat_timestamp = nat_table[j].timestamp;
           if (cur_time_msec - (nat_timestamp.tv_sec*1000 + nat_timestamp.tv_usec/1000) > 10000){
-            int tmp_translated_port = nat_table[j].translated_port;
-	    nat_table[j].translated_port =0 ;
+            nat_table[j].translated_port =0 ;
             nat_table[j].internal_ip = 0;
             nat_table[j].internal_port = 0;
             // nat_table[i].timestamp = NULL;
-            port_av[tmp_translated_port-10000] = 0;
+            port_av[j] = 1;
             print_nat();
           }
         }
@@ -236,8 +235,7 @@ void *process_thread(void *arg){
         iph = (struct iphdr*)pktData;
         udph = (struct udphdr*) (((char*)ipHeader) + ipHeader->ihl*4);
         // judge whether it is a inbound or outbound packet
-       printf("addr:0x%x, lan:0x%x\n",ntohl(iph->saddr), lan);
-       if ((ntohl(iph->saddr) & local_mask) == lan) {
+        if ((ntohl(iph->saddr) & local_mask) == lan) {
           printf("outbound traffic\n");
           // outbound traffic
           // lookup the nat table
@@ -256,11 +254,9 @@ void *process_thread(void *arg){
               break;
             }
           }
-	  
           if (!flag_in_nat_table){
             // find an available port 
-        printf("not in table\n");  
-	  int translated_port = 0;
+            int translated_port = 0;
             for (j = 0;j < 2001;j++){
               if(port_av[j] == 0){
                 translated_port = j+10000;
@@ -334,11 +330,11 @@ int main(int argc, char** argv) {
 
   struct in_addr public_ip_addr;
   inet_aton(argv[1], &public_ip_addr);
-  public_ip = ntohl(public_ip_addr.s_addr);
+  public_ip = public_ip_addr.s_addr;
 
   struct in_addr lan_ip_addr;
   inet_aton(argv[2], &lan_ip_addr);
-  lan = ntohl(lan_ip_addr.s_addr);
+  lan = lan_ip_addr.s_addr;
 
   mask = atoi(argv[3]);
   bucket_size = atoi(argv[4]);
