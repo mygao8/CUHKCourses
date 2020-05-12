@@ -203,8 +203,8 @@ void *process_thread(void *arg){
         last_time_initial_flag = 1;
         break;
       }
-    pthread_mutex_unlock(&mutex);
     }
+    pthread_mutex_unlock(&mutex);
   }
 
   printf("start filling and consuming tokens\n");
@@ -264,7 +264,7 @@ void *process_thread(void *arg){
 	  
           if (!flag_in_nat_table){
             // find an available port 
-            printf("not in table\n");  
+            printf("not in table\n");
 	          int translated_port = 0;
             for (j = 0;j < 2001;j++){
               if(port_av[j] == 0){
@@ -275,12 +275,21 @@ void *process_thread(void *arg){
             // create new entry
             for(j = 0;j < 2001;j++){
               if(nat_table[j].translated_port == 0){
+                // store new entry in table
                 nat_table[j].translated_port = translated_port;
+                nat_table[j].internal_port = ntohs(udph->source);
+                nat_table[j].internal_ip = ntohl(iph->saddr);
+                
+                // change packet ip
+                iph->saddr = htonl(public_ip);
+                udph->source = htons(translated_port);
+                udph->check = htons(udp_checksum(pktData));
+                iph->check = htons(ip_checksum(pktData)); 
+                
                 // set port unavailable
                 port_av[translated_port-10000] = 1;
 
-                nat_table[j].internal_port = ntohs(udph->source);
-                nat_table[j].internal_ip = ntohl(iph->saddr);
+                // initialize new entry's timestamp
                 struct timeval timestamp;
                 gettimeofday(&timestamp, NULL);
                 nat_table[j].timestamp = timestamp;
@@ -292,7 +301,7 @@ void *process_thread(void *arg){
 
         }else{
           printf("inbound traffic\n");
-        // inbound traffic
+          // inbound traffic
           int flag_in_nat_table = 0;
           // int flag_valid = 0;
           for (j = 0 ;j < 2001;j++){
