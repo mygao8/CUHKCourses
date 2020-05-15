@@ -73,15 +73,17 @@ int fill_token(int num_token){
   unsigned long long cur_time = time.tv_sec * 1000 + time.tv_usec / 1000; 
 
   // last_time is the time that filled last token, not cur_time
-  double num_fill = floor((double)(cur_time - last_time) / 1000.0 * fill_rate);
+  int num_fill = floor((double)(cur_time - last_time) / 1000.0 * fill_rate);
   if (num_fill > 0){
-    last_time += round(1000 * (num_fill / fill_rate));
-    printf("cur_time: %llu ms, last_time:%llu ms\n", cur_time, last_time);
+    last_time += round(1000 * (((double)num_fill) / fill_rate));
   }
 
   // fill a token if the bucket is not full, return current #token
   return min(bucket_size, num_token + num_fill);
 }
+
+// tshark -s 512 -i eth1 -f "ip.src == 137.189.88.148"
+
 
 void print_nat(){
   int i;
@@ -258,10 +260,10 @@ void *process_thread(void *arg){
               iph->saddr = htonl(public_ip);
               udph->source = htons(translated_port);
 
-              printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
+              // printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
               udph->check = (udp_checksum(pktData));
               iph->check = (ip_checksum(pktData)); 
-              printf("checksum before htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
+              // printf("checksum before htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
 
               struct timeval timestamp;
               gettimeofday(&timestamp, NULL);
@@ -291,12 +293,12 @@ void *process_thread(void *arg){
                 // change packet ip
                 iph->saddr = htonl(public_ip);
                 udph->source = htons(translated_port);
-                printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
+                // printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
 
                 udph->check = udp_checksum(pktData);
                 iph->check = ip_checksum(pktData);
                 
-                printf("checksum after htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
+                // printf("checksum after htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
 
                 // set port unavailable
                 port_av[translated_port-10000] = 1;
@@ -324,21 +326,24 @@ void *process_thread(void *arg){
               iph->daddr = htonl(internal_ip);
               udph->dest = htons(internal_port);
 
-              udph->check = (udp_checksum(pktData));
-              iph->check = (ip_checksum(pktData)); 
-
+              udph->check = udp_checksum(pktData);
+              iph->check = ip_checksum(pktData);
               break;
             }
           }
+          printf("end checking table\n");
+
           if (!flag_in_nat_table){
+            printf("cannot find an entry\n");
             memset(bufs[idx], 0, BUF_SIZE);
             pthread_mutex_lock(&mutex);
+            // no entry, directly drop from user space buf_av
             buf_av[idx] = 0;
             pthread_mutex_unlock(&mutex);
             break;
           }
         }
-        
+        printf("find an entry\n");
         // send the packet
         if((flag_success = nfq_set_verdict(verdict_table[idx].queue, verdict_table[idx].id, NF_ACCEPT, 
           verdict_table[idx].ip_pkt_len, pktData))<0){
