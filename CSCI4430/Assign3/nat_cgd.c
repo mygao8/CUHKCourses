@@ -48,7 +48,7 @@ int num_token = 0;
 int bucket_size = 0;
 int fill_rate = 0;
 int fill_per_msec;
-long long int last_time;
+unsigned long long last_time;
 
 int port_av[2001];
 
@@ -69,14 +69,16 @@ struct verdict_para verdict_table[10];
 int fill_token(int num_token){
   struct timeval time;     
   gettimeofday(&time, NULL);
-  long long int cur_time = time.tv_sec * 1000 + time.tv_usec / 1000;
+  // cur_time in unit ms
+  unsigned long long cur_time = time.tv_sec * 1000 + time.tv_usec / 1000; 
 
   // last_time is the time that filled last token, not cur_time
   double num_fill = floor((double)(cur_time - last_time) / 1000.0 * fill_rate);
-  if (num_fill >= 10e-7){
-    last_time += (int) round(1000 * (num_fill / fill_rate));
+  if (num_fill > 0){
+    last_time += round(1000 * (num_fill / fill_rate));
+    printf("cur_time: %llu ms, last_time:%llu ms\n", cur_time, last_time);
   }
-  
+
   // fill a token if the bucket is not full, return current #token
   return min(bucket_size, num_token + num_fill);
 }
@@ -157,14 +159,16 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   verdict_table[buf_av_idx].id = id;
   verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
   buf_av[buf_av_idx] = 1;
-  pthread_mutex_unlock(&mutex);
-  printf("release lock\n\n");
 
   printf("print buf_av\n");
   for(int idx=0 ;idx < 10;idx++){
     printf("%d ", buf_av[idx]);
   }
+  pthread_mutex_unlock(&mutex);
+  printf("release lock\n\n");
+
   printf("\ncallback end\n");
+
   return 1;
 }
 
@@ -214,7 +218,7 @@ void *process_thread(void *arg){
       if (buf_av[idx] == 1){
         // use one token for processing one packet
         num_token--;
-        printf("consume 1 token\n");
+        printf("consume 1 token, now %d tokens\n", num_token);
         int j;
 
         // remove expired entry
@@ -246,7 +250,7 @@ void *process_thread(void *arg){
           printf("outbound traffic\n");
           // outbound traffic
           // lookup the nat table
-          int flag_in_nat_table = 0;        
+          int flag_in_nat_table = 0; 
           for (j = 0 ;j < 2001;j++){
             if ( (nat_table[j].internal_ip == ntohl(iph->saddr)) && (nat_table[j].internal_port == ntohs(udph->source)) ){
               flag_in_nat_table = 1;
@@ -258,7 +262,7 @@ void *process_thread(void *arg){
               udph->check = (udp_checksum(pktData));
               iph->check = (ip_checksum(pktData)); 
               printf("checksum before htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
-              
+
               struct timeval timestamp;
               gettimeofday(&timestamp, NULL);
               nat_table[j].timestamp = timestamp;
@@ -319,14 +323,18 @@ void *process_thread(void *arg){
               int internal_ip = nat_table[j].internal_ip;
               iph->daddr = htonl(internal_ip);
               udph->dest = htons(internal_port);
-              udph->check = htons(udp_checksum(pktData));
-              iph->check = htons(ip_checksum(pktData)); 
+
+              udph->check = (udp_checksum(pktData));
+              iph->check = (ip_checksum(pktData)); 
+
               break;
             }
           }
           if (!flag_in_nat_table){
             memset(bufs[idx], 0, BUF_SIZE);
+            pthread_mutex_lock(&mutex);
             buf_av[idx] = 0;
+            pthread_mutex_unlock(&mutex);
             break;
           }
         }
@@ -336,7 +344,9 @@ void *process_thread(void *arg){
           verdict_table[idx].ip_pkt_len, pktData))<0){
           fprintf(stderr,"nfq_set_verdict error\n");
         }
+        pthread_mutex_lock(&mutex);
         buf_av[idx] = 0;
+        pthread_mutex_unlock(&mutex);
         break;
       }
     }
