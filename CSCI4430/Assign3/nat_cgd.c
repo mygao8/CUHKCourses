@@ -253,8 +253,12 @@ void *process_thread(void *arg){
               int translated_port = nat_table[j].translated_port;
               iph->saddr = htonl(public_ip);
               udph->source = htons(translated_port);
-              udph->check = htons(udp_checksum(pktData));
-              iph->check = htons(ip_checksum(pktData)); 
+
+              printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
+              udph->check = (udp_checksum(pktData));
+              iph->check = (ip_checksum(pktData)); 
+              printf("checksum before htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
+              
               struct timeval timestamp;
               gettimeofday(&timestamp, NULL);
               nat_table[j].timestamp = timestamp;
@@ -283,12 +287,12 @@ void *process_thread(void *arg){
                 // change packet ip
                 iph->saddr = htonl(public_ip);
                 udph->source = htons(translated_port);
-                printf("checksum before htons, udp=%x, ip=%x\n", udp_checksum(pktData), ip_checksum(pktData));
+                printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
 
                 udph->check = udp_checksum(pktData);
                 iph->check = ip_checksum(pktData);
                 
-                printf("checksum after htons, udp=%x, ip=%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
+                printf("checksum after htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
 
                 // set port unavailable
                 port_av[translated_port-10000] = 1;
