@@ -246,7 +246,7 @@ void *process_thread(void *arg){
           struct timeval nat_timestamp = nat_table[j].timestamp;
           if(nat_table[j].internal_ip == 0) continue;
           if (cur_time_msec - (nat_timestamp.tv_sec*1000 + nat_timestamp.tv_usec/1000) > 10000){
-            unsigned long long tmp_time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
+            unsigned long long tmp_time = nat_timestamp.tv_sec * 1000 + nat_timestamp.tv_usec / 1000;
             printf("expired time: %llu\n", tmp_time);
             int tmp_translated_port = nat_table[j].translated_port;
 	          nat_table[j].translated_port =0 ;
