@@ -101,7 +101,7 @@ int fill_token(int num_token){
 
 void print_nat(){
   int i;
-  printf("[NAT Table Begin]");
+  printf("[NAT Table Begin]\n");
   for(i = 0; i < 2001; i++){
     if(nat_table[i].internal_ip != 0){
       printf("[NAT Entry] org addr:%d.%d.%d.%d, org port:%d | tran addr:%d.%d.%d.%d, tran port:%d\n",
