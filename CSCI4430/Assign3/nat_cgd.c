@@ -85,8 +85,23 @@ int fill_token(int num_token){
 // tshark -s 512 -i eth1 -f "ip.src == 137.189.88.148"
 
 
+// void print_nat(){
+//   int i;
+//   for(i = 0; i < 2001; i++){
+//     if(nat_table[i].internal_ip != 0){
+//       printf("[NAT Entry] org addr:%d.%d.%d.%d, org port:%d | tran addr:%d.%d.%d.%d, tran port:%d\n",
+//         (nat_table[i].internal_ip >> 24) & 0xFF, (nat_table[i].internal_ip >> 16) & 0xFF, (nat_table[i].internal_ip >> 8) & 0xFF, (nat_table[i].internal_ip) & 0xFF,
+//         nat_table[i].internal_port,
+//         (public_ip >> 24) & 0xFF, (public_ip >> 16) & 0xFF, (public_ip >> 8) & 0xFF, (public_ip) & 0xFF, 
+//         nat_table[i].translated_port);
+//     }
+//   }
+//   printf("\n");
+// }
+
 void print_nat(){
   int i;
+  printf("[NAT Table Begin]");
   for(i = 0; i < 2001; i++){
     if(nat_table[i].internal_ip != 0){
       printf("[NAT Entry] org addr:%d.%d.%d.%d, org port:%d | tran addr:%d.%d.%d.%d, tran port:%d\n",
@@ -96,7 +111,7 @@ void print_nat(){
         nat_table[i].translated_port);
     }
   }
-  printf("\n");
+  printf("[NAT Table End]\n");
 }
 
 
@@ -261,8 +276,8 @@ void *process_thread(void *arg){
               udph->source = htons(translated_port);
 
               // printf("checksum before htons, udp=0x%x, ip=0x%x\n", udp_checksum(pktData), ip_checksum(pktData));
-              udph->check = (udp_checksum(pktData));
-              iph->check = (ip_checksum(pktData)); 
+              udph->check = udp_checksum(pktData);
+              iph->check = ip_checksum(pktData); 
               // printf("checksum before htons, udp=0x%x, ip=0x%x\n", htons(udp_checksum(pktData)), htons(ip_checksum(pktData)));
 
               struct timeval timestamp;
@@ -328,6 +343,10 @@ void *process_thread(void *arg){
 
               udph->check = udp_checksum(pktData);
               iph->check = ip_checksum(pktData);
+
+              struct timeval timestamp;
+              gettimeofday(&timestamp, NULL);
+              nat_table[j].timestamp = timestamp;
               break;
             }
           }
@@ -343,6 +362,7 @@ void *process_thread(void *arg){
             break;
           }
         }
+        
         printf("find an entry\n");
         // send the packet
         if((flag_success = nfq_set_verdict(verdict_table[idx].queue, verdict_table[idx].id, NF_ACCEPT, 
