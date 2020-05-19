@@ -764,7 +764,7 @@ void latch_datapath_values()
     /* LD.CC */
     if (GetLD_CC(CURRENT_LATCHES.MICROINSTRUCTION))
     {
-        if(BUS > 32767){ 
+        if(BUS >= 32768){ 
             NEXT_LATCHES.N = 1; 
             NEXT_LATCHES.Z = 0; 
             NEXT_LATCHES.P = 0;
