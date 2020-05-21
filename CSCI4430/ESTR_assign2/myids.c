@@ -393,12 +393,19 @@ int main(int argc, char** argv) {
 			src_num = 0;
 
 			add_record(src_ip, ip_payload_size, dst_ip, pkt_ts);
+
+			// update last_epoch timestamp
+			while (pkt_ts - last_epoch_ts > epoch_time){
+				last_epoch_ts += epoch_time;
+			}
 		}else{
 			add_record(src_ip, ip_payload_size, dst_ip, pkt_ts);
 		}
 	}
 
-	// last_epoch
+	// last_epoch, not a complete epoch
+	// maybe sth to be handled
+	// add_record normally, no problems about heavy hitter & changer
 
 
 	// close files
