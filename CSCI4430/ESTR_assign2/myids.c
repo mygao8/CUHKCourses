@@ -55,9 +55,8 @@ int first_epoch = 1;
 */
 
 
-int detect_hitter(int src_id, unsigned int src_addr, unsigned int src_traffic, char* detected_flag[], double ts);
-void detect_changer(int src_id, unsigned int pre_src_num, unsigned int* pre_src_addrs, unsigned int* pre_src_bytecount, 
-	unsigned int cur_src_addr, unsigned int cur_src_traffic, char* detected_flag[], double ts);
+int detect_hitter(int src_id, unsigned int src_addr, unsigned int new_payload, unsigned int total_traffic, char* detected_flag[], double ts);
+void detect_changer();
 void detect_spreader(int src_id, double ts);
 
 
@@ -85,12 +84,13 @@ int add_record(unsigned int src_addr, int payload_size, unsigned int dest_addr, 
 			src_bytecount[i] += payload_size;
 			
 			// printf("cur payload:%u, total payload:%u\n", payload_size, src_bytecount[i]);
-			if (detect_hitter(i, src_addr, src_bytecount[i], detected_flag, ts)){
-				printf("payload:%u, src_bytecount[i]:%u\n", payload_size, src_bytecount[i]);
-			}
-			if (!first_epoch){
-				detect_changer(i, pre_src_num, pre_src_addrs, pre_src_bytecount, src_addr, src_bytecount[i], detected_flag, ts);
-			}
+			detect_hitter(i, src_addr, payload_size, src_bytecount[i], detected_flag, ts);
+			// if (!first_epoch){
+			// 	detect_changer(i, pre_src_num, pre_src_addrs, pre_src_bytecount, src_addr, src_bytecount[i], detected_flag, ts);
+			// }
+
+			// store the last pkt from each src host
+			last_ts[i] = ts;
 
 			int j;
 			int dest_addr_found = 0;
@@ -135,15 +135,17 @@ int add_record(unsigned int src_addr, int payload_size, unsigned int dest_addr, 
 	detected_flag[1][src_num-1] = 0;
 	detected_flag[2] = (char*)realloc(detected_flag[2], sizeof(char)*src_num);
 	detected_flag[2][src_num-1] = 0;
+	
+	last_ts = (double *) realloc(last_ts, sizeof(double)*src_num);
+	last_ts[src_num-1] = ts;
 
 	// detect the first pkt from a src in an epoch
-	if (detect_hitter(src_num-1, src_addr, payload_size, detected_flag, ts)){
-		printf("payload:%u, src_bytecount[i]:%u\n", payload_size, src_bytecount[src_num-1]);
+	if (detect_hitter(src_num-1, src_addr, payload_size, src_bytecount[src_num-1] , detected_flag, ts)){
 		return DEBUG;
 	}
-	if (!first_epoch){
-		detect_changer(src_num-1, pre_src_num, pre_src_addrs, pre_src_bytecount, src_addr, payload_size, detected_flag, ts);
-	}
+	// if (!first_epoch){
+	// 	detect_changer(src_num-1, pre_src_num, pre_src_addrs, pre_src_bytecount, src_addr, payload_size, detected_flag, ts);
+	// }
 	detect_spreader(src_num-1,ts);
 	return 1;
 } 
@@ -154,7 +156,44 @@ void free_src_dest(){
 	for(i = 0; i < src_num; i++){
 		free(src_dest_addrs[i]);
 	}
+	free(src_dest_addrs);
 	free(src_dest_num);
+}
+
+void free_init(double epoch_time, double pass_time){
+	// free useless records of previos epoch
+	if (pre_src_addrs != NULL && pre_src_bytecount != NULL){
+		free(pre_src_addrs);
+		free(pre_src_bytecount);
+	}
+	// free the info that will not be stored in previos epoch
+	for(int i = 0; i < 3; i++){
+		free(detected_flag[i]);
+		detected_flag[i] = NULL;
+	}
+	free_src_dest();
+	free(last_ts);
+
+	// save cur records as pre records
+	if (pass_time > 2 * epoch_time){
+		// pre epoch is empty
+		pre_src_addrs = NULL;
+		pre_src_bytecount = NULL;
+		pre_src_num = 0;
+	}
+	else{
+		pre_src_addrs = src_addrs;
+		pre_src_bytecount = src_bytecount;
+		pre_src_num = src_num;
+	}
+
+	// cur pkt is the 1st pkt of cur epoch, reinitialize
+	src_addrs = NULL;
+	src_bytecount = NULL;
+	src_dest_num = NULL;
+	src_dest_addrs = NULL;
+	last_ts = NULL;
+	src_num = 0;
 }
 
 
@@ -185,15 +224,18 @@ void free_src_dest(){
 // 	}
 // }
 
-int detect_hitter(int src_id, unsigned int src_addr, unsigned int src_traffic, char* detected_flag[], double ts){
+int detect_hitter(int src_id, unsigned int src_addr, unsigned int new_payload, unsigned int total_traffic, char* detected_flag[], double ts){
 	enum flag_type flag = hitter;
 	// printf("\nsrc_traffic:%u, hh_thresh:%d\n", src_traffic, hh_thresh);
 	if (detected_flag[flag][src_id] == 1){
 		// had detected this epoch
-		printf("detected\n");
+		printf("new_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
+		printf("Hitter Detected. Timestamp: %lf, Type: Heavy Hitter, Src Host:", ts);
+		print_ipaddr(src_addr);
+		printf("\n");
 		return 0;
-	}else if (src_traffic > hh_thresh){
-		printf("src_traffic:%u, hh_thresh:%u\n", src_traffic, hh_thresh);
+	}else if (total_traffic > hh_thresh){
+		printf("new_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
 		detected_flag[hitter][src_id] = 1;
 		printf("Timestamp: %lf, Type: Heavy Hitter, Src Host: ", ts);
 		print_ipaddr(src_addr);
@@ -203,42 +245,59 @@ int detect_hitter(int src_id, unsigned int src_addr, unsigned int src_traffic, c
 	return 0;
 }
 
-void detect_changer(int src_id, unsigned int pre_src_num, unsigned int* pre_src_addrs, unsigned int* pre_src_bytecount, 
-	unsigned int cur_src_addr, unsigned int cur_src_traffic, char* detected_flag[], double ts){
-	enum flag_type flag = changer;
-	if (detected_flag[flag][src_id] == 1){
-		printf("detected\n");
-		return;
-	}
+// void detect_changer(int src_id, unsigned int pre_src_num, unsigned int* pre_src_addrs, unsigned int* pre_src_bytecount, 
+// 	unsigned int cur_src_addr, unsigned int cur_src_traffic, char* detected_flag[], double ts){
+// 	enum flag_type flag = changer;
+// 	if (detected_flag[flag][src_id] == 1){
+// 		printf("Changer detected\n");
+// 		return;
+// 	}
 
-	if (pre_src_addrs == NULL && pre_src_bytecount == NULL){
-		printf("no pkts in previous epoch\n");
-	}
+// 	if (pre_src_addrs == NULL && pre_src_bytecount == NULL){
+// 		printf("no pkts in previous epoch\n");
+// 	}
 
-	int i = 0, found = 0;
-	for (i = 0; i < pre_src_num; i++){
-		if (pre_src_addrs[i] == cur_src_addr){
-			found = 1;
-			// printf("cur_traffic:%u, pre_traffic:%u\n", cur_src_traffic, pre_src_bytecount[i]);
-			int change = cur_src_traffic - pre_src_bytecount[i];
-			if (change > hc_thresh){
-				detected_flag[changer][src_id] = 1;
-				printf("Timestamp: %lf, Type: Heavy Changer, Src Host: ", ts);
-				print_ipaddr(cur_src_addr);
-				printf("\n");
-				printf("pre_traffic:%u, cur_traffic:%u\n", pre_src_bytecount[i], cur_src_traffic);
-			}		
-			return;
+// 	int i = 0, found = 0;
+// 	for (i = 0; i < pre_src_num; i++){
+// 		if (pre_src_addrs[i] == cur_src_addr){
+// 			found = 1;
+// 			// printf("cur_traffic:%u, pre_traffic:%u\n", cur_src_traffic, pre_src_bytecount[i]);
+// 			int change = cur_src_traffic - pre_src_bytecount[i];
+// 			if (change > hc_thresh){
+// 				detected_flag[changer][src_id] = 1;
+// 				printf("Timestamp: %lf, Type: Heavy Changer, Src Host: ", ts);
+// 				print_ipaddr(cur_src_addr);
+// 				printf("\n");
+// 				printf("pre_traffic:%u, cur_traffic:%u\n", pre_src_bytecount[i], cur_src_traffic);
+// 			}		
+// 			return;
+// 		}
+// 	}
+
+// 	// no such case
+// 	// if (!found){
+// 	// 	if (cur_src_traffic - 0 > hc_thresh){
+// 	// 		detected_flag[changer][src_id] = 1;
+// 	// 		printf("Timestamp: %lf, Type: Heavy Changer, Src Host: %u\n", ts, cur_src_addr);
+// 	// 	}
+// 	// }
+// }
+
+void detect_changer(){
+	for (int i = 0; i < pre_src_num; i++){
+		for (int j = 0; j < src_num; j++){
+			if (pre_src_addrs[i] == src_addrs[j]){
+				// found same host in adjacent epoch
+				int change = src_bytecount[j] - pre_src_bytecount[i];
+				if (abs(change) > hc_thresh){
+					printf("Timestamp: %lf, Type: Heavy Changer, Src Host: ", last_ts[j]);
+					print_ipaddr(src_addrs[j]);
+					printf("\n");
+					printf("Heavy Change:%uB -> %uB\n", pre_src_bytecount[i], src_bytecount[j]);
+				}
+			}
 		}
 	}
-
-	// no such case
-	// if (!found){
-	// 	if (cur_src_traffic - 0 > hc_thresh){
-	// 		detected_flag[changer][src_id] = 1;
-	// 		printf("Timestamp: %lf, Type: Heavy Changer, Src Host: %u\n", ts, cur_src_addr);
-	// 	}
-	// }
 }
 
 void detect_spreader(int src_id, double ts){
@@ -363,7 +422,6 @@ int main(int argc, char** argv) {
 			// printf("->");
 			// print_ipaddr(ntohl(ip_hdr->ip_dst.s_addr));
 			// printf("  ip_len: %u, ip_hdr: %u, payload: %u\n",  ntohs(ip_hdr->ip_len), ip_hdr->ip_hl, ip_payload_size);
-			total_size += ip_payload_size;
 
 			// may need to use ntoh here
 		}else{
@@ -374,6 +432,7 @@ int main(int argc, char** argv) {
 		if(ip_checksum((unsigned char *)ip_hdr) == ip_hdr->ip_sum){
 			//check sum passed
 			ipv4_checksum_num++;
+			total_size += ip_payload_size;
 		}else{
 			// check sum failed, ignore
 			continue;
@@ -398,7 +457,6 @@ int main(int argc, char** argv) {
 			// 		(dst_ip >> 16) & 0xff, (dst_ip >> 24) & 0xff, 
 			// 		dst_port);
 
-
 			tcp_num++;
 		}else if(ip_hdr->ip_p == IPPROTO_UDP){
 			udp_num++;
@@ -414,76 +472,20 @@ int main(int argc, char** argv) {
 			if (first_epoch){
 				first_epoch = 0;
 			}
-
-			printf("***************************\n\
-*                         *\n\
-*=========New Epoch=======*\n\
-*                         *\n\
-***************************\n");
 			
-			// detect_spreader();
+			// Detect Heavy Changer
+			detect_changer();
+			/*** Previous epoch ends ***/
+
+			/*** Some works between last epoch and new epoch ***/
+			free_init(epoch_time, pass_time);
 
 
-			/* changer case:
-			   some srcs in last epoch don't apeare in cur epoch
-			   change is pre_bytecounts->0 
-			*/
-			// no such case
-			if (pre_src_addrs != NULL and pre_src_bytecount != NULL){
-				for (int i = 0; i < pre_src_num; i++){
-					int found = 0;
-					for (int j = 0; j < src_num; j++){
-						if (pre_src_addrs[i] == src_addrs[j]){
-							// found same host in adjacent epoch
-							int change = src_bytecount[j] - pre_src_bytecount[i];
-							if (abs(change) > hc_thresh){
-								printf("Timestamp: %lf, Type: Heavy Changer, Src Host: ", ts);
-								print_ipaddr(cur_src_addr);
-								printf("\n");
-								printf("Heavy Change:%uB -> %uB\n", pre_src_bytecount[i], src_bytecount[j]);
-							}
-						}
-					}
-
-					if (!found){
-						if (pre_src_bytecount[i] - 0 > hc_thresh){
-							printf("Timestamp: ???, Type: Heavy Changer, Src Host: ???\n";
-						}
-					}
-				}
-			}			
-
-			// save cur records as pre records
-			if (pre_src_addrs != NULL && pre_src_bytecount != NULL){
-				free(pre_src_addrs);
-				free(pre_src_bytecount);
-			}
-
-			int i;
-			for(i = 0; i < 3; i++){
-				free(detected_flag[i]);
-				detected_flag[i] = NULL;
-			}
-			free_src_dest();
-
-			if (pass_time > 2 * epoch_time){
-				// pre epoch is empty
-				pre_src_addrs = NULL;
-				pre_src_bytecount = NULL;
-				pre_src_num = 0;
-			}
-			else{
-				pre_src_addrs = src_addrs;
-				pre_src_bytecount = src_bytecount;
-				pre_src_num = src_num;
-			}
-
-			// cur pkt is the 1st pkt of cur epoch
-			src_addrs = NULL;
-			src_bytecount = NULL;
-			src_dest_num = NULL;
-			src_dest_addrs = NULL;
-			src_num = 0;
+			printf("****************************\n");
+			printf("*                          *\n");
+			printf("*=========New Epoch========*\n");
+			printf("*                          *\n");
+			printf("****************************\n");			
 
 			if (add_record(src_ip, ip_payload_size, dst_ip, pkt_ts) == DEBUG){
 				printf("ip_len: %u, ip_hdr: %u, payload: %u\n",ntohs(ip_hdr->ip_len), ip_hdr->ip_hl, ip_payload_size);
@@ -500,10 +502,11 @@ int main(int argc, char** argv) {
 		}
 	}
 
-	// last_epoch, not a complete epoch
-	// maybe sth to be handled
-	// add_record normally, no problems about heavy hitter & changer
-
+	// Final epoch, not a complete epoch
+	// Detect Heavy Changer
+	detect_changer();
+	/*** Final epoch ends ***/
+	
 
 	// close files
 	pcap_close(pcap);
@@ -511,7 +514,7 @@ int main(int argc, char** argv) {
 	printf("the total number of observed packets: %d\n", pkt_num);
 	printf("the total number of observed IPv4 packets: %d\n", ipv4_num);
 	printf("the total number of valid IPv4 packets that pass the checksum test: %d\n", ipv4_checksum_num);
-	printf("the total IP payload size: %d\n",ip_payload_size );
+	printf("the total IP payload size: %d\n", total_size);
 	printf("the total number of TCP packets: %d\n", tcp_num);
 	printf("the total number of UDP packets: %d\n", udp_num);
 	printf("the total number of ICMP packets: %d\n",icmp_num );

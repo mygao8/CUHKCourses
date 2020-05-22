@@ -1,0 +1,1902 @@
+Enter file
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049608, hh_thresh:1048576
+Timestamp: 1459948105.423211, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1051088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423224, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423235, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1054048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423248, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423260, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1057008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423273, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423283, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423298, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423309, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423321, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423334, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423347, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423358, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423371, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423384, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423396, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423406, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423422, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423431, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423443, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423458, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423467, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423480, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423492, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1085128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423504, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423517, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1088088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423530, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423543, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1091048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423556, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423568, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1094008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423581, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423594, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423604, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423618, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423628, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423641, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423653, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423665, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423678, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423690, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423702, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423715, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423727, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423739, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423752, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423765, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423775, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423788, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423799, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1122128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423814, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423827, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1125088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423838, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423851, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1128048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423863, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423874, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1131008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423887, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423899, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1133968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423910, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423924, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1136928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423936, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423949, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1139888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423961, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423973, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1142848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.423985, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424002, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1145808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424014, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424024, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1148768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424035, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1150248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424046, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1151728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424059, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1153208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424070, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1154688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424083, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1156168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424098, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1157648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424111, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1159128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424124, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1160608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424134, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1162088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424146, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1163568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424159, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1165048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424169, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1166528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424183, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1168008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424194, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1169488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424209, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1170968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424221, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1172448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424232, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1173928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424245, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1175408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424256, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1176888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424270, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1178368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424281, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1179848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424293, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1181328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424305, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1182808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424318, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1184288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424330, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1185768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424342, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1187248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424355, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1188728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424367, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1190208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424379, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1191688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424390, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1193168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424405, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1194648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424417, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1196128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424430, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1197608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.424441, Type: Heavy Hitter, Src Host:161.69.48.219
+Timestamp: 1459948105.424441, Type: Heavy Changer, Src Host: 161.69.48.219
+Heavy Change:28120B -> 1197608B
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+Timestamp: 1459948105.482963, Type: Super Spreader, Src Host: 43.139.101.97
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049608, hh_thresh:1048576
+Timestamp: 1459948105.503907, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1051088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503922, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503933, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1054048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503946, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503959, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1057008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503969, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503982, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.503995, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504006, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504018, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504030, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504043, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504056, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504067, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504079, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504092, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504104, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504119, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504130, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504142, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504154, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504166, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504178, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504190, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1085128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504202, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504216, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1088088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504227, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504241, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1091048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504254, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504266, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1094008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504279, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504291, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504300, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504314, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504328, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504340, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504350, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504363, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504375, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504388, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504401, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504412, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504425, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.504437, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049608, hh_thresh:1048576
+Timestamp: 1459948105.514137, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1051088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514148, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514161, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1054048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514174, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514186, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1057008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514200, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514210, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514225, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514235, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514250, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514260, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514275, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514285, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514296, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514309, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514322, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514334, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514345, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514358, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514372, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514383, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514397, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514409, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514421, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1085128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514433, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.514444, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049464, hh_thresh:1048576
+Timestamp: 1459948105.523170, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523183, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523194, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523206, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523221, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523233, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523246, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523255, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523269, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523281, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523293, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523305, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523317, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523329, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523342, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523356, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523367, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523415, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523426, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523437, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523450, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523466, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523477, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523490, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1084984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523506, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523519, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1087944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523526, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523538, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1090904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523549, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523561, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1093864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523573, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523587, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523599, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523610, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523623, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523635, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523648, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523658, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523672, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523685, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523698, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523711, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523720, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523734, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523747, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523759, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523770, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523784, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523797, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1121984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523810, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523819, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1124944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523832, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523845, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1127904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523858, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523868, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1130864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523881, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523895, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1133824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523906, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523918, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1136784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523930, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523941, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1139744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523955, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523969, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1142704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523980, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.523994, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1145664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524005, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524016, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1148624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524030, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1150104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524042, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1151584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524053, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1153064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524066, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1154544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524081, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1156024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524090, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1157504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524103, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1158984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524118, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1160464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524127, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1161944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524139, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1163424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524153, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1164904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524164, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1166384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524178, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1167864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524189, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1169344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524201, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1170824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524213, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1172304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524227, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1173784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524238, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1175264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524251, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1176744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524264, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1178224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524275, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1179704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524288, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1181184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524300, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1182664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524311, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1184144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524324, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1185624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524338, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1187104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524350, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1188584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524361, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1190064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524373, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1191544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524388, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1193024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524398, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1194504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524410, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1195984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524423, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1197464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524433, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1198944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.524447, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049320, hh_thresh:1048576
+Timestamp: 1459948105.533956, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.533967, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.533980, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.533993, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055240, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534007, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056720, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534019, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058200, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534029, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059680, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534042, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061160, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534056, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062640, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534066, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064120, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534079, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065600, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534093, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067080, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534106, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068560, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534116, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070040, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534129, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071520, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534141, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073000, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534153, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074480, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534165, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1075960, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534180, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077440, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534190, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1078920, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534201, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080400, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534214, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1081880, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534227, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083360, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534240, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1084840, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534252, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086320, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534264, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1087800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534278, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534289, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1090760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534301, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092240, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534313, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1093720, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534328, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095200, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534338, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096680, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534349, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098160, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534361, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099640, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534375, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101120, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534387, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102600, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534398, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104080, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534411, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105560, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534425, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107040, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534434, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108520, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.534448, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049464, hh_thresh:1048576
+Timestamp: 1459948105.553174, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553188, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553201, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553213, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553223, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553237, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553250, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553262, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553274, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553285, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553297, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553310, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553321, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553335, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553347, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553362, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553370, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553385, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553395, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553407, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553420, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553437, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553446, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553459, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1084984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553468, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553483, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1087944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553494, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553507, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1090904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553520, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553531, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1093864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553544, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553555, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553568, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553580, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553593, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553604, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553616, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553629, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553641, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553654, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553667, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553678, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553691, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553703, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553714, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553727, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553740, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553752, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553764, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1121984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553779, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553791, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1124944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553804, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553815, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1127904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553827, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553837, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1130864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553850, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553862, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1133824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553875, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553889, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1136784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553900, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553912, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1139744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553924, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553937, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1142704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553948, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553962, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1145664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553974, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553985, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1148624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.553998, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1150104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554010, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1151584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554021, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1153064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554036, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1154544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554046, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1156024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554059, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1157504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554071, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1158984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554084, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1160464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554099, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1161944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554111, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1163424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554121, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1164904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554133, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1166384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554145, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1167864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554158, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1169344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554170, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1170824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554183, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1172304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554194, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1173784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554208, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1175264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554220, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1176744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554235, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1178224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554244, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1179704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554258, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1181184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554270, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1182664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554284, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1184144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554297, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1185624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554305, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1187104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554319, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1188584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554330, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1190064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554343, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1191544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554357, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1193024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554371, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1194504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554379, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1195984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554392, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1197464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554404, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1198944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554415, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1200424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554431, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1201904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.554441, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049688, hh_thresh:1048576
+Timestamp: 1459948105.563674, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1051168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563686, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563698, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1054128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563710, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563722, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1057088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563733, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563747, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1060048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563759, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563771, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1063008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563782, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563796, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563810, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563820, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563834, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563846, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563856, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563870, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563885, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563893, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563906, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563919, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563931, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563943, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563956, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1085208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563968, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563981, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1088168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.563992, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564004, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1091128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564017, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564029, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1094088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564043, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564054, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1097048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564066, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564079, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1100008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564092, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564104, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564114, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564129, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105928, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564141, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107408, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564151, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108888, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564165, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110368, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564178, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111848, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564189, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113328, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564203, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114808, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564214, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116288, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564225, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117768, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564240, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119248, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564251, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120728, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564263, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1122208, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564276, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123688, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564287, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1125168, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564300, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126648, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564311, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1128128, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564323, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129608, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564338, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1131088, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564349, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132568, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564361, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1134048, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564374, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135528, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564387, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1137008, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564398, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138488, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564412, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1139968, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564423, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141448, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.564435, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049464, hh_thresh:1048576
+Timestamp: 1459948105.574259, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574272, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574283, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574295, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574308, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574319, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574334, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574345, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574358, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574369, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574382, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574393, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574406, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574420, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574430, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.574445, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049832, hh_thresh:1048576
+Timestamp: 1459948105.593457, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1051312, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593471, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052792, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593482, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1054272, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593495, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055752, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593508, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1057232, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593520, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058712, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593532, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1060192, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593544, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061672, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593557, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1063152, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593570, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064632, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593582, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1066112, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593592, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067592, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593607, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1069072, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593617, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070552, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593631, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1072032, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593643, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073512, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593654, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074992, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593668, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076472, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593679, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077952, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593692, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079432, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593704, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080912, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593716, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082392, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593728, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083872, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593743, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1085352, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593753, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086832, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593765, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1088312, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593778, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089792, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593789, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1091272, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593802, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092752, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593816, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1094232, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593828, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095712, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593842, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1097192, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593854, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098672, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593865, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1100152, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593878, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101632, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593889, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1103112, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593901, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104592, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593913, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1106072, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593925, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107552, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593938, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1109032, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593950, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110512, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593964, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111992, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593975, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113472, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593988, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114952, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.593999, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116432, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594011, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117912, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594023, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119392, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594036, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120872, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594050, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1122352, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594062, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123832, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594073, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1125312, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594086, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126792, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594098, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1128272, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594112, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129752, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594122, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1131232, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594134, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132712, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594149, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1134192, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594159, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135672, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594171, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1137152, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594185, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138632, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594199, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1140112, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594210, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141592, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594222, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1143072, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594235, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144552, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594245, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1146032, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594257, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147512, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594269, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1148992, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594282, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1150472, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594294, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1151952, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594308, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1153432, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594319, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1154912, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594332, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1156392, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594344, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1157872, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594356, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1159352, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594370, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1160832, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594381, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1162312, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594394, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1163792, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594406, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1165272, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594419, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1166752, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594431, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1168232, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.594444, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049320, hh_thresh:1048576
+Timestamp: 1459948105.603166, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603178, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603190, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603204, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055240, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603217, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056720, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603227, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058200, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603242, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059680, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603252, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061160, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603264, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062640, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603276, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064120, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603291, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065600, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603302, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067080, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603318, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068560, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603326, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070040, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603340, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071520, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603352, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073000, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603364, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074480, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603375, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1075960, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603389, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077440, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603399, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1078920, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603412, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080400, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603426, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1081880, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603441, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083360, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603450, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1084840, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603462, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086320, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603475, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1087800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603488, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603501, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1090760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603513, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092240, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603524, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1093720, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603541, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095200, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603559, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096680, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603578, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098160, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603589, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099640, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603595, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101120, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603607, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102600, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603627, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104080, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603644, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105560, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603653, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107040, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603659, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108520, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603663, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110000, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603670, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111480, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603682, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1112960, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603696, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114440, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603711, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1115920, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603725, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117400, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603745, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1118880, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603767, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120360, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603786, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1121840, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603804, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123320, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603812, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1124800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603820, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603837, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1127760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603856, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129240, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603870, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1130720, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603889, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132200, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603902, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1133680, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603909, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135160, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603918, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1136640, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603925, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138120, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603931, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1139600, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603935, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141080, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603943, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1142560, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603951, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144040, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603955, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1145520, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603965, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147000, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603979, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1148480, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.603990, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1149960, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604003, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1151440, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604016, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1152920, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604027, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1154400, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604039, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1155880, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604053, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1157360, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604064, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1158840, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604077, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1160320, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604091, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1161800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604101, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1163280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604114, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1164760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604126, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1166240, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604141, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1167720, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604151, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1169200, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604170, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1170680, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604184, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1172160, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604196, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1173640, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604206, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1175120, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604223, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1176600, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604236, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1178080, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604251, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1179560, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604266, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1181040, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604280, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1182520, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604300, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1184000, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604309, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1185480, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604314, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1186960, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604318, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1188440, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604325, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1189920, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604335, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1191400, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604351, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1192880, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604369, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1194360, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604388, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1195840, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604401, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1197320, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604410, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1198800, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604417, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1200280, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604427, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1201760, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.604443, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1048656, hh_thresh:1048576
+Timestamp: 1459948105.633164, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050136, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633176, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1051616, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633190, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053096, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633200, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1054576, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633212, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056056, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633225, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1057536, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633238, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059016, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633251, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1060496, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633263, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061976, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633276, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1063456, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633287, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064936, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633301, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1066416, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633311, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067896, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633327, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1069376, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633336, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070856, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633349, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1072336, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633361, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073816, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633373, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1075296, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633386, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076776, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633398, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1078256, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633411, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079736, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633422, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1081216, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633436, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082696, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633447, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1084176, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633459, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1085656, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633473, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1087136, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633484, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1088616, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633499, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1090096, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633507, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1091576, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633521, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1093056, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633533, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1094536, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633545, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096016, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633557, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1097496, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633569, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098976, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633581, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1100456, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633594, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101936, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633609, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1103416, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633618, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104896, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633634, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1106376, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633643, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107856, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633657, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1109336, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633668, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110816, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633682, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1112296, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633693, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113776, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633704, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1115256, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633717, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116736, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633731, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1118216, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633742, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119696, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633755, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1121176, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633766, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1122656, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633780, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1124136, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633793, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1125616, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633805, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1127096, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633817, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1128576, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633828, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1130056, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633841, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1131536, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633854, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1133016, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633866, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1134496, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633880, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135976, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633889, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1137456, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633903, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138936, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633916, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1140416, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633927, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141896, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633940, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1143376, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633952, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144856, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633966, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1146336, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633976, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147816, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.633989, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1149296, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634001, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1150776, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634013, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1152256, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634026, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1153736, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634037, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1155216, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634049, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1156696, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634061, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1158176, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634076, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1159656, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634088, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1161136, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634098, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1162616, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634111, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1164096, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634124, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1165576, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634135, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1167056, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634148, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1168536, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634161, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1170016, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634173, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1171496, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634186, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1172976, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634197, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1174456, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634210, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1175936, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634222, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:256, total_traffic:1176192, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.634224, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+Timestamp: 1459948105.643863, Type: Super Spreader, Src Host: 43.139.101.101
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+new_payload:1480, total_traffic:1049464, hh_thresh:1048576
+Timestamp: 1459948105.653165, Type: Heavy Hitter, Src Host: 161.69.48.219
+new_payload:1480, total_traffic:1050944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653175, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1052424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653190, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1053904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653199, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1055384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653213, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1056864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653224, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1058344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653236, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1059824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653249, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1061304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653261, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1062784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653273, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1064264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653286, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1065744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653298, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1067224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653310, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1068704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653324, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1070184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653336, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1071664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653347, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1073144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653362, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1074624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653373, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1076104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653386, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1077584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653399, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1079064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653409, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1080544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653422, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1082024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653433, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1083504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653445, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1084984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653459, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1086464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653471, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1087944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653483, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1089424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653494, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1090904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653507, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1092384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653522, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1093864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653532, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1095344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653544, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1096824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653557, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1098304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653569, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1099784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653582, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1101264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653595, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1102744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653606, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1104224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653619, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1105704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653632, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1107184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653646, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1108664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653657, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1110144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653669, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1111624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653679, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1113104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653693, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1114584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653703, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1116064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653717, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1117544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653728, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1119024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653741, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1120504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653753, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1121984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653766, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1123464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653780, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1124944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653790, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1126424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653803, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1127904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653815, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1129384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653827, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1130864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653841, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1132344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653854, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1133824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653867, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1135304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653876, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1136784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653889, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1138264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653900, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1139744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653913, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1141224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653925, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1142704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653940, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1144184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653950, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1145664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653962, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1147144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653977, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1148624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.653986, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1150104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654002, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1151584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654012, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1153064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654026, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1154544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654039, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1156024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654049, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1157504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654061, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1158984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654074, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1160464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654088, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1161944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654098, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1163424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654112, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1164904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654123, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1166384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654134, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1167864, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654148, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1169344, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654160, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1170824, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654172, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1172304, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654186, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1173784, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654198, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1175264, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654210, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1176744, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654223, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1178224, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654235, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1179704, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654246, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1181184, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654259, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1182664, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654273, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1184144, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654282, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1185624, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654297, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1187104, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654307, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1188584, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654323, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1190064, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654334, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1191544, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654345, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1193024, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654358, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1194504, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654370, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1195984, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654381, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1197464, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654394, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1198944, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654407, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1200424, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654417, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1201904, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654432, Type: Heavy Hitter, Src Host:161.69.48.219
+new_payload:1480, total_traffic:1203384, hh_thresh:1048576
+Hitter Detected. Timestamp: 1459948105.654442, Type: Heavy Hitter, Src Host:161.69.48.219
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+****************************
+*                          *
+*=========New Epoch========*
+*                          *
+****************************
+the total number of observed packets: 159263
+the total number of observed IPv4 packets: 154438
+the total number of valid IPv4 packets that pass the checksum test: 154438
+the total IP payload size: 102623828
+the total number of TCP packets: 140236
+the total number of UDP packets: 13721
+the total number of ICMP packets: 213
