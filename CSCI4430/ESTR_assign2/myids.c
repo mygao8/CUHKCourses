@@ -44,6 +44,8 @@ int ss_thresh;
 
 int first_epoch = 1;
 
+unsigned int spreader_per_epoch = 0;
+
 /* The src_dest_addrs like:
 
 		dest addrs
@@ -229,18 +231,19 @@ int detect_hitter(int src_id, unsigned int src_addr, unsigned int new_payload, u
 	// printf("\nsrc_traffic:%u, hh_thresh:%d\n", src_traffic, hh_thresh);
 	if (detected_flag[flag][src_id] == 1){
 		// had detected this epoch
-		printf("Hitter Detected.\n");
-		printf("new_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
-		printf("Timestamp: %lf, Src Host:", ts);
-		print_ipaddr(src_addr);
-		printf("\n");
+		// printf("Hitter Detected.\n");
+		// printf("new_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
+		// printf("Timestamp: %lf, Src Host:", ts);
+		// print_ipaddr(src_addr);
+		// printf("\n");
 		return 0;
 	}else if (total_traffic > hh_thresh){
-		printf("\nnew_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
+		// printf("\nnew_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
 		detected_flag[hitter][src_id] = 1;
-		printf("[Intrusion] Timestamp: %lf, Type: Heavy Hitter, Src Host: ", ts);
+		printf("[ Heavy Hitter ] %lf : ", ts);
 		print_ipaddr(src_addr);
-		printf("\n\n");
+		printf("	(Total traffic: %uB)", total_traffic);
+		printf("\n");
 		return 1;
 	}
 	return 0;
@@ -291,10 +294,10 @@ void detect_changer(){
 				// found same host in adjacent epoch
 				int change = src_bytecount[j] - pre_src_bytecount[i];
 				if (abs(change) > hc_thresh){
-					printf("\n[Intrusion] Timestamp: %lf, Type: Heavy Changer, Src Host: ", last_ts[j]);
+					printf("[ Heavy Changer ] %lf : ", last_ts[j]);
 					print_ipaddr(src_addrs[j]);
+					printf("	(%uB -> %uB)", pre_src_bytecount[i], src_bytecount[j]);
 					printf("\n");
-					printf("Heavy Change:%uB -> %uB\n\n", pre_src_bytecount[i], src_bytecount[j]);
 				}
 			}
 		}
@@ -309,9 +312,11 @@ void detect_spreader(int src_id, double ts){
 
 	if(src_dest_num[src_id] > ss_thresh){
 		detected_flag[spreader][src_id] = 1;
-		printf("\n[Intrusion] Timestamp: %lf, Type: Super Spreader, Src Host: ",ts);
+		printf("[ Superspreader ] %lf : ", ts);
 		print_ipaddr(src_addrs[src_id]);
-		printf("\n\n");
+		printf(" (dst num:%d)", src_dest_num[src_id]);
+		printf("\n");
+		spreader_per_epoch++;
 	}
 
 	return;
@@ -340,14 +345,14 @@ int main(int argc, char** argv) {
 	// unsigned short dst_port;
 	
 	// for statistics
-	int pkt_num = 0;
-	int ipv4_num = 0;
-	int ipv4_checksum_num = 0;
-	int ip_payload_size = 0;
-	int total_size = 0;
-	int tcp_num = 0;
-	int udp_num = 0;
-	int icmp_num = 0;
+	unsigned int pkt_num = 0;
+	unsigned int ipv4_num = 0;
+	unsigned int ipv4_checksum_num = 0;
+	unsigned int ip_payload_size = 0;
+double total_size = 0;
+	unsigned int tcp_num = 0;
+	unsigned int udp_num = 0;
+	unsigned int icmp_num = 0;
 
 
 	if (argc != 6) {
@@ -355,8 +360,8 @@ int main(int argc, char** argv) {
 		exit(-1);
 	}
 
-	hh_thresh = 1024 * 1024 * atoi(argv[1]); // in MB
-	hc_thresh = 1024 * 1024 * atoi(argv[2]); // in MB
+	hh_thresh = 1000 * 1000 * atoi(argv[1]); // in MB
+	hc_thresh = 1000 * 1000 * atoi(argv[2]); // in MB
 	ss_thresh = atoi(argv[3]);
 	int epoch = atoi(argv[4]); // in msec
 	filename = argv[5];
@@ -373,15 +378,12 @@ int main(int argc, char** argv) {
 		exit(-1);
 	}
 
-	printf("Enter file\n");
-
 	int first_pkt = 1;
 	double last_epoch_ts = 0;
 	double epoch_time = ((double) epoch) / 1000; // epoch in sec
 	
-	int loop_num = 0;
+	int epoch_num = 0;
 	while((pkt = pcap_next(pcap, &hdr)) != NULL) {
-		loop_num++;
 		// get the timestamp
 		pkt_ts = (double)hdr.ts.tv_usec / 1000000 + hdr.ts.tv_sec;
 
@@ -392,7 +394,7 @@ int main(int argc, char** argv) {
 		}		
 
 		//one packet observed
-		pkt_num ++;
+		pkt_num++;
 
 		//initial value for the ip_hdr
 		ip_hdr = (struct ip*)pkt;
@@ -433,7 +435,7 @@ int main(int argc, char** argv) {
 		if(ip_checksum((unsigned char *)ip_hdr) == ip_hdr->ip_sum){
 			//check sum passed
 			ipv4_checksum_num++;
-			total_size += ip_payload_size;
+			total_size += ip_payload_size/1000000.0;
 		}else{
 			// check sum failed, ignore
 			continue;
@@ -476,20 +478,34 @@ int main(int argc, char** argv) {
 			
 			// Detect Heavy Changer
 			detect_changer();
+
+			// for (int i = 0; i < src_num; i++){
+			// 	if (src_bytecount[i] > hh_thresh){
+			// 		// printf("\nnew_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
+			// 		printf("[ Heavy Hitter ] %lf : ", last_ts[i]);
+			// 		print_ipaddr(src_addrs[i]);
+			// 		printf("	(Total traffic: %uB)", src_bytecount[i]);
+			// 		printf("\n");
+			// 	}else if(src_addrs[i] == 2705666267){ // 2705666267 is 169.69.48.219
+			// 		printf("NOT a hitter %lf : ", last_ts[i]);
+			// 		print_ipaddr(src_addrs[i]);
+			// 		printf("	(Total traffic: %uB)\n", src_bytecount[i]);
+			// 	}
+			// }
+			// printf("epoch %d\n", epoch_num);
+
+			// printf("epoch%d, spreader num: %u\n", epoch_num, spreader_per_epoch);
+
 			/*** Previous epoch ends ***/
+			epoch_num++;
+			spreader_per_epoch = 0;
 
 			/*** Some works between last epoch and new epoch ***/
 			free_init(epoch_time, pass_time);
 
-
-			printf("****************************\n");
-			printf("*                          *\n");
-			printf("*=========New Epoch========*\n");
-			printf("*                          *\n");
-			printf("****************************\n");			
-
+			/*** New(Current) Epoch ***/
 			if (add_record(src_ip, ip_payload_size, dst_ip, pkt_ts) == DEBUG){
-				printf("ip_len: %u, ip_hdr: %u, payload: %u\n",ntohs(ip_hdr->ip_len), ip_hdr->ip_hl, ip_payload_size);
+				
 			}
 
 			// update last_epoch timestamp
@@ -498,27 +514,47 @@ int main(int argc, char** argv) {
 			}
 		}else{
 			if (add_record(src_ip, ip_payload_size, dst_ip, pkt_ts) == DEBUG){
-				printf("ip_len: %u, ip_hdr: %u, payload: %u\n",ntohs(ip_hdr->ip_len), ip_hdr->ip_hl, ip_payload_size);
+				
 			}
 		}
 	}
 
-	// Final epoch, not a complete epoch
+	/*** Final epoch, not a complete epoch ***/
+
 	// Detect Heavy Changer
 	detect_changer();
+	// for (int i = 0; i < src_num; i++){
+	// 	if (src_bytecount[i] > hh_thresh){
+	// 		// printf("\nnew_payload:%u, total_traffic:%u, hh_thresh:%u\n", new_payload, total_traffic, hh_thresh);
+	// 		printf("[ Heavy Hitter ] %lf : ", last_ts[i]);
+	// 		print_ipaddr(src_addrs[i]);
+	// 		printf("	(Total traffic: %uB)", src_bytecount[i]);
+	// 		printf("\n");
+	// 	}
+	// }
+	// printf("epoch%d, spreader num: %u\n", epoch_num, spreader_per_epoch);
 	/*** Final epoch ends ***/
-	
+	// for (int i = 0; i < src_num; i++){
+	// 	print_ipaddr(src_addrs[i]);
+	// 	for (int j = 0; j < pre_src_num; j++){\
+	// 		if (src_addrs[i] == pre_src_addrs[j]){
+	// 			printf("	%u -> ",pre_src_bytecount[j]);
+	// 			break;
+	// 		}
+	// 	}
+	// 	printf("  cur_traffic:%u\n", src_bytecount[i]);
+	// }
 
 	// close files
 	pcap_close(pcap);
 
-	printf("the total number of observed packets: %d\n", pkt_num);
-	printf("the total number of observed IPv4 packets: %d\n", ipv4_num);
-	printf("the total number of valid IPv4 packets that pass the checksum test: %d\n", ipv4_checksum_num);
-	printf("the total IP payload size: %d\n", total_size);
-	printf("the total number of TCP packets: %d\n", tcp_num);
-	printf("the total number of UDP packets: %d\n", udp_num);
-	printf("the total number of ICMP packets: %d\n",icmp_num );
+	printf("the total number of observed packets: %u\n", pkt_num);
+	printf("the total number of observed IPv4 packets: %u\n", ipv4_num);
+	printf("the total number of valid IPv4 packets that pass the checksum test: %u\n", ipv4_checksum_num);
+	printf("the total IP payload size: %lf\n", total_size);
+	printf("the total number of TCP packets: %u\n", tcp_num);
+	printf("the total number of UDP packets: %u\n", udp_num);
+	printf("the total number of ICMP packets: %u\n",icmp_num );
 	
 	return 0;
 }

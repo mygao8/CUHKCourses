@@ -3,7 +3,7 @@ CFLAGS= -Wall -Wno-sign-compare -Wno-write-strings -g -O3 -I./
 LDFLAGS=-g -lnfnetlink -lnetfilter_queue -lm -lpthread
 
 EXE=nat
-OBJ=nat_cgd.o checksum.o
+OBJ=nat.o checksum.o
 
 all: $(EXE)
 

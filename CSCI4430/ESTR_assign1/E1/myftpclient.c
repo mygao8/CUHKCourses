@@ -41,7 +41,7 @@ int main(int argc, char **argv){
 	SSL_load_error_strings();
 
 	/* Create an SSL_METHOD structure (choose an SSL/TLS protocol version) */
-	meth = (SSL_METHOD*)SSLv23_method();
+	meth = (SSL_METHOD*)TLSv1_method();
 
 	/* Create an SSL_CTX structure */
 	ctx = SSL_CTX_new(meth);

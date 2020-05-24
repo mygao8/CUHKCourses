@@ -70,7 +70,7 @@ void *threadFun(void *arg){
     SSL_load_error_strings();
 
     /* Create a SSL_METHOD structure (choose a SSL/TLS protocol version) */
-    meth = (SSL_METHOD*)SSLv23_method();
+    meth = (SSL_METHOD*)TLSv1_method();
 
     /* Create a SSL_CTX structure */
     ctx = SSL_CTX_new(meth);
@@ -88,7 +88,7 @@ void *threadFun(void *arg){
     }
 
     /* set password for the private key file. Use this statement carefully */
-    SSL_CTX_set_default_passwd_cb_userdata(ctx, (char*)"12345");
+    SSL_CTX_set_default_passwd_cb_userdata(ctx, (char*)"4430");
 
 
     /* Load the private-key corresponding to the server certificate */
@@ -305,8 +305,7 @@ void *threadFun(void *arg){
 
     /* Free the SSL structure */
     SSL_free(ssl);
-
-    /* Free the SSL_CTX structure */
+    
     SSL_CTX_free(ctx);
 
     int threadIdx = threadParam.threadClientIdx;
