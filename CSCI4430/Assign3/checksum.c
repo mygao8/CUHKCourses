@@ -6,7 +6,7 @@
 #include <netinet/tcp.h>    // required by "struct tcph"
 #include <netinet/udp.h>    // required by "struct udph"
 
-#define PKT_BUF_SIZE    1500
+#define PKT_BUF_SIZE    2400
 
 
 unsigned short in_cksum(unsigned short* addr, int len)    // Interent checksum

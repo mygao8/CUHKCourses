@@ -1,6 +1,6 @@
 CC=g++
 CFLAGS= -Wall -Wno-sign-compare -Wno-write-strings -g -O3 -I./
-LDFLAGS=-lnfnetlink -lnetfilter_queue -lm -lpthread
+LDFLAGS=-g -lnfnetlink -lnetfilter_queue -lm -lpthread
 
 EXE=nat
 OBJ=nat_cgd.o checksum.o
