@@ -180,7 +180,7 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
 }
 
 void *process_thread(void *arg){
-  // struct timespec tim1, tim2;
+  struct timespec tim1;
   tim1.tv_sec = 0;
   tim1.tv_nsec = fill_per_msec;
   int flag_success = 0;
