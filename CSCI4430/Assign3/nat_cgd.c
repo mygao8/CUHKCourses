@@ -140,7 +140,7 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   struct iphdr *ipHeader = (struct iphdr *)pktData;
 
   // Access UDP Packet
-  struct udphdr *udph = (struct udphdr *) (pktData + ipHeader->ihl * 4) ;
+  struct udphdr *udph = (struct udphdr *) (pktData + ipHeader->ihl * 4);
 
   // Access App Data
   unsigned char* appData;

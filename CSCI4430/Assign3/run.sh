@@ -7,4 +7,3 @@ FILL_RATE="2"
 
 sudo ./iptables.sh
 sudo ./nat ${IP} ${LAN} ${MASK} ${BUCKET_SIZE} ${FILL_RATE}
- 
