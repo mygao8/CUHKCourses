@@ -137,12 +137,12 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   }
   struct iphdr *ipHeader = (struct iphdr *)pktData;
 
-  // Access UDP Packet
-  struct udphdr *udph = (struct udphdr *) (pktData + ipHeader->ihl * 4);
+  // // Access UDP Packet
+  // struct udphdr *udph = (struct udphdr *) (pktData + ipHeader->ihl * 4);
 
-  // Access App Data
-  unsigned char* appData;
-  int udp_payload_len; // prompt: udp_payload_len + udp_header_len + ip_header_len = ip_pkt_len
+  // // Access App Data
+  // unsigned char* appData;
+  // int udp_payload_len; // prompt: udp_payload_len + udp_header_len + ip_header_len = ip_pkt_len
 
 
   if(ipHeader->protocol != IPPROTO_UDP) { // drop packets not in UDP
@@ -180,7 +180,7 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
 }
 
 void *process_thread(void *arg){
-  struct timespec tim1, tim2;
+  // struct timespec tim1, tim2;
   tim1.tv_sec = 0;
   tim1.tv_nsec = fill_per_msec;
   int flag_success = 0;
@@ -194,7 +194,7 @@ void *process_thread(void *arg){
   //udph->dest;
   //udph->check;
   unsigned int local_mask = 0xffffffff << (32-mask);
-  int i;
+
   //mark all the port to be available
   // for(i = 0 ;i < 2001;i++){
   //   port_av[i] = 1; //???????????
@@ -208,7 +208,7 @@ void *process_thread(void *arg){
       if (buf_av[idx] == 1){
         struct timeval time;     
         gettimeofday(&time, NULL);
-        long long int last_time = time.tv_sec * 1000 + time.tv_usec / 1000;
+        // long long int last_time = time.tv_sec * 1000 + time.tv_usec / 1000;
         last_time_initial_flag = 1;
         break;
       }
@@ -268,7 +268,7 @@ void *process_thread(void *arg){
               struct timeval timestamp;
               gettimeofday(&timestamp, NULL);
               nat_table[j].timestamp = timestamp;
-              unsigned long long time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
+              // unsigned long long time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
               break;
             }
           }
@@ -307,7 +307,7 @@ void *process_thread(void *arg){
                 struct timeval timestamp;
                 gettimeofday(&timestamp, NULL);
                 nat_table[j].timestamp = timestamp;
-                unsigned long long time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
+                // unsigned long long time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
                 print_nat();
                 break;
               }
@@ -382,7 +382,7 @@ int main(int argc, char** argv) {
   bucket_size = atoi(argv[4]);
   num_token = bucket_size;
   fill_rate = atoi(argv[5]);
-  int fill_per_msec = 1000000/fill_rate;
+  // int fill_per_msec = 1000000/fill_rate;
 
   // initialize the nat table
   int i;
