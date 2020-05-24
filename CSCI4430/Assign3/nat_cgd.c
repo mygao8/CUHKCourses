@@ -118,7 +118,6 @@ void print_nat(){
 static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     struct nfq_data *pkt, void *cbData) {
   // call back is recv thread
-  printf("callback start\n");
   int i;
 
   // Get the id in the queue
@@ -133,7 +132,6 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
   int ip_pkt_len;
 
   ip_pkt_len = nfq_get_payload(pkt, &pktData); 
-  printf("ip_pkt_len:%d\n", ip_pkt_len);
   if(ip_pkt_len > 1500){
     printf("Packet larger than 1500!\n");
   }
@@ -168,29 +166,20 @@ static int Callback(struct nfq_q_handle *myQueue, struct nfgenmsg *msg,
     return 1;
   }
   
-  printf("try to get lock\n");
   pthread_mutex_lock(&mutex);
-  printf("get lock\n");
   memcpy(bufs[buf_av_idx], pktData, ip_pkt_len);
   verdict_table[buf_av_idx].queue = myQueue;
   verdict_table[buf_av_idx].id = id;
   verdict_table[buf_av_idx].ip_pkt_len = ip_pkt_len;
   buf_av[buf_av_idx] = 1;
 
-  printf("print buf_av\n");
-  for(int idx=0 ;idx < 10;idx++){
-    printf("%d ", buf_av[idx]);
-  }
   pthread_mutex_unlock(&mutex);
-  printf("release lock\n\n");
 
-  printf("\ncallback end\n");
 
   return 1;
 }
 
 void *process_thread(void *arg){
-  printf("processing thread\n");
   struct timespec tim1, tim2;
   tim1.tv_sec = 0;
   tim1.tv_nsec = fill_per_msec;
@@ -212,7 +201,6 @@ void *process_thread(void *arg){
   // }
 
   // record initial last_time as the time just consume the first token
-  printf("set initial last_time\n");
   int last_time_initial_flag = 0;
   while (last_time_initial_flag == 0){
     pthread_mutex_lock(&mutex);
@@ -228,14 +216,12 @@ void *process_thread(void *arg){
     pthread_mutex_unlock(&mutex);
   }
 
-  printf("start filling and consuming tokens\n");
   while(1){
   while((num_token=fill_token(num_token))>=1){
     for(idx =0 ;idx < 10;idx++){
       if (buf_av[idx] == 1){
         // use one token for processing one packet
         num_token--;
-        printf("consume 1 token, now %d tokens\n", num_token);
         int j;
 
         // remove expired entry
@@ -246,7 +232,6 @@ void *process_thread(void *arg){
           struct timeval nat_timestamp = nat_table[j].timestamp;
           if(nat_table[j].internal_ip == 0) continue;
           if (cur_time_msec - (nat_timestamp.tv_sec*1000 + nat_timestamp.tv_usec/1000) > 10000){
-            printf("expired time: %llu\n", cur_time_msec);
             int tmp_translated_port = nat_table[j].translated_port;
 	          nat_table[j].translated_port =0 ;
             nat_table[j].internal_ip = 0;
@@ -265,7 +250,6 @@ void *process_thread(void *arg){
         // judge whether it is a inbound or outbound packet
 
         if ((ntohl(iph->saddr) & local_mask) == lan) {
-          printf("outbound traffic\n");
           // outbound traffic
           // lookup the nat table
           int flag_in_nat_table = 0; 
@@ -285,14 +269,12 @@ void *process_thread(void *arg){
               gettimeofday(&timestamp, NULL);
               nat_table[j].timestamp = timestamp;
               unsigned long long time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
-              printf("used timestamp: %llu\n", time);
               break;
             }
           }
 	  
           if (!flag_in_nat_table){
             // find an available port 
-            printf("not in table\n");
 	          int translated_port = 0;
             for (j = 0;j < 2001;j++){
               if(port_av[j] == 0){
@@ -326,7 +308,6 @@ void *process_thread(void *arg){
                 gettimeofday(&timestamp, NULL);
                 nat_table[j].timestamp = timestamp;
                 unsigned long long time = timestamp.tv_sec * 1000 + timestamp.tv_usec / 1000;
-                printf("used timestamp: %llu\n", time);
                 print_nat();
                 break;
               }
@@ -334,7 +315,6 @@ void *process_thread(void *arg){
           }
 
         }else{
-          printf("inbound traffic\n");
           // inbound traffic
           int flag_in_nat_table = 0;
           // int flag_valid = 0;
@@ -355,10 +335,8 @@ void *process_thread(void *arg){
               break;
             }
           }
-          printf("end checking table\n");
 
           if (!flag_in_nat_table){
-            printf("cannot find an entry\n");
             memset(bufs[idx], 0, BUF_SIZE);
             pthread_mutex_lock(&mutex);
             // no entry, directly drop from user space buf_av
@@ -368,7 +346,6 @@ void *process_thread(void *arg){
           }
         }
         
-        printf("find an entry\n");
         // send the packet
         if((flag_success = nfq_set_verdict(verdict_table[idx].queue, verdict_table[idx].id, NF_ACCEPT, 
           verdict_table[idx].ip_pkt_len, pktData))<0){
@@ -382,7 +359,6 @@ void *process_thread(void *arg){
     }
   }
   }
-  printf("exit processing thread\n");
 }
 
 
@@ -463,7 +439,6 @@ int main(int argc, char** argv) {
   pthread_create(&pro_thread, NULL, process_thread, NULL);
   pthread_detach(pro_thread);
 
-  printf("recv\n");
   // recv thread as main 
   while ((res = recv(fd, buf, sizeof(buf), 0)) && res >= 0) {
     nfq_handle_packet(nfqHandle, buf, res);
